@@ -33,7 +33,7 @@ Tabela de Conteúdos
  <a href="#valores">Valores</a> 
 </p>
 
-## 💻 Sobre o projeto
+### 💻 Sobre o projeto
 O calmamente é uma ferramenta que visa auxiliar os usuários que possuem ansiedade, mostrando exercícios práticos e simples, mas com uma eficácia e potencial de retirar um ansioso de uma crise de ansiedade. Ou caso a pessoa sinta que está entrando em uma crise, ela poderá acessar os exercícios voltados para pré-crise.
 Nossa solução utilizará de um chat-bot fornecido pela IBM - "Watson Assistant", integrado com o IBM Cloud. Este chat-bot será capaz de identificar através de uma conversa: o nível de ansiedade de uma pessoa; constatar clinicamente que ela possui o Transtorno de Ansiedade Generalizada ou não; constatar clinicamente que ela possui Síndrome do Pânico ou não; e identifica alguns gostos pessoais do usuário. Esta informação é processada e, é retornado para a aplicação web os exercícios que mais se adequam àquele usuário.
 Para que assim com um layout intuitivo e ágil, a pessoa possa acessar nossos exercícios para sair de seu estado de crise, ou caso não queira entrar em um. O usuário também será capaz de se aventurar por todos os exercícios existentes em nosso sistema na aba de personalizar, onde poderá escolher qual exercício deseja fazer ou não, para que assim sua experiência seja mais satisfatória ainda.
