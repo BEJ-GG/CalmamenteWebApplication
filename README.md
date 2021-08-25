@@ -16,14 +16,16 @@
 ### 🧠 Calmamente
 <p>É um projeto em parceria com a IBM - International Business Machines | Com o intuito de auxíliar os ansiosos principalmente nesse tempo de pandemia.</p>
 
+
+
 Tabela de Conteúdos
 ===================
 <p align="center">
- <a href="#Sobre-o-projeto">Sobre o projeto</a> •
+ <a href="#-sobre-o-projeto">Sobre o projeto</a> •
  <a href="#missão">Missão</a> • 
  <a href="#visão">Visão</a> • 
  <a href="#valores">Valores</a> • 
- <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#-tecnologias">Tecnologias</a> • 
 </p>
 
 ## 💻 Sobre o projeto
@@ -47,4 +49,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Java](https://pt.wikipedia.org/wiki/Java_(linguagem_de_programa%C3%A7%C3%A3o))
 - [Metodologia SCRUM](https://blog.contaazul.com/metodologia-scrum)
 
+### Recursos
 
+- [x] Cadastro de usuário
