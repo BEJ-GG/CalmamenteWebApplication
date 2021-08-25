@@ -40,7 +40,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 Tabela de Conteúdos
 ===================
 <p align="center">
- <a href="#sobreoprojeto">Sobre o projeto</a> •
+ <a href="sobreoprojeto">Sobre o projeto</a> •
  <a href="#missão">Missão</a> • 
  <a href="#visão">Visão</a> • 
  <a href="#valores">Valores</a> • 
