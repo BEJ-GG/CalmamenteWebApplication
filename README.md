@@ -73,3 +73,11 @@ Compreensão: Compreendemos que a ansiedade é um problema sério e que deve ser
 Gratidão: Somos gratos pela possibilidade de auxílio às pessoas principalmente por termos passado por momentos tão difíceis.
 
 Confiabilidade: Estabelecer relacionamentos abertos, transparentes e apoiados na confiança mútua.
+
+## 👥 Contribuitors
+<table>
+	<tr>
+	    <td align="center"><a href="https://github.com/JhoctanTeixeira"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/80040630?s=60&v=4" width="100px;" alt=""/><br /><sub><b>Jhoctan Teixeira</b></sub></a><br /><a href="https://github.com/JhoctanTeixeira" title="Jhoctan-Teixeira">🚀💻</a></td>
+		<td align="center"><a href="https://github.com/enzo-b-pagliacci"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/80040708?v=4" width="100px;" alt=""/><br /><sub><b>enzo-b-pagliaci</b></sub></a><br /><a href="https://github.com/enzo-b-pagliacci" title="enzo-b-pagliaci">🚀</a></td>	
+	</tr>
+</table>
