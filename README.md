@@ -22,10 +22,11 @@ Tabela de Conteúdos
 ===================
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre o projeto</a> •
- <a href="#missão">Missão</a> • 
- <a href="#visão">Visão</a> • 
- <a href="#valores">Valores</a> • 
+ <a href="#-missão">Missão</a> • 
+ <a href="#-visão">Visão</a> • 
+ <a href="#-valores">Valores</a> • 
  <a href="#-tecnologias">Tecnologias</a> • 
+<a href="#recursos">Recursos</a>
 </p>
 
 ## 💻 Sobre o projeto
