@@ -53,3 +53,21 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ### Recursos
 
 - [x] Cadastro de usuário
+
+### Quem somos
+
+Somos um grupo de desenvolvedores que entendemos que a ansiedade no Brasil é um problema real, sério e que aumentou muito durante a pandemia. Por isso criamos o Calmamente uma plataforma digital que possa ajudar você em momentos de uma crise de ansiedade e em momentos antes de uma crise, forncecendo exercícios simples com a capacidade retirada de sua mente do estado de crise. Entendemos também que cada pessoa tem suas individualidades em momentos de crise e que devem ser respeitadas, recomendando assim exercícios de acordo com suas próprias características individuais.
+### Missão
+Ajudar pessoas que possuem problemas com ansiedade sugerindo diversos exercícios de acordo com a personalidade da pessoa, e permitindo que ela personalize suas soluções. Ultimamente os casos de pessoas com ansiedade vem subindo muito e quanto mais pessoas forem ajudadas melhor.
+
+### Visão
+Pretendemos nos tornar o maior canal acessível para ajuda contra ansiedade do Brasil, sendo bem-visto e recomendado por conselhos de psicologia de todo o país. Nosso objetivo é ser capaz de ajudar milhares de pessoas todos os dias a lidarem com essa doença e contribuir para que o Brasil pare de ser, no ranking da OMS, o pais mais ansioso do Mundo.
+
+### Valores
+Humanização: Cuidado centrado nas pessoas, respeitando todos os usuários.
+
+Compreensão: Compreendemos que a ansiedade é um problema sério e que deve ser tratada com muita atenção.
+
+Gratidão: Somos gratos pela possibilidade de auxílio às pessoas principalmente por termos passado por momentos tão difíceis.
+
+Confiabilidade: Estabelecer relacionamentos abertos, transparentes e apoiados na confiança mútua.
