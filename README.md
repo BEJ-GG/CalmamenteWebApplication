@@ -42,6 +42,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [HTML5](https://www.devmedia.com.br/o-que-e-o-html5/25820) <img align = "center" alt = "HTML" height = "30" width = "40" src = "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg ">
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS0) <img align = "center" alt = "CSS" height = "30" width = "40" src = "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg ">
+- [Bootstrap](https://pt.wikipedia.org/wiki/Bootstrap_(framework_front-end)) <img align = "center" alt = "Jhoctan-Bootsrtap" height = "30" width = "40" src = "https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-plain.svg">
 - [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)<img align = "center" alt = "javascript" height = "30" width = "40" src = "https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg">
 - [Node.js](https://nodejs.org/en/)<img align = "center" alt = "node.js" height = "30" width = "40" src = "https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-plain.svg">
 - [React](https://pt-br.reactjs.org/)<img align = "center" alt = "react" height = "30" width = "40" src = "https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg">
