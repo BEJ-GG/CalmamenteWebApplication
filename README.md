@@ -40,14 +40,14 @@ Nosso projeto utilizará das tecnologias de React Js para o desenvolvimento da a
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [HTML5](https://www.devmedia.com.br/o-que-e-o-html5/25820)
-- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS0)
-- [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [Sql](https://www.devmedia.com.br/guia/guia-completo-de-sql/38314)
+- [HTML5](https://www.devmedia.com.br/o-que-e-o-html5/25820) <img align = "center" alt = "HTML" height = "30" width = "40" src = "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg ">
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS0) <img align = "center" alt = "CSS" height = "30" width = "40" src = "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg ">
+- [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)<img align = "center" alt = "javascript" height = "30" width = "40" src = "https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg">
+- [Node.js](https://nodejs.org/en/)<img align = "center" alt = "node.js" height = "30" width = "40" src = "https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-plain.svg">
+- [React](https://pt-br.reactjs.org/)<img align = "center" alt = "react" height = "30" width = "40" src = "https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg">
+- [Sql](https://www.devmedia.com.br/guia/guia-completo-de-sql/38314)<img align = "center" alt = "sql" height = "30" width = "40" src = "https://github.com/devicons/devicon/blob/master/icons/microsoftsqlserver/microsoftsqlserver-plain.svg">
+- [Java](https://pt.wikipedia.org/wiki/Java_(linguagem_de_programa%C3%A7%C3%A3o))<img align = "center" alt = "" height = "30" width = "40" src = "https://github.com/devicons/devicon/blob/master/icons/java/java-original.svg">
 - [Chat-bot(Watson assistant)](https://www.ibm.com/br-pt/cloud/watson-assistant)
-- [Java](https://pt.wikipedia.org/wiki/Java_(linguagem_de_programa%C3%A7%C3%A3o))
 - [Metodologia SCRUM](https://blog.contaazul.com/metodologia-scrum)
 
 ### 👥 Quem somos
