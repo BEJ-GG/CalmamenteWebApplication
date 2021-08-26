@@ -50,10 +50,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Java](https://pt.wikipedia.org/wiki/Java_(linguagem_de_programa%C3%A7%C3%A3o))
 - [Metodologia SCRUM](https://blog.contaazul.com/metodologia-scrum)
 
-### 🧾 Recursos
-
-- [x] Cadastro de usuário
-
 ### 👥 Quem somos
 
 Somos um grupo de desenvolvedores que entendemos que a ansiedade no Brasil é um problema real, sério e que aumentou muito durante a pandemia. Por isso criamos o Calmamente uma plataforma digital que possa ajudar você em momentos de uma crise de ansiedade e em momentos antes de uma crise, forncecendo exercícios simples com a capacidade retirada de sua mente do estado de crise. Entendemos também que cada pessoa tem suas individualidades em momentos de crise e que devem ser respeitadas, recomendando assim exercícios de acordo com suas próprias características individuais.
