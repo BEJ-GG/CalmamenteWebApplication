@@ -14,7 +14,7 @@
 </p>
 
 ### 🧠 Calmamente
-<p>É um projeto em parceria com a IBM - International Business Machines | Com o intuito de auxíliar os ansiosos principalmente nesse tempo de pandemia.</p>
+<p>É um projeto em parceria com a IBM - International Business Machines | Com o intuito de auxiliar os ansiosos principalmente nesse tempo de pandemia.</p>
 
 🚀 Conteúdos
 ===================
@@ -34,7 +34,7 @@ O calmamente é uma ferramenta que visa auxiliar os usuários que possuem ansied
 Nossa solução utilizará de um chat-bot fornecido pela IBM - "Watson Assistant", integrado com o IBM Cloud. Este chat-bot será capaz de identificar através de uma conversa: o nível de ansiedade de uma pessoa; constatar clinicamente que ela possui o Transtorno de Ansiedade Generalizada ou não; constatar clinicamente que ela possui Síndrome do Pânico ou não; e identifica alguns gostos pessoais do usuário. Esta informação é processada e, é retornado para a aplicação web os exercícios que mais se adequam àquele usuário.
 Para que assim com um layout intuitivo e ágil, a pessoa possa acessar nossos exercícios para sair de seu estado de crise, ou caso não queira entrar em um. O usuário também será capaz de se aventurar por todos os exercícios existentes em nosso sistema na aba de personalizar, onde poderá escolher qual exercício deseja fazer ou não, para que assim sua experiência seja mais satisfatória ainda.
 
-Nosso projeto utilizará das tecnologias de React Js para o desenvolvimento da aplicação web, java como linguagem de back-end, SQL Oracle como banco de dados para o armazenamento e persistencias necessárias e o Watson Assistant como fornecedor de chat-bot. Além disso todo o projeto está sendo desenvolvido em metodologia ágil: SCRUM.
+Nosso projeto utilizará das tecnologias de React Js para o desenvolvimento da aplicação web, java como linguagem de back-end, SQL Oracle como banco de dados para o armazenamento e persistências necessárias e o Watson Assistant como fornecedor de chat-bot. Além disso todo o projeto está sendo desenvolvido em metodologia ágil: SCRUM.
 
 ### 🛠 Tecnologias
 
@@ -53,7 +53,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### 👥 Quem somos
 
-Somos um grupo de desenvolvedores que entendemos que a ansiedade no Brasil é um problema real, sério e que aumentou muito durante a pandemia. Por isso criamos o Calmamente uma plataforma digital que possa ajudar você em momentos de uma crise de ansiedade e em momentos antes de uma crise, forncecendo exercícios simples com a capacidade retirada de sua mente do estado de crise. Entendemos também que cada pessoa tem suas individualidades em momentos de crise e que devem ser respeitadas, recomendando assim exercícios de acordo com suas próprias características individuais.
+Somos um grupo de desenvolvedores que entendemos que a ansiedade no Brasil é um problema real, sério e que aumentou muito durante a pandemia. Por isso criamos o Calmamente uma plataforma digital que possa ajudar você em momentos de uma crise de ansiedade e em momentos antes de uma crise, fornecendo exercícios simples com a capacidade retirada de sua mente do estado de crise. Entendemos também que cada pessoa tem suas individualidades em momentos de crise e que devem ser respeitadas, recomendando assim exercícios de acordo com suas próprias características individuais.
 ### 🎖 Missão
 Ajudar pessoas que possuem problemas com ansiedade sugerindo diversos exercícios de acordo com a personalidade da pessoa, e permitindo que ela personalize suas soluções. Ultimamente os casos de pessoas com ansiedade vem subindo muito e quanto mais pessoas forem ajudadas melhor.
 
