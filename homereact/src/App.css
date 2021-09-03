@@ -103,12 +103,12 @@ body {
 }
 
 
-a {
+a, .linkreact {
     text-decoration: none;
     color: #000;
 }
 
-a:hover {
+a:hover, .linkreact:hover {
     color: #000;
 }
 
@@ -1914,4 +1914,6 @@ a:hover {
     display: flex;
     border: 1px solid #c7c7c7;
 }
+
+
 
