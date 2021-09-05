@@ -18,6 +18,27 @@ $("#inicio").click(function () {
 });
 //fim dos iframes de exercícios
 
+// inicio dos iframes do grounding
+var urlsG = ['1.html', 'ifraVisao.html', 'exerciciomao.html', 'exerciciosom.html'];
+var indexG = 0;
+
+$("#grounPro").click(function () {
+  if (indexG < (urlsG.length - 1)) {
+    indexG++;
+  }
+  $("#ifra-groun").attr("src", urlsG[indexG]);
+
+});
+
+$("#grounVol").click(function () {
+  if (indexG < urlsG.length && indexG > 0) {
+    indexG--;
+  }
+  $("#ifra-groun").attr("src", urlsG[indexG]);
+});
+// fim dos iframes do grounding
+
+
 //inicio link pros botões iniciais
 $(".btn-inicial-enter").click(function () {
   location.href = 'cadastro.html'

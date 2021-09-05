@@ -163,6 +163,17 @@ a:hover {
         margin-bottom: 3%;
     }
 
+    .groun-ifra {
+        position: static;
+        width: 50%;
+        height: 78vh;
+        margin-left: 25%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        border: 0.01 solid #c7c7c7;
+        border-radius: 20px;
+    }
+
 
     .tam-funcprin {
         font-size: 100px;
@@ -222,6 +233,25 @@ a:hover {
         height: 3rem;
         background-color: #03a3ff;
     }
+
+    #grounVol {
+        margin-left: 5%;
+        align-items: center;
+        font-size: 19px;
+        width: 17%;
+        height: 3rem;
+        background-color: #03a3ff;
+    }
+
+    #grounPro {
+        margin-left: 95%;
+        align-items: center;
+        font-size: 19px;
+        width: 17%;
+        height: 3rem;
+        background-color: #03a3ff;
+    }
+
 
     .ebcard {
         width: 70%;
@@ -378,7 +408,7 @@ a:hover {
         font-size: 30px;
     }
 
-    .tam-exercicio{
+    .tam-exercicio {
         font-size: 40px;
     }
 
@@ -555,7 +585,7 @@ a:hover {
 
     /* fim parallax praia  */
 
-    .tieb{
+    .tieb {
         background: rgba(238, 238, 238, 0.8);
         border-radius: 5px;
         color: #000;
@@ -564,7 +594,7 @@ a:hover {
         padding-bottom: 0.5%;
     }
 
-       .sub-tieb{
+    .sub-tieb {
         color: #fff;
     }
 
@@ -596,14 +626,124 @@ a:hover {
         background-color: white;
     }
 
-    .caixa-escrita{
-    margin-left: 18%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    width: 50%;
-    height: 500px;
-    resize: none
-}
+    .caixa-escrita {
+        margin-left: 18%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 50%;
+        height: 500px;
+        resize: none
+    }
+
+    .eyes {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .eye {
+        /* border: 1px solid #000; */
+        width: 150px;
+        height: 150px;
+        background: #fff;
+        display: inline-block;
+        margin: 40px;
+        border-radius: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .ball {
+        width: 50px;
+        height: 50px;
+        background: #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        border: 15px solid #03a3ff;
+    }
+
+
+    .fundoOl {
+        margin: 0;
+        padding: 0;
+        background: #034f7a;
+    }
+
+    .fundo-mao {
+        margin: 0;
+        padding: 0;
+        background: #034f7a;
+        cursor: grab;
+    }
+
+    .escr-olho {
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-top: 2%;
+        color: #fff;
+        text-align: justify;
+        font-size: 31px;
+    }
+
+    .in-ce {
+        text-align: center;
+        margin-top: 12%;
+    }
+
+    .in-ce-se {
+        text-align: center;
+        margin-top: 12%;
+    }
+
+
+    .laex {
+        display: inline-block;
+        font-size: 50px;
+        color: #15ff00;
+        ;
+    }
+
+    .laex:hover {
+        color: #0c6300;
+    }
+
+    .soex {
+        display: inline-block;
+        font-size: 50px;
+        color: #ffd900;
+    }
+
+    .soex:hover {
+        color: #c9d42c;
+    }
+
+    .moex {
+        display: inline-block;
+        font-size: 50px;
+        color: #ea00ff;
+    }
+
+    .moex:hover {
+        color: #970090;
+    }
+
+    .coex {
+        display: inline-block;
+        font-size: 50px;
+        color: #ae00ff;
+
+    }
+
+    .coex:hover {
+        color: #6d028d;
+    }
+
+
 
 }
 
@@ -634,6 +774,14 @@ a:hover {
         margin-top: 5%;
     }
 
+    .groun-ifra {
+        position: static;
+        width: 100%;
+        height: 50vh;
+        margin-top: 5%;
+        border: 0.01 solid #c7c7c7;
+        border-radius: 20px;
+    }
 
     .tam-funcprin {
         font-size: 80px;
@@ -698,6 +846,24 @@ a:hover {
         background-color: #03a3ff;
     }
 
+    #grounVol {
+        margin-left: 5%;
+        align-items: center;
+        font-size: 20px;
+        width: 15%;
+        height: 3rem;
+        background-color: #03a3ff;
+    }
+
+    #grounPro {
+        margin-left: 95%;
+        align-items: center;
+        font-size: 20px;
+        width: 15%;
+        height: 3rem;
+        background-color: #03a3ff;
+    }
+
     .ebcard {
         width: 80%;
         margin-top: 5%;
@@ -732,8 +898,8 @@ a:hover {
         padding-bottom: 0.5%;
     }
 
-    .sub-tieb{
-       color: #fff;
+    .sub-tieb {
+        color: #fff;
 
     }
 
@@ -859,7 +1025,7 @@ a:hover {
         font-size: 25px;
     }
 
-     .tam-exercicio{
+    .tam-exercicio {
         font: size 35px;
     }
 
@@ -1056,14 +1222,122 @@ a:hover {
         background-color: white;
     }
 
-    .caixa-escrita{
-    margin-left: 18%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    width: 1000px;
-    height: 500px;
-    resize: none
-}
+    .caixa-escrita {
+        margin-left: 18%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 1000px;
+        height: 500px;
+        resize: none
+    }
+
+    .eyes {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .eye {
+        /* border: 1px solid #000; */
+        width: 150px;
+        height: 150px;
+        background: #fff;
+        display: inline-block;
+        margin: 40px;
+        border-radius: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .ball {
+        width: 50px;
+        height: 50px;
+        background: #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        border: 15px solid #03a3ff;
+    }
+
+    .fundoOl {
+        margin: 0;
+        padding: 0;
+        background: #034f7a;
+    }
+
+    .fundo-mao {
+        margin: 0;
+        padding: 0;
+        background: #034f7a;
+        cursor: grab;
+    }
+
+    .escr-olho {
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-top: 2%;
+        color: #fff;
+        text-align: justify;
+        font-size: 31px;
+    }
+
+    .in-ce {
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .in-ce-se {
+        text-align: center;
+        margin-top: 10%;
+    }
+
+
+    .laex {
+        display: inline-block;
+        font-size: 50px;
+        color: #15ff00;
+        ;
+    }
+
+    .laex:hover {
+        color: #0c6300;
+    }
+
+    .soex {
+        display: inline-block;
+        font-size: 50px;
+        color: #ffd900;
+    }
+
+    .soex:hover {
+        color: #c9d42c;
+    }
+
+    .moex {
+        display: inline-block;
+        font-size: 50px;
+        color: #ea00ff;
+    }
+
+    .moex:hover {
+        color: #970090;
+    }
+
+    .coex {
+        display: inline-block;
+        font-size: 50px;
+        color: #ae00ff;
+
+    }
+
+    .coex:hover {
+        color: #6d028d;
+    }
+
 
 }
 
@@ -1089,6 +1363,17 @@ a:hover {
         height: 60vh;
         border: none;
         margin-bottom: 15%;
+    }
+
+    .groun-ifra {
+        position: static;
+        margin-top: 5%;
+        width: 100%;
+        height: 60vh;
+        border: none;
+        margin-bottom: 15%;
+        border: 0.01 solid #c7c7c7;
+        border-radius: 20px;
     }
 
 
@@ -1158,6 +1443,24 @@ a:hover {
         background-color: #03a3ff;
     }
 
+    #grounVol {
+        align-items: center;
+        height: 3rem;
+        width: 50%;
+        margin-left: 20%;
+        font-size: 20px;
+        background-color: #03a3ff;
+    }
+
+    #grounPro {
+        align-items: center;
+        height: 3rem;
+        width: 50%;
+        margin-left: 80%;
+        font-size: 20px;
+        background-color: #03a3ff;
+    }
+
     .ebcard {
         width: 90%;
         margin-top: 5%;
@@ -1166,7 +1469,7 @@ a:hover {
     }
 
     .tieb {
-              background: rgba(238, 238, 238, 0.8);
+        background: rgba(238, 238, 238, 0.8);
         border-radius: 5px;
         color: #000;
         margin: 0 25%;
@@ -1175,7 +1478,7 @@ a:hover {
         text-align: center;
     }
 
-    .sub-tieb{
+    .sub-tieb {
         color: #fff;
     }
 
@@ -1326,7 +1629,7 @@ a:hover {
         font-size: 20px;
     }
 
-     .tam-exercicio{
+    .tam-exercicio {
         font-size: 30px;
     }
 
@@ -1527,14 +1830,123 @@ a:hover {
         background-color: white;
     }
 
-    .caixa-escrita{
-    margin-left: 18%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    width: 1000px;
-    height: 500px;
-    resize: none
-}
+    .caixa-escrita {
+        margin-left: 18%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 1000px;
+        height: 500px;
+        resize: none
+    }
+
+    .eyes {
+        position: absolute;
+        /* top: 50%; */
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .eye {
+        /* border: 1px solid #000; */
+        width: 70px;
+        height: 70px;
+        background: #fff;
+        display: inline-block;
+        margin: 40% 30px 30px 30px;
+        border-radius: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .ball {
+        width: 45px;
+        height: 45px;
+        background: #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        border: 13px solid #03a3ff;
+    }
+
+    .fundoOl {
+        margin: 0;
+        padding: 0;
+        background: #034f7a;
+    }
+
+    .fundo-mao {
+        margin: 0;
+        padding: 0;
+        background: #034f7a;
+        cursor: grab;
+    }
+
+    .escr-olho {
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-top: 2%;
+        color: #fff;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .in-ce {
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        /* margin-left: 0.1%; */
+    }
+
+    .in-ce-se {
+        text-align: center;
+        /* margin-left: 0.1%; */
+    }
+
+
+    .laex {
+        display: inline-block;
+        font-size: 45px;
+        color: #15ff00;
+        ;
+    }
+
+    .laex:hover {
+        color: #0c6300;
+    }
+
+    .soex {
+        display: inline-block;
+        font-size: 45px;
+        color: #ffd900;
+    }
+
+    .soex:hover {
+        color: #c9d42c;
+    }
+
+    .moex {
+        display: inline-block;
+        font-size: 45px;
+        color: #ea00ff;
+    }
+
+    .moex:hover {
+        color: #970090;
+    }
+
+    .coex {
+        display: inline-block;
+        font-size: 45px;
+        color: #ae00ff;
+
+    }
+
+    .coex:hover {
+        color: #6d028d;
+    }
 
 
 }
@@ -1549,7 +1961,7 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
     .logo {
         width: 200px;
         height: auto;
@@ -1894,7 +2306,7 @@ a:hover {
     background: linear-gradient(90deg, rgba(3, 163, 255, 0.3) 0%, rgba(17, 64, 207, 1) 50%, rgba(3, 163, 255, 0.3) 100%);
 }
 
-.ti-escrita{
+.ti-escrita {
     text-align: center;
     margin-top: 1%;
     margin-bottom: 2%;
@@ -1904,6 +2316,10 @@ a:hover {
 .formul-exercicios {
     display: flex;
     justify-content: center;
+    width: 80%;
+    border: none;
+    margin-left: 10%;
+    margin-bottom: 3%;
 }
 
 .for-exercicios {
@@ -1915,3 +2331,50 @@ a:hover {
     border: 1px solid #c7c7c7;
 }
 
+.di-bt-ex {
+    display: flex;
+    justify-content: center;
+}
+
+.bt-exercicios {
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: #1140cf 3px solid;
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+
+.bt-exercicios:hover {
+    border: #03a3ff 3px solid;
+}
+
+.tex-mod-exercicio {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+
+}
+
+
+.fundo-som {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parabola {
+    width: 100px;
+    height: 100px;
+    border: solid;
+    border-color: transparent #000 #000 #000;
+    border-radius: 0 0 100px 100px;
+}
+
+#ifra-groun {
+    width: 100%;
+    height: 100%;
+    border: 0.01px solid #ffffff;
+    border-radius: 20px 20px 0 0;
+
+}
