@@ -1,6 +1,11 @@
 import React from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import NavbarToggle from 'react-bootstrap/NavbarToggle'
+import Navbar from 'react-bootstrap/Navbar'
+import NavDropdown from 'react-bootstrap/NavDropdown'
+import Nav from 'react-bootstrap/Nav'
+import Container from 'react-bootstrap/Container'
 import { faBook, faExclamationTriangle, faMugHot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from './Components/img/logo.png'
@@ -18,27 +23,22 @@ return(
 <>
 <div id="container">
     <div id="main">
+
       {/* <!-- inicio menu  --> */}
-      <nav className="navbar navbar-expand-lg navbar-light back-menu">
-        <div className=" container-fluid">
-          <div>
-            <a  href="./home.html" className="m-0 linkreact"> <img src={logo} alt="cerebro meditando, nome: calmamente"
-                className="logo m-0"></img> </a>
-          </div>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"></button>
-            <span className="navbar-toggler-icon"></span>
-          
-          <div className="justify-content-end collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-              <hr></hr>
-              <a className="menu-di  mx-1 linkreact" aria-current="page" href="./estouEmCriseCadastro.html">Estou em crise</a>
-              <a className="menu-di mx-1 linkreact" href="./queroMeAcalmar.html">Quero me acalmar</a>
-              <a className="menu-di mx-1 linkreact" href="./informacoes.html">Informações</a>
-              <div className="perfi-usu">
+      <Navbar collapseOnSelect expand="lg" variant="light" className="back-menu m-0 p-0 d-flex justify-content-between">
+        <div className="m-0 container-fluid ">
+        <Navbar.Brand href="#home"><img src={logo} alt="cerebro meditando, nome: calmamente"
+                className="logo m-0"></img></Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
+          <Nav className="">
+            <a href="#features" className="menu-di  mx-1 linkreact">Estou em crise</a>
+            <a href="#pricing" className="menu-di  mx-1 linkreact">Quero me acalmar</a>
+            <a href="#pricing" className="menu-di  mx-1 linkreact">Informações</a>
+            {/* <!-- inicio do perfil --> */}
+            <div className="perfi-usu">
                 <button className="menu-dir mx-1" id="bt-perfi" onclick='mostra_ocultaper()' href="#"><img
-                    src={perfil} className="men-home" alt=""></img></button>
-                {/* <!-- inicio do perfil --> */}
+                    src={perfil} className="men-home " alt=""></img></button>
                 <div className="per-text" id="bt-quaper">
                   <a href="#"><i className="fas fa-user-edit i-per-fil linkreact"></i></a>
                   <i className="fas fa-question-circle i-imusu"></i>
@@ -57,12 +57,12 @@ return(
                         className="fas fa-sign-in-alt ic-sape"></i></button>
                   </div>
                 </div>
-                {/* <!-- fim do perfil --> */}
               </div>
-            </div>
-          </div>
+              {/* <!-- fim do perfil --> */}
+          </Nav>
+        </Navbar.Collapse>
         </div>
-      </nav>
+      </Navbar>
       {/* <!-- fim menu  --> */}
 
       {/* <!-- inicio dos cards de 3 funcionalidade --> */}
@@ -117,7 +117,7 @@ return(
             </div>
           </div>
 
-          {/* <!-- card 3 --> */}
+          {/*  card 3  */}
           <div className="col">
             <div className="ho-bor">
               <a className="linkreact" href="informacoes.html">
