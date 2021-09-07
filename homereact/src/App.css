@@ -10,7 +10,7 @@ cinza claro - #eeeeee / 238, 238, 238 */
 /* cinza um pouco mais escuro #c7c7c7 */
 
 html,
-body {
+body, #root {
     height: 100%;
     
 }
