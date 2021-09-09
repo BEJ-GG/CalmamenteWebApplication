@@ -1,6 +1,7 @@
 import React from 'react'
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import gifRespira from '../img/respiracao.gif'
 
 export default function Respiracao() {
 
@@ -183,6 +184,14 @@ export default function Respiracao() {
 
             {/* <!-- inicio respiração --> */}
             <h1 class="ti-escrita">Exercício de respiração</h1>
+
+            <div className="d-flex justify-content-center mrgt-grande mrgb-media">
+                <div style={{height: '40%'}} >
+                    <img src={gifRespira} alt="gif de respiração" style={{width: '100%'}} />
+                    
+                </div>
+
+            </div>
             
             {/* <!-- fim respiração  --> */}
 
