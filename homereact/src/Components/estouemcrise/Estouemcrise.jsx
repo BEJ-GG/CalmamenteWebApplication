@@ -12,9 +12,9 @@ export default function Estouemcrise() {
       </div>
 
       {/* <!-- Inicio Modal do personalizar --> */}
-      <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"/>
-        <div class="modal-dialog modal-dialog-scrollable  modal-dialog-centered"/>
-          <div class="modal-content"/>
+      <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable  modal-dialog-centered">
+          <div class="modal-content">
             <div class="modal-header">
               <h4 class="modal-title" id="exampleModalLabel">Personalizar</h4>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -232,9 +232,9 @@ export default function Estouemcrise() {
           </div>
         </div>
       </div>
-      <!-- fim modal do personalizar -->
-      <!-- fim personalizar -->
-      <!-- inicio card do iframe  -->
+      {/* // <!-- fim modal do personalizar --> */}
+      {/* // <!-- fim personalizar --> */}
+      {/* // <!-- inicio card do iframe  --> */}
       <div class="card  quadro-ifra">
         <iframe src="ifra-estoucrise.html" id="ifra-quadro"></iframe>
         <div class="card-body">
@@ -253,15 +253,15 @@ export default function Estouemcrise() {
 
         </div>
       </div>
-      <!-- fim card do iframe  -->
+      {/* // <!-- fim card do iframe  --> */}
 
-      <!-- inicio dos cards de soluções -->
+      {/* // <!-- inicio dos cards de soluções --> */}
       <div class="mrgx-pequena mrgt-pequena">
         <div class="row m-0 row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <a href="">
               <div class="card h-100  ho-bor" >
-                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                 <div class="d-flex justify-content-center mrgt-media">
                   <i class="fas fa-question-circle tam-funcprin"></i>
                 </div>
@@ -278,7 +278,7 @@ export default function Estouemcrise() {
           <div class="col">
             <a href="">
               <div class="card h-100  ho-bor" >
-                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                 <div class="d-flex justify-content-center mrgt-media">
                   <i class="fas fa-question-circle tam-funcprin"></i>
                 </div>
@@ -295,7 +295,7 @@ export default function Estouemcrise() {
           <div class="col">
             <a href="">
               <div class="card h-100  ho-bor" >
-                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                 <div class="d-flex justify-content-center mrgt-media">
                   <i class="fas fa-question-circle tam-funcprin"></i>
                 </div>
@@ -312,7 +312,7 @@ export default function Estouemcrise() {
           <div class="col mrgb-pequena">
             <a href="">
               <div class="card h-100  ho-bor" >
-                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                 <div class="d-flex justify-content-center mrgt-media">
                   <i class="fas fa-question-circle tam-funcprin"></i>
                 </div>
@@ -329,7 +329,7 @@ export default function Estouemcrise() {
           <div class="col mrgb-pequena">
             <a href="">
               <div class="card h-100  ho-bor" >
-                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                 <div class="d-flex justify-content-center mrgt-media">
                   <i class="fas fa-question-circle tam-funcprin"></i>
                 </div>
@@ -346,7 +346,7 @@ export default function Estouemcrise() {
           <div class="col mrgb-pequena">
             <a href="">
               <div class="card h-100  ho-bor" >
-                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                 <div class="d-flex justify-content-center mrgt-media">
                   <i class="fas fa-question-circle tam-funcprin"></i>
                 </div>
@@ -363,7 +363,7 @@ export default function Estouemcrise() {
         </div>
       </div>
       {/* <!-- fim dos cards de soluções --> */}
-      </hr>
+      {/* </hr> */}
 
       </>
 )
