@@ -1,5 +1,5 @@
 import React from 'react'
-
+import TestEbook from '../img/teste-ebook.jpg'
 export default function Informacoes() {
 
     return (
@@ -12,7 +12,7 @@ export default function Informacoes() {
             <div class="card mb-3 ebcard bg-light" style={{border: "none", position: "static"}}>
                 <div class="d-flex mrgt-grande row m-0">
                     <div class="  col-12 col-sm-12 col-md-9 col-lg-9 " id="home-book">
-                        <img src="./img/teste-ebook.jpg" alt="Imagem e-book" title="Imagem e-book" style={{width: "100%"}} />
+                        <img src={TestEbook} alt="Imagem e-book" title="Imagem e-book" style={{width: "100%"}} />
                     </div>
                     <div class="col-12 col-sm-12 col-md-9 col-lg-9">
                         <p class="titulos mrgx-media" id="home-tbook">Titulo do E-book</p>
@@ -32,20 +32,20 @@ export default function Informacoes() {
                 <h1 class=" tieb  titulos t-home d-flex justify-content-center" id="idpraia">Pesquisas</h1>
             </div>
             <div class="row m-0 row-cols-lg-6 row-cols-md-6 row-cols-sm-6 row-cols-xs-12 ">
-                <a href="" class="row minl-ebooks"><img src="./img/teste-ebook.jpg" alt="Imagem e-book" title="Imagem e-book" />
+                <a href="" class="row minl-ebooks"><img src={TestEbook} alt="Imagem e-book" title="Imagem e-book" />
 
                     <p class="min-ti-eb">Titulo</p>
                 </a>
-                <a href="" class="row min-ebooks"><img src="./img/teste-ebook.jpg" alt="Imagem e-book" title="Imagem e-book" />
+                <a href="" class="row min-ebooks" ><img src={TestEbook} alt="Imagem e-book" title="Imagem e-book" />
                     <p class="min-ti-eb">Titulo</p>
                 </a>
-                <a href="" class="row min-ebooks"><img src="./img/teste-ebook.jpg" alt="Imagem e-book" title="Imagem e-book" />
+                <a href="" class="row min-ebooks"><img src={TestEbook} alt="Imagem e-book" title="Imagem e-book" />
                     <p class="min-ti-eb">Titulo</p>
                 </a>
-                <a href="" class="row min-ebooks"><img src="./img/teste-ebook.jpg" alt="Imagem e-book" title="Imagem e-book" />
+                <a href="" class="row min-ebooks"><img src={TestEbook} alt="Imagem e-book" title="Imagem e-book" />
                     <p class="min-ti-eb">Titulo</p>
                 </a>
-                <a href="" class="row min-ebooks"><img src="./img/teste-ebook.jpg" alt="Imagem e-book" title="Imagem e-book" />
+                <a href="" class="row min-ebooks"><img src={TestEbook} alt="Imagem e-book" title="Imagem e-book" />
                     <p class="min-ti-eb">Titulo</p>
                 </a>
 
