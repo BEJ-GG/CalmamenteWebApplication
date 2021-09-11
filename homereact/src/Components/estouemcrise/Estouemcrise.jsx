@@ -2,13 +2,13 @@ import React from 'react'
 
 export default function Estouemcrise() {
 
-   return(
-      <>
-      
+  return (
+    <>
+
       {/* <!-- inicio personalizar --> */}
       <div class=" d-flex justify-content-end mrgr-media mrgt-pequena ">
-        <button style={{ border: "none", backgroundColor: "rgba(240, 248, 255, 0)"}}><i class="fas fa-cog tam-personalizar"
-            data-bs-toggle="modal" data-bs-target="#exampleModal"></i></button>
+        <button style={{ border: "none", backgroundColor: "rgba(240, 248, 255, 0)" }}><i class="fas fa-cog tam-personalizar"
+          data-bs-toggle="modal" data-bs-target="#exampleModal"></i></button>
       </div>
 
       {/* <!-- Inicio Modal do personalizar --> */}
@@ -34,7 +34,7 @@ export default function Estouemcrise() {
                     </select>
                   </div>
                   <div class="form-switch che-modal">
-                    <input type="checkbox" class="form-check-input" id="idAceitar"/>
+                    <input type="checkbox" class="form-check-input" id="idAceitar" />
                   </div>
                 </fieldset>
               </form>
@@ -52,7 +52,7 @@ export default function Estouemcrise() {
                 </div>
               </div>
               {/* <!-- fim 1 --> */}
-              <hr class="mod-linha " size="5"/>
+              <hr class="mod-linha " size="5" />
               {/* <!-- inicio 2 --> */}
               <form class="foge-modal">
                 <fieldset>
@@ -67,7 +67,7 @@ export default function Estouemcrise() {
                     </select>
                   </div>
                   <div class="form-switch che-modal">
-                    <input type="checkbox" class="form-check-input" id="idAceitar"/>
+                    <input type="checkbox" class="form-check-input" id="idAceitar" />
                   </div>
                 </fieldset>
               </form>
@@ -85,7 +85,7 @@ export default function Estouemcrise() {
                 </div>
               </div>
               {/* <!-- fim 2 --> */}
-              <hr class="mod-linha" size="5"/>
+              <hr class="mod-linha" size="5" />
               {/* <!-- inicio 3 --> */}
               <form class="foge-modal">
                 <fieldset>
@@ -100,7 +100,7 @@ export default function Estouemcrise() {
                     </select>
                   </div>
                   <div class="form-switch che-modal">
-                    <input type="checkbox" class="form-check-input" id="idAceitar"/>
+                    <input type="checkbox" class="form-check-input" id="idAceitar" />
                   </div>
                 </fieldset>
               </form>
@@ -118,7 +118,7 @@ export default function Estouemcrise() {
                 </div>
               </div>
               {/* <!-- fim 3 --> */}
-              <hr class="mod-linha" size="5"/>
+              <hr class="mod-linha" size="5" />
               {/* <!-- inicio 4 --> */}
               <form class="foge-modal">
                 <fieldset>
@@ -133,7 +133,7 @@ export default function Estouemcrise() {
                     </select>
                   </div>
                   <div class="form-switch che-modal">
-                    <input type="checkbox" class="form-check-input" id="idAceitar"/>
+                    <input type="checkbox" class="form-check-input" id="idAceitar" />
                   </div>
                 </fieldset>
               </form>
@@ -151,7 +151,7 @@ export default function Estouemcrise() {
                 </div>
               </div>
               {/* <!-- fim 4 --> */}
-              <hr class="mod-linha" size="5"/>
+              <hr class="mod-linha" size="5" />
               {/* <!-- inicio 5 --> */}
               <form class="foge-modal">
                 <fieldset>
@@ -166,7 +166,7 @@ export default function Estouemcrise() {
                     </select>
                   </div>
                   <div class="form-switch che-modal">
-                    <input type="checkbox" class="form-check-input" id="idAceitar"/>
+                    <input type="checkbox" class="form-check-input" id="idAceitar" />
                   </div>
                 </fieldset>
               </form>
@@ -184,7 +184,7 @@ export default function Estouemcrise() {
                 </div>
               </div>
               {/* <!-- fim 5 --> */}
-              <hr class="mod-linha" size="5"/>
+              <hr class="mod-linha" size="5" />
               {/* <!-- inicio 6 --> */}
               <form class="foge-modal">
                 <fieldset>
@@ -199,7 +199,7 @@ export default function Estouemcrise() {
                     </select>
                   </div>
                   <div class="form-switch che-modal">
-                    <input type="checkbox" class="form-check-input" id="idAceitar"/>
+                    <input type="checkbox" class="form-check-input" id="idAceitar" />
                   </div>
                 </fieldset>
               </form>
@@ -218,7 +218,7 @@ export default function Estouemcrise() {
               </div>
               {/* <!-- fim 6 --> */}
             </div>
-            <div class="modal-footer" style="display: flex; justify-content: center;">
+            <div class="modal-footer" style={{display: "flex", justifyContent: "center"}}>
               <div class="modal-but-ajuda">
                 <button class="but-modal-ajuda "><i class="fas fa-question-circle modal-ajuda"></i></button>
                 <div class="dicaTexto">Esta é a área para personalizar quais exercícios deseja fazer ou não.
@@ -239,14 +239,14 @@ export default function Estouemcrise() {
         <iframe src="ifra-estoucrise.html" id="ifra-quadro"></iframe>
         <div class="card-body">
           <div class="position-relative m-4">
-            <div style="height: 1px;">
-              <div style="width: 50%;"></div>
+            <div style={{height: "1px"}}>
+              <div style={{width: "50%"}}></div>
             </div>
             <button type="button" class="position-absolute  translate-middle btn btn-primary"
               id="inicio">Voltar</button>
             <a href="home.html"><button type="button" class="position-absolute translate-middle btn btn-primary"
-                id="estouCalmo">Estou mais
-                calmo</button></a>
+              id="estouCalmo">Estou mais
+              calmo</button></a>
             <button type="button" class="position-absolute  translate-middle btn btn-primary"
               id="estouCrise">Próximo</button>
           </div>
@@ -259,7 +259,7 @@ export default function Estouemcrise() {
       <div class="mrgx-pequena mrgt-pequena">
         <div class="row m-0 row-cols-1 row-cols-md-3 g-4">
           <div class="col">
-            <a href="">
+            <a href="" className="linkreact">
               <div class="card h-100  ho-bor" >
                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                 <div class="d-flex justify-content-center mrgt-media">
@@ -267,7 +267,7 @@ export default function Estouemcrise() {
                 </div>
                 <div class="card-body">
                   <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
-                  <p class="card-text textos" style="text-align: justify;">Lorem, ipsum dolor sit amet
+                  <p class="card-text textos" style={{textAlign: "justify"}}>Lorem, ipsum dolor sit amet
                     consectetur
                     adipisicing elit. Sed, optio! Dolorem consectetur quibusdam quas odit at! Ipsa eos
                     recusandae </p>
@@ -276,7 +276,7 @@ export default function Estouemcrise() {
             </a>
           </div>
           <div class="col">
-            <a href="">
+            <a href="" className="linkreact">
               <div class="card h-100  ho-bor" >
                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                 <div class="d-flex justify-content-center mrgt-media">
@@ -284,7 +284,7 @@ export default function Estouemcrise() {
                 </div>
                 <div class="card-body">
                   <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
-                  <p class="card-text textos" style="text-align: justify;">Lorem, ipsum dolor sit amet
+                  <p class="card-text textos" style={{textAlign: "justify"}}>Lorem, ipsum dolor sit amet
                     consectetur
                     adipisicing elit. Sed, optio! Dolorem consectetur quibusdam quas odit at! Ipsa eos
                     recusandae </p>
@@ -293,7 +293,7 @@ export default function Estouemcrise() {
             </a>
           </div>
           <div class="col">
-            <a href="">
+            <a href="" className="linkreact">
               <div class="card h-100  ho-bor" >
                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                 <div class="d-flex justify-content-center mrgt-media">
@@ -301,7 +301,7 @@ export default function Estouemcrise() {
                 </div>
                 <div class="card-body">
                   <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
-                  <p class="card-text textos" style="text-align: justify;">Lorem, ipsum dolor sit amet
+                  <p class="card-text textos" style={{textAlign: "justify"}}>Lorem, ipsum dolor sit amet
                     consectetur
                     adipisicing elit. Sed, optio! Dolorem consectetur quibusdam quas odit at! Ipsa eos
                     recusandae </p>
@@ -310,7 +310,7 @@ export default function Estouemcrise() {
             </a>
           </div>
           <div class="col mrgb-pequena">
-            <a href="">
+            <a href="" className="linkreact">
               <div class="card h-100  ho-bor" >
                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                 <div class="d-flex justify-content-center mrgt-media">
@@ -318,7 +318,7 @@ export default function Estouemcrise() {
                 </div>
                 <div class="card-body">
                   <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
-                  <p class="card-text textos" style="text-align: justify;">Lorem, ipsum dolor sit amet
+                  <p class="card-text textos" style={{textAlign: "justify"}}>Lorem, ipsum dolor sit amet
                     consectetur
                     adipisicing elit. Sed, optio! Dolorem consectetur quibusdam quas odit at! Ipsa eos
                     recusandae </p>
@@ -327,7 +327,7 @@ export default function Estouemcrise() {
             </a>
           </div>
           <div class="col mrgb-pequena">
-            <a href="">
+            <a href="" className="linkreact">
               <div class="card h-100  ho-bor" >
                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                 <div class="d-flex justify-content-center mrgt-media">
@@ -335,7 +335,7 @@ export default function Estouemcrise() {
                 </div>
                 <div class="card-body">
                   <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
-                  <p class="card-text textos" style="text-align: justify;">Lorem, ipsum dolor sit amet
+                  <p class="card-text textos" style={{textAlign: "justify"}}>Lorem, ipsum dolor sit amet
                     consectetur
                     adipisicing elit. Sed, optio! Dolorem consectetur quibusdam quas odit at! Ipsa eos
                     recusandae </p>
@@ -344,7 +344,7 @@ export default function Estouemcrise() {
             </a>
           </div>
           <div class="col mrgb-pequena">
-            <a href="">
+            <a href="" className="linkreact">
               <div class="card h-100  ho-bor" >
                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                 <div class="d-flex justify-content-center mrgt-media">
@@ -352,7 +352,7 @@ export default function Estouemcrise() {
                 </div>
                 <div class="card-body">
                   <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
-                  <p class="card-text textos" style="text-align: justify;">Lorem, ipsum dolor sit amet
+                  <p class="card-text textos" style={{textAlign: "justify"}}>Lorem, ipsum dolor sit amet
                     consectetur
                     adipisicing elit. Sed, optio! Dolorem consectetur quibusdam quas odit at! Ipsa eos
                     recusandae </p>
@@ -365,6 +365,6 @@ export default function Estouemcrise() {
       {/* <!-- fim dos cards de soluções --> */}
       {/* </hr> */}
 
-      </>
-)
+    </>
+  )
 }

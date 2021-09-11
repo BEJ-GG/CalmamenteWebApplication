@@ -10,7 +10,10 @@ import twitter from '../../../img/twitter-logo.png'
 import instagram from '../../../img/instagram-logo.png'
 import { Switch, Route, Link, Redirect } from 'react-router-dom'
 import Home from '../home/Home'
-import Respiracao from '../../exercicios/respiracao/Respiracao';
+import Respiracao from '../../exercicios/respiracao/Respiracao'
+import Estouemcrise from '../../../estouemcrise/Estouemcrise'
+import Queromeacalmar from '../../../queromeacalmar/Queromeacalmar';
+import Informacoes from '../../../informacoes/Informacoes';
 
 
 
@@ -29,9 +32,9 @@ return(
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
                 <Nav className="">
-                    <Link to="/" className="menu-di  mx-1 linkreact">Estou em crise</Link>
-                    <Link to="/" className="menu-di  mx-1 linkreact">Quero me acalmar</Link>
-                    <Link to="/" className="menu-di  mx-1 linkreact">Informações</Link>
+                    <Link to="/estouemcrise" className="menu-di  mx-1 linkreact">Estou em crise</Link>
+                    <Link to="/queromeacalmar" className="menu-di  mx-1 linkreact">Quero me acalmar</Link>
+                    <Link to="/informacoes" className="menu-di  mx-1 linkreact">Informações</Link>
                     {/* <!-- inicio do perfil --> */}
                     <div className="perfi-usu">
                         <button className="menu-dir mx-1" id="bt-perfi" onclick='mostra_ocultaper()' href="#"><img
@@ -75,6 +78,10 @@ return(
             </Route>
             <Route path="/home" component={Home}/>
             <Route path="/respiracao" component={Respiracao}/>
+            <Route path="/estouemcrise" component={Estouemcrise}/>
+            <Route path="/queromeacalmar" component={Queromeacalmar}/>
+            <Route path="/informacoes" component={Informacoes}/>
+
         </Switch>
     </main>
     {/* Fim Conteudo */}
