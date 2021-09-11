@@ -1,7 +1,7 @@
 import React from 'react'
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import gifRespira from '../img/respiracao.gif'
+import gifRespira from '../../../img/respiracao.gif'
 
 export default function Respiracao() {
 

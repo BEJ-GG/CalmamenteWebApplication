@@ -1,7 +1,8 @@
 import React from 'react'
 import { faBook, faExclamationTriangle, faMugHot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ebook from '../img/teste-ebook.jpg'
+import ebook from '../../../img/teste-ebook.jpg'
+import { Switch, Route, Link, Redirect } from 'react-router-dom'
 
 export default function Home() {
 
@@ -13,7 +14,7 @@ export default function Home() {
         <div className="row m-0 row-cols-1 row-cols-md-3 g-4">
           <div className="col">
             <div className="ho-bor">
-              <a className="linkreact" href="estouEmCriseCadastro.html">
+              <Link to="/" className="linkreact">
                  
                 <div className="card h-100" style={{border: "0px", position: "static"}}> 
 
@@ -29,14 +30,14 @@ export default function Home() {
                       para fazer alguns exercícios recomendados pra você, ou personalize seus exercícios.</p>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
 
           {/* <!-- card 2 --> */}
           <div className="col ">
             <div className="ho-bor">
-              <a className="linkreact" href="queroMeAcalmar.html">
+              <Link to="/" className="linkreact" >
 
                 <div className="card h-100" style={{border: "0px", position: "static"}}> 
 
@@ -55,14 +56,14 @@ export default function Home() {
                       seus exercícios.</p>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
 
           {/*  card 3  */}
           <div className="col">
             <div className="ho-bor">
-              <a className="linkreact" href="informacoes.html">
+              <Link to="/" className="linkreact" >
 
                 <div className="card h-100 " style={{border: '0px', position: 'static'}} >
 
@@ -79,7 +80,7 @@ export default function Home() {
                       e-books, pesquisas e vídeos informacionais.</p>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
