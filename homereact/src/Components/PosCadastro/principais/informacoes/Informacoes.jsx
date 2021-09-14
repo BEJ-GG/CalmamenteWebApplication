@@ -1,5 +1,6 @@
 import React from 'react'
-import TestEbook from '../img/teste-ebook.jpg'
+import TestEbook from '../../../img/teste-ebook.jpg'
+import TestPreto from '../../../img/pretoteste.png'
 export default function Informacoes() {
 
     return (
@@ -32,20 +33,20 @@ export default function Informacoes() {
                 <h1 class=" tieb  titulos t-home d-flex justify-content-center" id="idpraia">Pesquisas</h1>
             </div>
             <div class="row m-0 row-cols-lg-6 row-cols-md-6 row-cols-sm-6 row-cols-xs-12 ">
-                <a href="" class="row minl-ebooks"><img src={TestEbook} alt="Imagem e-book" title="Imagem e-book" />
+                <a href="" class="row minl-ebooks linkreact"><img src={TestEbook} alt="Imagem e-book" title="Imagem e-book" />
 
                     <p class="min-ti-eb">Titulo</p>
                 </a>
-                <a href="" class="row min-ebooks" ><img src={TestEbook} alt="Imagem e-book" title="Imagem e-book" />
+                <a href="" class="row min-ebooks linkreact" ><img src={TestEbook} alt="Imagem e-book" title="Imagem e-book" />
                     <p class="min-ti-eb">Titulo</p>
                 </a>
-                <a href="" class="row min-ebooks"><img src={TestEbook} alt="Imagem e-book" title="Imagem e-book" />
+                <a href="" class="row min-ebooks linkreact"><img src={TestEbook} alt="Imagem e-book" title="Imagem e-book" />
                     <p class="min-ti-eb">Titulo</p>
                 </a>
-                <a href="" class="row min-ebooks"><img src={TestEbook} alt="Imagem e-book" title="Imagem e-book" />
+                <a href="" class="row min-ebooks linkreact"><img src={TestEbook} alt="Imagem e-book" title="Imagem e-book" />
                     <p class="min-ti-eb">Titulo</p>
                 </a>
-                <a href="" class="row min-ebooks"><img src={TestEbook} alt="Imagem e-book" title="Imagem e-book" />
+                <a href="" class="row min-ebooks linkreact"><img src={TestEbook} alt="Imagem e-book" title="Imagem e-book" />
                     <p class="min-ti-eb">Titulo</p>
                 </a>
 
@@ -106,7 +107,7 @@ export default function Informacoes() {
                     <a href="" className="linkreact">
                         <div class="mrgt-pequena box-vid-info ">
                             <div class="box-vid-vid">
-                                <img src="./img/pretoteste.png" alt="" class="img-di" />
+                                <img src={TestPreto} alt="" class="img-di" />
                             </div>
                             <div class="box-vid-t">
                                 <p class=" mrgl-grande  itens t-videos">Titulo do vídeo</p>
@@ -116,7 +117,7 @@ export default function Informacoes() {
                     <a href="" className="linkreact">
                         <div class="mrgt-pequena box-vid-info">
                             <div class="box-vid-vid">
-                                <img src="./img/pretoteste.png" alt="" class="img-di" />
+                                <img src={TestPreto} alt="" class="img-di" />
                             </div>
                             <div class="box-vid-t">
                                 <p class=" mrgl-grande  itens t-videos">Titulo do vídeo</p>
@@ -126,7 +127,7 @@ export default function Informacoes() {
                     <a href="" className="linkreact">
                         <div class="mrgt-pequena box-vid-info">
                             <div class="box-vid-vid">
-                                <img src="./img/pretoteste.png" alt="" class="img-di" />
+                                <img src={TestPreto} alt="" class="img-di" />
                             </div>
                             <div class="box-vid-t">
                                 <p class=" mrgl-grande  itens t-videos">Titulo do vídeo</p>
@@ -136,7 +137,7 @@ export default function Informacoes() {
                     <a href="" className="linkreact">
                         <div class="mrgt-pequena box-vid-info">
                             <div class="box-vid-vid">
-                                <img src="./img/pretoteste.png" alt="" class="img-di" />
+                                <img src= {TestPreto} alt="" class="img-di" />
                             </div>
                             <div class="box-vid-t">
                                 <p class=" mrgl-grande  itens t-videos">Titulo do vídeo</p>
@@ -146,7 +147,7 @@ export default function Informacoes() {
                     <a href="" className="linkreact">
                         <div class="mrgt-pequena box-vid-info">
                             <div class="box-vid-vid">
-                                <img src="./img/pretoteste.png" alt="" class="img-di" />
+                                <img src= {TestPreto} alt="" class="img-di" />
                             </div>
                             <div class="box-vid-t">
                                 <p class=" mrgl-grande  itens t-videos">Titulo do vídeo</p>
@@ -156,7 +157,7 @@ export default function Informacoes() {
                     <a href="" className="linkreact">
                         <div class="mrgt-pequena box-vid-info">
                             <div class="box-vid-vid">
-                                <img src="./img/pretoteste.png" alt="" class="img-di" />
+                                <img src= {TestPreto} alt="" class="img-di" />
                             </div>
                             <div class="box-vid-t">
                                 <p class=" mrgl-grande  itens t-videos">Titulo do vídeo</p>

@@ -545,7 +545,7 @@ a:hover, .linkreact:hover {
     /* inicio parallax praia  */
 
     .paralax-praia {
-        /* background-image: url(../img/paralax-praia-ima.jpg); */
+        background-image: url(./Components/img/paralax-praia-ima.jpg);
         background-repeat: no-repeat;
         background-position: center top;
         background-size: cover;

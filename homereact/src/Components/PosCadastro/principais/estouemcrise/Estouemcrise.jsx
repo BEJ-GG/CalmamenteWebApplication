@@ -1,14 +1,22 @@
 import React from 'react'
+import { faQuestionCircle, faCog } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Estouemcrise() {
+
 
   return (
     <>
 
       {/* <!-- inicio personalizar --> */}
-      <div class=" d-flex justify-content-end mrgr-media mrgt-pequena ">
+      {/* <div class=" d-flex justify-content-end mrgr-media mrgt-pequena ">
         <button style={{ border: "none", backgroundColor: "rgba(240, 248, 255, 0)" }}><i class="fas fa-cog tam-personalizar"
           data-bs-toggle="modal" data-bs-target="#exampleModal"></i></button>
+      </div> */}
+
+      <div class=" d-flex justify-content-end mrgr-media mrgt-pequena ">
+        <button style={{ border: "none", backgroundColor: "rgba(240, 248, 255, 0)" }}>
+        <FontAwesomeIcon icon={faCog} className="tam-personalizar" style={{color: "black"}}  data-bs-toggle="modal" data-bs-target="#exampleModal"/></button>
       </div>
 
       {/* <!-- Inicio Modal do personalizar --> */}
@@ -40,7 +48,7 @@ export default function Estouemcrise() {
               </form>
               <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                  <i class="fas fa-question-circle ic-modal"></i>
+                <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{color: "black"}} />
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                   <h5 class="titu-modal">lorem</h5>
@@ -73,7 +81,7 @@ export default function Estouemcrise() {
               </form>
               <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                  <i class="fas fa-question-circle ic-modal"></i>
+                <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{color: "black"}} />
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                   <h5 class="titu-modal">lorem</h5>
@@ -106,7 +114,7 @@ export default function Estouemcrise() {
               </form>
               <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                  <i class="fas fa-question-circle ic-modal"></i>
+                <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{color: "black"}} />
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                   <h5 class="titu-modal">lorem</h5>
@@ -139,7 +147,7 @@ export default function Estouemcrise() {
               </form>
               <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                  <i class="fas fa-question-circle ic-modal"></i>
+                <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{color: "black"}} />
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                   <h5 class="titu-modal">lorem</h5>
@@ -172,7 +180,7 @@ export default function Estouemcrise() {
               </form>
               <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                  <i class="fas fa-question-circle ic-modal"></i>
+                <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{color: "black"}} />
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                   <h5 class="titu-modal">lorem</h5>
@@ -205,7 +213,7 @@ export default function Estouemcrise() {
               </form>
               <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                  <i class="fas fa-question-circle ic-modal"></i>
+                <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{color: "black"}} />
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                   <h5 class="titu-modal">lorem</h5>
@@ -220,7 +228,9 @@ export default function Estouemcrise() {
             </div>
             <div class="modal-footer" style={{display: "flex", justifyContent: "center"}}>
               <div class="modal-but-ajuda">
-                <button class="but-modal-ajuda "><i class="fas fa-question-circle modal-ajuda"></i></button>
+                <button class="but-modal-ajuda ">
+                <FontAwesomeIcon icon={faQuestionCircle} className="modal-ajuda" style={{color: "black"}} />
+                </button>
                 <div class="dicaTexto">Esta é a área para personalizar quais exercícios deseja fazer ou não.
                   Na caixa de
                   seleção é onde você personalizará a ordem que eles aparecerão no quadro, e você também
@@ -263,7 +273,7 @@ export default function Estouemcrise() {
               <div class="card h-100  ho-bor" >
                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                 <div class="d-flex justify-content-center mrgt-media">
-                  <i class="fas fa-question-circle tam-funcprin"></i>
+                <FontAwesomeIcon icon={faQuestionCircle} className="tam-funcprin" style={{color: "black"}} />
                 </div>
                 <div class="card-body">
                   <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
@@ -280,7 +290,7 @@ export default function Estouemcrise() {
               <div class="card h-100  ho-bor" >
                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                 <div class="d-flex justify-content-center mrgt-media">
-                  <i class="fas fa-question-circle tam-funcprin"></i>
+                <FontAwesomeIcon icon={faQuestionCircle} className="tam-funcprin" style={{color: "black"}} />
                 </div>
                 <div class="card-body">
                   <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
@@ -297,7 +307,7 @@ export default function Estouemcrise() {
               <div class="card h-100  ho-bor" >
                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                 <div class="d-flex justify-content-center mrgt-media">
-                  <i class="fas fa-question-circle tam-funcprin"></i>
+                <FontAwesomeIcon icon={faQuestionCircle} className="tam-funcprin" style={{color: "black"}} />
                 </div>
                 <div class="card-body">
                   <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
@@ -314,7 +324,7 @@ export default function Estouemcrise() {
               <div class="card h-100  ho-bor" >
                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                 <div class="d-flex justify-content-center mrgt-media">
-                  <i class="fas fa-question-circle tam-funcprin"></i>
+                <FontAwesomeIcon icon={faQuestionCircle} className="tam-funcprin" style={{color: "black"}} />
                 </div>
                 <div class="card-body">
                   <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
@@ -331,7 +341,7 @@ export default function Estouemcrise() {
               <div class="card h-100  ho-bor" >
                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                 <div class="d-flex justify-content-center mrgt-media">
-                  <i class="fas fa-question-circle tam-funcprin"></i>
+                <FontAwesomeIcon icon={faQuestionCircle} className="tam-funcprin" style={{color: "black"}} />
                 </div>
                 <div class="card-body">
                   <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
@@ -348,7 +358,7 @@ export default function Estouemcrise() {
               <div class="card h-100  ho-bor" >
                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                 <div class="d-flex justify-content-center mrgt-media">
-                  <i class="fas fa-question-circle tam-funcprin"></i>
+                  <FontAwesomeIcon icon={faQuestionCircle} className="tam-funcprin" style={{color: "black"}} />
                 </div>
                 <div class="card-body">
                   <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
