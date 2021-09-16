@@ -2,6 +2,7 @@ import React from 'react'
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import gifRespira from '../../../img/respiracao.gif'
+import Timer from './Timer'
 
 export default function Respiracao() {
 
@@ -183,13 +184,21 @@ export default function Respiracao() {
             {/* <!-- fim informação --> */}
 
             {/* <!-- inicio respiração --> */}
-            <h1 class="ti-escrita">Exercício de respiração</h1>
+            <h1 className="ti-escrita">Exercício de respiração</h1>
+            
+            <div className=" mrgt-grande">
+                <h4 className="ti-escrita">Respire junto com o gif durante 30 segundos</h4>
 
-            <div className="d-flex justify-content-center mrgt-grande mrgb-media">
+            </div>
+
+           
+            <div className="d-flex justify-content-center  mrgb-media">
                 <div style={{height: '40%'}} >
                     <img src={gifRespira} alt="gif de respiração" style={{width: '100%'}} />
                     
                 </div>
+                <p className="mrgl-grande"></p>
+                <Timer></Timer>
 
             </div>
             

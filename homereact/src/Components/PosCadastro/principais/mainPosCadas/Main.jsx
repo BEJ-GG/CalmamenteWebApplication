@@ -29,7 +29,7 @@ return(
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
                 <Nav className="">
-                    <Link to="/" className="menu-di  mx-1 linkreact">Estou em crise</Link>
+                    <Link to="/respiracao" className="menu-di  mx-1 linkreact">Estou em crise</Link>
                     <Link to="/" className="menu-di  mx-1 linkreact">Quero me acalmar</Link>
                     <Link to="/" className="menu-di  mx-1 linkreact">Informações</Link>
                     {/* <!-- inicio do perfil --> */}
