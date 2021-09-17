@@ -1922,3 +1922,33 @@ a:hover, .linkreact:hover {
     display: flex;
     justify-content: space-between;
 }
+
+.icoContinuarResp{
+    font-size: 42px;
+    color: #03a3ff;
+}
+
+.btnContinuarResp{
+    border-radius: 25px;
+    background-color: #03a3ff2d;
+    border: 1px solid #03a3ff;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 3%;
+    
+}
+
+.icoContinuarRespInvi{
+    font-size: 42px;
+    color: #03a3ff7c;
+}
+
+.btnContinuarRespInvi{
+    border-radius: 25px;
+    background-color: #03a3ff15;
+    border: 1px solid #03a3ff4b;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 3%;
+    
+}
