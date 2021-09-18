@@ -18,94 +18,80 @@
 </head>
 
 <body>
-    <div id="container">
-        <div id="main">
-            <!-- inicio menu  -->
-            <nav class="navbar navbar-expand-lg navbar-light back-menu">
-                <div class=" container-fluid">
-                    <div>
-                        <a href="./home.html" class="m-0"> <img src="./img/logo.png"
-                                alt="cerebro meditando, nome: calmamente" class="logo m-0"> </a>
+  <div id="container">
+    <div id="main">
+      <!-- inicio menu  -->
+      <nav class="navbar navbar-expand-lg navbar-light back-menu">
+        <div class=" container-fluid">
+          <div>
+            <a href="./home.html" class="m-0"> <img src="./img/logo.png" alt="cerebro meditando, nome: calmamente"
+                class="logo m-0"> </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="justify-content-end collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <hr>
+              <a class="menu-di  mx-1" aria-current="page" href="./estouEmCriseCadastro.html">Estou em crise</a>
+              <a class="menu-di mx-1" href="./queroMeAcalmar.html">Quero me acalmar</a>
+              <a class="menu-di mx-1" href="./informacoes.html">Informações</a>
+              <div class="perfi-usu">
+                <button class="menu-dir mx-1" id="bt-perfi" onclick='mostra_ocultaper()' href="#"><img
+                    src="./img/icon-usuario.png" class="men-home" alt=""></button>
+                <!-- inicio do perfil -->
+                <div class="per-text" id="bt-quaper">
+                  <a href="#"><i class="fas fa-user-edit i-per-fil"></i></a>
+                  <i class="fas fa-question-circle i-imusu"></i>
+                  <h4 class="p-nomus ">Xandao de Combate</h4>
+                  <hr class="hr-per" size="4">
+                  <h5 class="nomus-p">Missilbalistico@intercontinental</h5>
+                  <hr class="hr-per" size="4">
+                  <a href="#">
+                    <div class=" per-falabo">
+                      <h6 class="pa-per">Falar com o bot</h6>
+                      <i class="fas fa-robot ic-bot-per ic-fabo"></i>
                     </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="justify-content-end collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <hr>
-                            <a class="menu-di  mx-1" aria-current="page" href="./estouEmCriseCadastro.html">Estou em
-                                crise</a>
-                            <a class="menu-di mx-1" href="./queroMeAcalmar.html">Quero me acalmar</a>
-                            <a class="menu-di mx-1" href="./informacoes.html">Informações</a>
-                            <div class="perfi-usu">
-                                <button class="menu-dir mx-1" id="bt-perfi" onclick='mostra_ocultaper()' href="#"><img
-                                        src="./img/icon-usuario.png" class="men-home" alt=""></button>
-                                <!-- inicio do perfil -->
-                                <div class="per-text" id="bt-quaper">
-                                    <a href="#"><i class="fas fa-user-edit i-per-fil"></i></a>
-                                    <i class="fas fa-question-circle i-imusu"></i>
-                                    <h4 class="p-nomus ">Xandao de Combate</h4>
-                                    <hr class="hr-per" size="4">
-                                    <h5 class="nomus-p">Missilbalistico@intercontinental</h5>
-                                    <hr class="hr-per" size="4">
-                                    <a href="#">
-                                        <div class=" per-falabo">
-                                            <h6 class="pa-per">Falar com o bot</h6>
-                                            <i class="fas fa-robot ic-bot-per ic-fabo"></i>
-                                        </div>
-                                    </a>
-                                    <div class="mrgt-media mrgr-pequena d-flex justify-content-end">
-                                        <button type="button" class="bt-sape" id="idSaiPer" onclick='saiper()'>Sair <i
-                                                class="fas fa-sign-in-alt ic-sape"></i></button>
-                                    </div>
-                                </div>
-                                <!-- fim do perfil -->
-                            </div>
-                        </div>
-                    </div>
+                  </a>
+                  <div class="mrgt-media mrgr-pequena d-flex justify-content-end">
+                    <button type="button" class="bt-sape" id="idSaiPer" onclick='saiper()'>Sair <i
+                        class="fas fa-sign-in-alt ic-sape"></i></button>
+                  </div>
                 </div>
-            </nav>
-            <!-- fim menu  -->
-            <!-- inicio personalizar -->
-            <div class="d-flex justify-content-end mrgr-media mrgt-pequena">
-                <button style="border: none; background-color: rgba(240, 248, 255, 0);"><i
-                        class="fas fa-info-circle tam-exercicio" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"></i></button>
+                <!-- fim do perfil -->
+              </div>
             </div>
-
-            <!-- Inicio Modal do personalizar -->
-            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-scrollable  modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="exampleModalLabel">Como fazer o exercicio</h4>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body ">
-                            <form class="foge-modal">
-                                <fieldset>
-                                    <p class="tex-mod-exercicio">Lorem ipsum, dolor sit amet consectetur adipisicing
-                                        elit.
-                                        Asperiores vero
-                                        consequuntur est dolore deserunt facere fugit rerum laborum maiores voluptas sit
-                                        fuga nulla, quis laudantium explicabo hic reiciendis autem temporibus?</p>
-                                </fieldset>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <!-- fim modal do personalizar  -->
+      </nav>
+      <!-- fim menu  -->
 
-        <!-- fim personalizar -->
+      <!-- inicio personalizar -->
+      <div class=" d-flex justify-content-end mrgr-media mrgt-pequena ">
+        <button style=" border: none; background-color: rgba(240, 248, 255, 0);"><i class="fas fa-info-circle tam-personalizar"
+            data-bs-toggle="modal" data-bs-target="#exampleModal"></i> </button>
+      </div>
 
+       <!-- Inicio Modal do personalizar -->
+      <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable  modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel">Personalizar</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fim modal do personalizar -->
+      <!-- fim personalizar -->
         <!-- inicio card do iframe  -->
         <div class="card  groun-ifra">
-            <iframe src="1.html" id="ifra-groun"></iframe>
+            <iframe src="exerciciovisao.html" id="ifra-groun"></iframe>
             <div class="card-body">
                 <div class="position-relative m-4">
                     <div style="height: 1px;">

@@ -164,6 +164,7 @@ a:hover {
     }
 
     .groun-ifra {
+        overflow-y: hidden;
         position: static;
         width: 50%;
         height: 78vh;
@@ -410,6 +411,7 @@ a:hover {
 
     .tam-exercicio {
         font-size: 40px;
+
     }
 
 
@@ -627,12 +629,20 @@ a:hover {
     }
 
     .caixa-escrita {
-        margin-left: 18%;
+        /* margin-left: 18%; */
         margin-top: 2%;
         margin-bottom: 2%;
-        width: 50%;
+        width: 80%;
         height: 500px;
-        resize: none
+        resize: vertical;
+        box-shadow: #dfdfdf 1px 1px 1px 1px;
+    }
+
+    .for-exercicios {
+        display: flex;
+        justify-content: center;
+        width: 1100px;
+        border: none;
     }
 
     .eyes {
@@ -669,12 +679,15 @@ a:hover {
 
 
     .fundoOl {
+        width: 100%;
+        height: 100%;
         margin: 0;
         padding: 0;
         background: #034f7a;
     }
 
     .fundo-mao {
+        overflow-x: hidden;
         margin: 0;
         padding: 0;
         background: #034f7a;
@@ -705,7 +718,6 @@ a:hover {
         display: inline-block;
         font-size: 50px;
         color: #15ff00;
-        ;
     }
 
     .laex:hover {
@@ -743,6 +755,54 @@ a:hover {
         color: #6d028d;
     }
 
+    .topo,
+    .base {
+        background-color: gold;
+        width: 200px;
+        height: 100px;
+        border-radius: 100px 100px 0 0;
+        animation: comex 550ms linear infinite;
+    }
+
+    .base {
+        border-radius: 0 0 100px 100px;
+        animation: comey 550ms linear infinite;
+    }
+
+    @keyframes comex {
+        50% {
+            transform: rotate(-25deg);
+        }
+    }
+
+    @keyframes comey {
+        50% {
+            transform: rotate(25deg);
+        }
+    }
+
+    .margi-to-sabor {
+        width: 80%;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    .im-donut {
+        margin-top: 24%;
+        width: 25%;
+    }
+
+    .im-cereja {
+        margin-left: 10%;
+        margin-top: 24%;
+        width: 25%;
+    }
+
+    .im-sorvete {
+        margin-left: 10%;
+        margin-top: 24%;
+        width: 25%;
+    }
 
 
 }
@@ -775,9 +835,10 @@ a:hover {
     }
 
     .groun-ifra {
+        overflow-y: hidden;
         position: static;
         width: 100%;
-        height: 50vh;
+        height: 65vh;
         margin-top: 5%;
         border: 0.01 solid #c7c7c7;
         border-radius: 20px;
@@ -1223,12 +1284,19 @@ a:hover {
     }
 
     .caixa-escrita {
-        margin-left: 18%;
         margin-top: 2%;
         margin-bottom: 2%;
-        width: 1000px;
+        width: 90%;
         height: 500px;
-        resize: none
+        resize: vertical;
+        box-shadow: #dfdfdf 1px 1px 1px 1px;
+    }
+
+    .for-exercicios {
+        display: flex;
+        justify-content: center;
+        width: 700px;
+        border: none;
     }
 
     .eyes {
@@ -1245,7 +1313,7 @@ a:hover {
         height: 150px;
         background: #fff;
         display: inline-block;
-        margin: 40px;
+        margin: 42px;
         border-radius: 100%;
         position: relative;
         overflow: hidden;
@@ -1264,12 +1332,15 @@ a:hover {
     }
 
     .fundoOl {
+        width: 100%;
+        height: 100%;
         margin: 0;
         padding: 0;
         background: #034f7a;
     }
 
     .fundo-mao {
+        overflow-x: hidden;
         margin: 0;
         padding: 0;
         background: #034f7a;
@@ -1300,7 +1371,7 @@ a:hover {
         display: inline-block;
         font-size: 50px;
         color: #15ff00;
-        ;
+
     }
 
     .laex:hover {
@@ -1338,6 +1409,56 @@ a:hover {
         color: #6d028d;
     }
 
+    .topo,
+    .base {
+        background-color: gold;
+        width: 200px;
+        height: 100px;
+        border-radius: 100px 100px 0 0;
+        animation: comex 550ms linear infinite;
+    }
+
+    .base {
+        border-radius: 0 0 100px 100px;
+        animation: comey 550ms linear infinite;
+    }
+
+    @keyframes comex {
+        50% {
+            transform: rotate(-25deg);
+        }
+    }
+
+    @keyframes comey {
+        50% {
+            transform: rotate(25deg);
+        }
+    }
+
+    .margi-to-sabor {
+        width: 80%;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    .im-donut {
+        margin-top: 24%;
+        width: 25%;
+    }
+
+    .im-cereja {
+        margin-left: 10%;
+        margin-top: 24%;
+        width: 25%;
+    }
+
+    .im-sorvete {
+        margin-left: 10%;
+        margin-top: 24%;
+        width: 25%;
+    }
+
+
 
 }
 
@@ -1366,6 +1487,7 @@ a:hover {
     }
 
     .groun-ifra {
+        overflow-y: hidden;
         position: static;
         margin-top: 5%;
         width: 100%;
@@ -1831,12 +1953,19 @@ a:hover {
     }
 
     .caixa-escrita {
-        margin-left: 18%;
         margin-top: 2%;
         margin-bottom: 2%;
-        width: 1000px;
+        width: 90%;
         height: 500px;
-        resize: none
+        resize: vertical;
+        box-shadow: #dfdfdf 1px 1px 1px 1px;
+    }
+
+    .for-exercicios {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        border: none;
     }
 
     .eyes {
@@ -1849,11 +1978,11 @@ a:hover {
 
     .eye {
         /* border: 1px solid #000; */
-        width: 70px;
-        height: 70px;
+        width: 75px;
+        height: 75px;
         background: #fff;
         display: inline-block;
-        margin: 40% 30px 30px 30px;
+        margin: 45% 30px 30px 30px;
         border-radius: 100%;
         position: relative;
         overflow: hidden;
@@ -1872,12 +2001,15 @@ a:hover {
     }
 
     .fundoOl {
+        width: 100%;
+        height: 100%;
         margin: 0;
         padding: 0;
         background: #034f7a;
     }
 
     .fundo-mao {
+        overflow-x: hidden;
         margin: 0;
         padding: 0;
         background: #034f7a;
@@ -1894,21 +2026,22 @@ a:hover {
     }
 
     .in-ce {
+
         text-align: center;
-        margin-top: 5%;
+        margin-top: 20%;
         margin-bottom: 10%;
-        /* margin-left: 0.1%; */
+        margin-left: 0.1%;
     }
 
     .in-ce-se {
         text-align: center;
-        /* margin-left: 0.1%; */
+        margin-left: 0.1%;
     }
 
 
     .laex {
         display: inline-block;
-        font-size: 45px;
+        font-size: 50px;
         color: #15ff00;
         ;
     }
@@ -1919,7 +2052,7 @@ a:hover {
 
     .soex {
         display: inline-block;
-        font-size: 45px;
+        font-size: 50px;
         color: #ffd900;
     }
 
@@ -1929,7 +2062,7 @@ a:hover {
 
     .moex {
         display: inline-block;
-        font-size: 45px;
+        font-size: 50px;
         color: #ea00ff;
     }
 
@@ -1939,7 +2072,7 @@ a:hover {
 
     .coex {
         display: inline-block;
-        font-size: 45px;
+        font-size: 50px;
         color: #ae00ff;
 
     }
@@ -1959,6 +2092,57 @@ a:hover {
         width: 280px;
         height: auto;
     }
+
+    .topo,
+    .base {
+        background-color: gold;
+        width: 100px;
+        height: 50px;
+        border-radius: 100px 100px 0 0;
+        animation: comex 550ms linear infinite;
+    }
+
+    .base {
+        border-radius: 0 0 100px 100px;
+        animation: comey 550ms linear infinite;
+    }
+
+    @keyframes comex {
+        50% {
+            transform: rotate(-25deg);
+        }
+    }
+
+    @keyframes comey {
+        50% {
+            transform: rotate(25deg);
+        }
+    }
+
+    .margi-to-sabor {
+        width: 90%;
+        margin-top: 25%;
+        margin-left: 10%;
+    }
+
+    .im-donut {
+        margin-top: 24%;
+        width: 28%;
+    }
+
+    .im-cereja {
+        margin-left: 3%;
+        margin-top: 24%;
+        width: 28%;
+    }
+
+    .im-sorvete {
+        margin-left: 3%;
+        margin-top: 24%;
+        width: 28%;
+    }
+
+
 }
 
 @media screen and (max-width: 320px) {
@@ -1966,6 +2150,56 @@ a:hover {
         width: 200px;
         height: auto;
     }
+
+    .topo,
+    .base {
+        background-color: gold;
+        width: 100px;
+        height: 50px;
+        border-radius: 100px 100px 0 0;
+        animation: comex 550ms linear infinite;
+    }
+
+    .base {
+        border-radius: 0 0 100px 100px;
+        animation: comey 550ms linear infinite;
+    }
+
+    @keyframes comex {
+        50% {
+            transform: rotate(-25deg);
+        }
+    }
+
+    @keyframes comey {
+        50% {
+            transform: rotate(25deg);
+        }
+    }
+
+    .margi-to-sabor {
+        width: 90%;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    .im-donut {
+        margin-top: 24%;
+        width: 28%;
+    }
+
+    .im-cereja {
+        margin-left: 3%;
+        margin-top: 24%;
+        width: 28%;
+    }
+
+    .im-sorvete {
+        margin-left: 3%;
+        margin-top: 24%;
+        width: 28%;
+    }
+
 }
 
 /* fim media logo dos celulares  */
@@ -2322,15 +2556,6 @@ a:hover {
     margin-bottom: 3%;
 }
 
-.for-exercicios {
-    width: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 2%;
-    display: flex;
-    border: 1px solid #c7c7c7;
-}
-
 .di-bt-ex {
     display: flex;
     justify-content: center;
@@ -2356,25 +2581,24 @@ a:hover {
 
 }
 
-
-.fundo-som {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.parabola {
-    width: 100px;
-    height: 100px;
-    border: solid;
-    border-color: transparent #000 #000 #000;
-    border-radius: 0 0 100px 100px;
-}
-
 #ifra-groun {
+    overflow-y: hidden;
     width: 100%;
     height: 100%;
     border: 0.01px solid #ffffff;
     border-radius: 20px 20px 0 0;
+}
 
+.ar-cheiro {
+    animation: sobe-ar 1s infinite alternate
+}
+
+@keyframes sobe-ar {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(10px);
+    }
 }
