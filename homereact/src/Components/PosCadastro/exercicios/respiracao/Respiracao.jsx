@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 export default function Respiracao() {
     // primeira parte 
-    const [secondsX, setSecondsX] = useState(2);
+    const [secondsX, setSecondsX] = useState(30);
     const [secondsY, setSecondsY] = useState('');
     const [comecar, setComecar] = useState(false);
     const [continuar, setContinuar] = useState(true);
@@ -18,7 +18,7 @@ export default function Respiracao() {
     const [invisiBtn, setInvisiBtn] = useState('btnContinuarRespInvi')
     // fim da primeira parte 
     // inicio parte dois 
-    const [secondsX2, setSecondsX2] = useState(2);
+    const [secondsX2, setSecondsX2] = useState(30);
     const [secondsY2, setSecondsY2] = useState('');
     const [comecar2, setComecar2] = useState(false);
     const [continuar2, setContinuar2] = useState(true);
@@ -27,10 +27,11 @@ export default function Respiracao() {
     const [invisiBtn2, setInvisiBtn2] = useState('btnContinuarRespInvi')
     // fim parte dois 
     // inicio parte três 
-    const [secondsX3, setSecondsX3] = useState(2);
+    const [secondsX3, setSecondsX3] = useState(30);
     const [secondsY3, setSecondsY3] = useState('');
     const [comecar3, setComecar3] = useState(false);
     const [continuar3, setContinuar3] = useState({pointerEvents: 'none'});
+    const [continuar3X, setContinuar3X] = useState(true);
     // fim parte três 
 
     // ------------------------------------
@@ -76,6 +77,7 @@ export default function Respiracao() {
         }
         if(secondsX3 == 0){
             setContinuar3({pointerEvents: 'auto'})
+            setContinuar3X(false)
           }
       }
       // fim parte três  
@@ -276,6 +278,7 @@ return(
     <!-- inicio respiração --> */}
     <h1 className="ti-escrita">Exercício de respiração</h1>
 
+    <div style={{paddingLeft: '5%', paddingRight: '5%'}}>
     {/* inicio da parte um  */}
     <div>
     <div className=" mrgt-grande">
@@ -284,16 +287,18 @@ return(
     </div>
 
 
-    <div className="d-flex justify-content-center  mrgb-media">
+    <div className="responsCardResp  mrgb-media">
         <div style={{height: '40%'}}>
             <img src={gifRespira} alt="gif de respiração" style={{width: '100%'}} />
 
         </div>
         <p className="mrgl-grande"></p>
-        <div>
+        <div className="responsTimer">
+            <div className="boxTimer">
+                <p style={{fontSize: '30px'}}>00:{secondsY}{secondsX}</p>
 
-            <p style={{fontSize: '30px'}}>00:{secondsY}{secondsX}</p>
-            <button onClick={()=> setComecar(true)}>Começar</button>
+            </div>
+            <button onClick={()=> setComecar(true)} className="btn btn-primary " style={{backgroundColor: '#03a3ff', borderRadius: '0 0 5px 5px'}}>Começar</button>
 
         </div>
 
@@ -314,20 +319,22 @@ return(
     </div>
 
 
-    <div className="d-flex justify-content-center  mrgb-media">
+    <div className=" responsCardResp  mrgb-media">
         <div style={{height: '40%'}}>
-            <img src={gifRespira} alt="gif de respiração" style={{width: '80%'}} />
+            <img src={gifRespira} alt="gif de respiração" className="ImgResp1"  />
 
         </div>
         <div style={{height: '100%'}}>
-            <img src={instruEntrelaca} alt="gif de respiração" style={{width: '91%'}} />
+            <img src={instruEntrelaca} alt="gif de respiração" className="ImgResp2"  />
 
         </div>
         <p className="mrgl-grande"></p>
-        <div>
+        <div className="responsTimer">
+            <div className="boxTimer">
+                <p style={{fontSize: '30px'}}>00:{secondsY2}{secondsX2}</p>
 
-            <p style={{fontSize: '30px'}}>00:{secondsY2}{secondsX2}</p>
-            <button onClick={()=> setComecar2(true)}>Começar</button>
+            </div>
+            <button onClick={()=> setComecar2(true)} className="btn btn-primary" style={{backgroundColor: '#03a3ff', borderRadius: '0 0 5px 5px'}}>Começar</button>
 
         </div>
 
@@ -342,38 +349,39 @@ return(
     {/* inicio da parte três  */}
     <div style={aparecer2}>
     <div className=" mrgt-grande">
-        <h4 className="ti-escrita">Agora coloque as mãos sobre a barriga, e ao inspirar infle a barriga, e ao expirar murche-a</h4>
+        <h4 className="ti-escrita">Agora coloque as mãos sobre a barriga, ao inspirar infle a barriga, e ao expirar murche-a</h4>
 
     </div>
 
 
-    <div className="d-flex justify-content-center  mrgb-media">
+    <div className=" responsCardResp  mrgb-media">
         <div style={{height: '100%'}}>
-            <img src={gifRespira} alt="gif de respiração" style={{width: '80%'}} />
+            <img src={gifRespira} alt="gif de respiração" className="ImgResp1"  />
 
         </div>
         <div style={{height: '100%'}}>
-            <img src={instruBarriga} alt="gif de respiração" style={{width: '91%'}} />
+            <img src={instruBarriga} alt="gif de respiração" className="ImgResp2"  />
 
         </div>
         <p className="mrgl-grande"></p>
-        <div>
+        <div className="responsTimer">
+            <div className="boxTimer">
+                <p style={{fontSize: '30px'}}>00:{secondsY3}{secondsX3}</p>
 
-            <p style={{fontSize: '30px'}}>00:{secondsY3}{secondsX3}</p>
-            <button onClick={()=> setComecar3(true)}>Começar</button>
+            </div>
+            <button onClick={()=> setComecar3(true)} className="btn btn-primary" style={{backgroundColor: '#03a3ff', borderRadius: '0 0 5px 5px'}}>Começar</button>
 
         </div>
 
     </div>
     <div className="d-flex justify-content-center">
-        <Link to="/" style={continuar3}> Estou mais calmo </Link>
+        <button disabled={continuar3X} className="btn btn-primary btn-lg mrgb-media"  style={{backgroundColor: '#03a3ff'}}> <Link to="/" style={continuar3} className="linkreact estouMaisCResp"> Estou mais calmo </Link> </button>
     </div>
 
     </div>
     {/* fim da parte três  */}
-
-    {/*
-    <!-- fim respiração  --> */}
+    </div>
+    {/* <!-- fim respiração  --> */}
 
 
 
