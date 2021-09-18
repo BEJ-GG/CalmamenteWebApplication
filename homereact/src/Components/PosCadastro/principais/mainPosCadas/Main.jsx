@@ -14,6 +14,7 @@ import Respiracao from '../../exercicios/respiracao/Respiracao'
 import Estouemcrise from '../../../estouemcrise/Estouemcrise'
 import Queromeacalmar from '../../../queromeacalmar/Queromeacalmar';
 import Informacoes from '../../../informacoes/Informacoes';
+import MusicaDeUsoTerapeutico from '../../exercicios/musicaDeUsoTerapeutico/MusicaDeUsoTerapeutico'
 
 
 
@@ -32,7 +33,7 @@ return(
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
                 <Nav className="">
-                    <Link to="/estouemcrise" className="menu-di  mx-1 linkreact">Estou em crise</Link>
+                    <Link to="/musicaTerapia" className="menu-di  mx-1 linkreact">Estou em crise</Link>
                     <Link to="/queromeacalmar" className="menu-di  mx-1 linkreact">Quero me acalmar</Link>
                     <Link to="/informacoes" className="menu-di  mx-1 linkreact">Informações</Link>
                     {/* <!-- inicio do perfil --> */}
@@ -77,10 +78,11 @@ return(
                 <Redirect to="/home" />
             </Route>
             <Route path="/home" component={Home}/>
-            <Route path="/respiracao" component={Respiracao}/>
             <Route path="/estouemcrise" component={Estouemcrise}/>
             <Route path="/queromeacalmar" component={Queromeacalmar}/>
             <Route path="/informacoes" component={Informacoes}/>
+            <Route path="/respiracao" component={Respiracao}/>
+            <Route path="/musicaTerapia" component={MusicaDeUsoTerapeutico}/>
 
         </Switch>
     </main>
