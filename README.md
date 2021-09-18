@@ -25,7 +25,7 @@
  <a href="#-quem-somos">Quem somos</a> • 
  <a href="#-missão">Missão</a> • 
  <a href="#-visão">Visão</a> • 
- <a href="#-valores">Valores</a>
+ <a href="#-valores">Valores</a> • 
 <a href="#-contribuitors">Contribuidores</a>
 </p>
 
