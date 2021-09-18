@@ -19,7 +19,7 @@ $("#inicio").click(function () {
 //fim dos iframes de exercícios
 
 // inicio dos iframes do grounding
-var urlsG = ['1.html', 'ifraVisao.html', 'exerciciomao.html', 'exerciciosom.html'];
+var urlsG = ['exerciciovisao.html', 'exerciciomao.html', 'exerciciosom.html','exerciciocheiro.html', 'exerciciogosto.html'];
 var indexG = 0;
 
 $("#grounPro").click(function () {
