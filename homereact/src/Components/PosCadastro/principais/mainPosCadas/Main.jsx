@@ -15,7 +15,8 @@ import Estouemcrise from '../../../estouemcrise/Estouemcrise'
 import Queromeacalmar from '../../../queromeacalmar/Queromeacalmar';
 import Informacoes from '../../../informacoes/Informacoes';
 import MusicaDeUsoTerapeutico from '../../exercicios/musicaDeUsoTerapeutico/MusicaDeUsoTerapeutico'
-
+import Meditacao from '../../exercicios/meditacao/Meditacao'
+import MeditacaoGuiada from '../../exercicios/meditacao/MeditacaoGuiada'
 
 
 export default function Main() {
@@ -33,7 +34,7 @@ return(
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
                 <Nav className="">
-                    <Link to="/musicaTerapia" className="menu-di  mx-1 linkreact">Estou em crise</Link>
+                    <Link to="/meditacao" className="menu-di  mx-1 linkreact">Estou em crise</Link>
                     <Link to="/queromeacalmar" className="menu-di  mx-1 linkreact">Quero me acalmar</Link>
                     <Link to="/informacoes" className="menu-di  mx-1 linkreact">Informações</Link>
                     {/* <!-- inicio do perfil --> */}
@@ -83,6 +84,8 @@ return(
             <Route path="/informacoes" component={Informacoes}/>
             <Route path="/respiracao" component={Respiracao}/>
             <Route path="/musicaTerapia" component={MusicaDeUsoTerapeutico}/>
+            <Route path="/meditacao" component={Meditacao}/>
+            <Route path="/meditacaoGuiada" component={MeditacaoGuiada}/>
 
         </Switch>
     </main>
