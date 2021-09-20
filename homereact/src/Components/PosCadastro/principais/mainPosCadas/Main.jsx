@@ -11,9 +11,9 @@ import instagram from '../../../img/instagram-logo.png'
 import { Switch, Route, Link, Redirect } from 'react-router-dom'
 import Home from '../home/Home'
 import Respiracao from '../../exercicios/respiracao/Respiracao'
-import Estouemcrise from '../../../estouemcrise/Estouemcrise'
-import Queromeacalmar from '../../../queromeacalmar/Queromeacalmar';
-import Informacoes from '../../../informacoes/Informacoes';
+import Estouemcrise from '../../../PosCadastro/principais/estouemcrise/Estouemcrise'
+import Queromeacalmar from '../../../PosCadastro/principais/queromeacalmar/Queromeacalmar';
+import Informacoes from '../../../PosCadastro/principais/informacoes/Informacoes';
 
 
 

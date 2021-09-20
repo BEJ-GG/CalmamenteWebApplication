@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Queromeacalmar() {
 
     return (
@@ -170,7 +171,7 @@ export default function Queromeacalmar() {
 
                                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                                 <div class="d-flex justify-content-center mrgt-media">
-                                    <i class="fas fa-question-circle tam-funcprin"></i>
+                                <FontAwesomeIcon icon={faQuestionCircle} className="tam-funcprin" style={{color: "black"}} />
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
@@ -187,7 +188,7 @@ export default function Queromeacalmar() {
 
                                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                                 <div class="d-flex justify-content-center mrgt-media">
-                                    <i class="fas fa-question-circle tam-funcprin"></i>
+                                <FontAwesomeIcon icon={faQuestionCircle} className="tam-funcprin" style={{color: "black"}} />
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
@@ -204,7 +205,7 @@ export default function Queromeacalmar() {
 
                                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                                 <div class="d-flex justify-content-center mrgt-media">
-                                    <i class="fas fa-question-circle tam-funcprin"></i>
+                                <FontAwesomeIcon icon={faQuestionCircle} className="tam-funcprin" style={{color: "black"}} />
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
@@ -221,7 +222,7 @@ export default function Queromeacalmar() {
 
                                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                                 <div class="d-flex justify-content-center mrgt-media">
-                                    <i class="fas fa-question-circle tam-funcprin"></i>
+                                <FontAwesomeIcon icon={faQuestionCircle} className="tam-funcprin" style={{color: "black"}} />
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
@@ -238,7 +239,7 @@ export default function Queromeacalmar() {
 
                                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                                 <div class="d-flex justify-content-center mrgt-media">
-                                    <i class="fas fa-question-circle tam-funcprin"></i>
+                                <FontAwesomeIcon icon={faQuestionCircle} className="tam-funcprin" style={{color: "black"}} />
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
@@ -255,7 +256,7 @@ export default function Queromeacalmar() {
 
                                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                                 <div class="d-flex justify-content-center mrgt-media">
-                                    <i class="fas fa-question-circle tam-funcprin"></i>
+                                <FontAwesomeIcon icon={faQuestionCircle} className="tam-funcprin" style={{color: "black"}} />
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
