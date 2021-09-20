@@ -1,7 +1,10 @@
 import React from 'react'
 import TestEbook from '../../../img/teste-ebook.jpg'
 import TestPreto from '../../../img/pretoteste.png'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 export default function Informacoes() {
+
 
     return (
         <>
@@ -30,7 +33,7 @@ export default function Informacoes() {
             </div>
             {/* <!-- fim banner ebooks  --> */}
             <div class="paralax-praia-ce " id="idpapra">
-                <h1 class=" tieb  titulos t-home d-flex justify-content-center" id="idpraia">Pesquisas</h1>
+                <h1 class=" tieb  titulos t-home d-flex justify-content-center" id="idpraia"></h1>
             </div>
             <div class="row m-0 row-cols-lg-6 row-cols-md-6 row-cols-sm-6 row-cols-xs-12 ">
                 <a href="" class="row minl-ebooks linkreact"><img src={TestEbook} alt="Imagem e-book" title="Imagem e-book" />
