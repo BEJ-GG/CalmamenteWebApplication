@@ -17,6 +17,9 @@ import Informacoes from '../../../informacoes/Informacoes';
 import MusicaDeUsoTerapeutico from '../../exercicios/musicaDeUsoTerapeutico/MusicaDeUsoTerapeutico'
 import Meditacao from '../../exercicios/meditacao/Meditacao'
 import MeditacaoGuiada from '../../exercicios/meditacao/MeditacaoGuiada'
+import MeditacaoPranayama from '../../exercicios/meditacao/MeditacaoPranayama';
+import MeditacaoExpansao from '../../exercicios/meditacao/MeditacaoExpansao';
+
 
 
 export default function Main() {
@@ -86,6 +89,8 @@ return(
             <Route path="/musicaTerapia" component={MusicaDeUsoTerapeutico}/>
             <Route path="/meditacao" component={Meditacao}/>
             <Route path="/meditacaoGuiada" component={MeditacaoGuiada}/>
+            <Route path="/meditacaoPranayama" component={MeditacaoPranayama}/>
+            <Route path="/meditacaoExpansao" component={MeditacaoExpansao}/>
 
         </Switch>
     </main>

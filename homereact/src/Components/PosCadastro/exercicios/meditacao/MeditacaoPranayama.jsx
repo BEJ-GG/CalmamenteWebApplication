@@ -1,13 +1,89 @@
-import React from 'react'
-import { faInfoCircle} from "@fortawesome/free-solid-svg-icons";
+import React, {useState} from 'react'
+import { faInfoCircle, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Pranayama from '../../../img/pranayama.jpg'
-import Nidra from '../../../img/Yoga-Nidra.png'
-import Medita from '../../../img/meditation.jpg'
-import { Link } from 'react-router-dom'
+import gifRespira from '../../../img/respiracao.gif'
+import instruBarriga from '../../../img/respBarriga.jpg'
+import instruEntrelaca from '../../../img/postura.png'
+import { Link } from 'react-router-dom';
+import VisnhuMudra from '../../../img/vishnu.jpg'
+import cicloVish from '../../../img/vishnu.gif'
 
-export default function MusicaDeUsoTerapeutico() {
 
+export default function MeditacaoPranayama() {
+    // primeira parte 
+    const [secondsX, setSecondsX] = useState(30);
+    const [secondsY, setSecondsY] = useState('');
+    const [comecar, setComecar] = useState(false);
+    const [continuar, setContinuar] = useState(true);
+    const [aparecer, setAparecer] = useState({display: 'none'})
+    const [invisiIco, setInvisiIco] = useState('icoContinuarRespInvi')
+    const [invisiBtn, setInvisiBtn] = useState('btnContinuarRespInvi')
+    // fim da primeira parte 
+    // inicio parte dois 
+    const [secondsX2, setSecondsX2] = useState(30);
+    const [secondsY2, setSecondsY2] = useState('');
+    const [comecar2, setComecar2] = useState(false);
+    const [continuar2, setContinuar2] = useState(true);
+    const [aparecer2, setAparecer2] = useState({display: 'none'})
+    const [invisiIco2, setInvisiIco2] = useState('icoContinuarRespInvi')
+    const [invisiBtn2, setInvisiBtn2] = useState('btnContinuarRespInvi')
+    // fim parte dois 
+    // inicio parte três 
+    const [secondsX3, setSecondsX3] = useState(30);
+    const [secondsY3, setSecondsY3] = useState('');
+    const [comecar3, setComecar3] = useState(false);
+    const [continuar3, setContinuar3] = useState({pointerEvents: 'none'});
+    const [continuar3X, setContinuar3X] = useState(true);
+    // fim parte três 
+
+    // ------------------------------------
+
+    React.useEffect(() => {  
+    // inicio parte um 
+    if (comecar == true){  
+      if(secondsX > 0){
+        setTimeout(() => setSecondsX(secondsX - 1), 1000)
+      }
+      if (secondsX == 9){
+        setSecondsY(0)
+      }
+      if(secondsX == 0){
+        setContinuar(false)
+        setInvisiIco('icoContinuarResp')
+        setInvisiBtn('btnContinuarResp')
+      }
+    }
+    // fim parte um 
+    // inicio parte dois 
+    if (comecar2 == true){  
+        if(secondsX2 > 0){
+          setTimeout(() => setSecondsX2(secondsX2 - 1), 1000)
+        }
+        if (secondsX2 == 9){
+          setSecondsY2(0)
+        }
+        if(secondsX2 == 0){
+          setContinuar2(false)
+          setInvisiIco2('icoContinuarResp')
+          setInvisiBtn2('btnContinuarResp')
+        }
+      }
+      // fim parte dois
+      // inicio parte três 
+    if (comecar3 == true){  
+        if(secondsX3 > 0){
+          setTimeout(() => setSecondsX3(secondsX3 - 1), 1000)
+        }
+        if (secondsX3 == 9){
+          setSecondsY3(0)
+        }
+        if(secondsX3 == 0){
+            setContinuar3({pointerEvents: 'auto'})
+            setContinuar3X(false)
+          }
+      }
+      // fim parte três  
+  });
 
 return(
 <>
@@ -201,82 +277,63 @@ return(
     <!-- fim informação --> */}
 
     {/*
-    <!-- inicio meditação --> */}
-    <h1 className="ti-escrita">Exercício de meditação</h1>
+    <!-- inicio respiração --> */}
+    <h1 className="ti-escrita">Exercício de respiração</h1>
 
-    <div className="mrgx-pequena mrgt-pequena mrgb-pequena">
-        <div className="row m-0 row-cols-1 row-cols-md-3 g-4">
-            <div className="col">
-                <div className="ho-bor">
-                    
-                    <Link to="/meditacaoGuiada" className="linkreact"> 
+    <div style={{paddingLeft: '5%', paddingRight: '5%'}}>
+    {/* inicio da parte um  */}
+    <div>
+    <div className=" mrgt-grande">
+        <h4 className="ti-escrita">Primeiro entenda como fazer um pranayama, primeiramente deve-se posicionar a mão em vishnu mudra, posteriormente seguir o ritmo de respiração, alternando entre as narinas. Veja o vídeo de explicação</h4>
 
-                    <div className="card h-100" style={{border: "0px", position: "static"}}>
-
-                    <img src={Medita} class="card-img-top" alt="Pranayama"/>
-                        <div className="d-flex justify-content-center mrgt-media">
-                        </div>
-                        <div className="card-body esp-car">
-                            <h5 className="card-title d-flex justify-content-center titulos">Meditação guiada</h5>
-                            <p className="card-text textos " style={{textAlign: 'center'}}>Meditação guiada pela fala
-                                para ajudar a diminuir a ansiedade</p>
-                        </div>
-                    </div>
-                    </Link>
-                </div>
-            </div>
-
-            {/*
-            <!-- card 2 --> */}
-            <div className="col">
-                <div className="ho-bor">
-                   
-                    <Link to="/meditacaoPranayama" className="linkreact"> 
-
-                    <div className="card h-100" style={{border: "0px", position: "static"}}>
-
-                        
-                        <img src={Pranayama} class="card-img-top" alt="Pranayama"/>
-                        <div className="d-flex justify-content-center mrgt-media">
-                        </div>
-                        <div className="card-body esp-car">
-                            <h5 className="card-title d-flex justify-content-center titulos">Meditação com pranayama
-                            </h5>
-                            <p className="card-text textos " style={{textAlign: 'center'}}>Meditação guiada pela fala,
-                                com princípios do controle da entrada e saida de prana (ar), para ajudar a diminuir a ansiedade e trazer um maior controle
-                                sob a respiração</p>
-                        </div>
-                    </div>
-                    </Link>
-                </div>
-            </div>
-            {/* card 3 */}
-            <div className="col">
-                <div className="ho-bor">
-                    
-                    <Link to="/meditacaoExpansao" className="linkreact"> 
-
-                    <div className="card h-100" style={{border: "0px", position: "static"}}>
-
-                    <img src={Nidra} class="card-img-top" alt="Pranayama"/>
-                        <div className="d-flex justify-content-center mrgt-media">
-                        </div>
-                        <div className="card-body esp-car">
-                            <h5 className="card-title d-flex justify-content-center titulos">Meditação de expansão
-                            </h5>
-                            <p className="card-text textos " style={{textAlign: 'center'}}>Meditação guiada que visa a
-                                interiorização e aceitação, prove um relaxamento profundo e a possibilidade de entrar no
-                                modo alpha</p>
-                        </div>
-                    </div>
-                    </Link>
-                </div>
-            </div>
-        </div>
     </div>
 
-    {/*
-    <!-- fim meditação --> */}
+    <div className=" responsCardResp  mrgb-media">
+        <div style={{width: '40%'}}>
+            <img src={VisnhuMudra} alt="gif de respiração" className="ImgResp1"  />
+
+        </div>
+        <div style={{width: '35%'}}>
+            <img src={cicloVish} alt="gif de respiração" className="ImgResp2"  />
+
+        </div>
+
+    </div>
+        
+    <div className="d-flex justify-content-center mrgb-media">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SZ8Hrhc4XZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    
+
+    <div className="d-flex justify-content-center">
+        <button  className="btnContinuarResp" onClick={()=> setAparecer({display: 'block'})}><FontAwesomeIcon icon={faChevronDown} className={invisiIco}></FontAwesomeIcon></button>
+    </div>
+    </div>
+    {/* fim da parte um  */}
+
+
+    {/* inicio da parte dois  */}
+    <div style={aparecer}>
+    <div className=" mrgt-grande">
+        <h4 className="ti-escrita">Agora que já sabe fazer um pranayama, inicie a meditação guiada. Obs: Você pode inspirar e expirar no tempo que desejar, desde que seja mais longo do que o normal, e no mesmo tempo.</h4>
+
+    </div>
+
+
+    <div className="responsCardResp  mrgb-media">
+        <div style={{height: '40%'}}>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lkxNig20CW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+
+    </div>
+
+    </div>
+    {/* fim da parte dois  */}
+
+    </div>
+    {/* <!-- fim respiração  --> */}
 
 
 

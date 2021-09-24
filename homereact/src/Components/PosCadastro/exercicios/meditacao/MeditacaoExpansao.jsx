@@ -1,8 +1,8 @@
 import React from 'react'
-import gifRespira from '../../../img/respiracao.gif'
 
 
-export default function Respiracao() {
+
+export default function MeditacaoExpansao() {
 
 return(
 <>
@@ -15,15 +15,14 @@ return(
         {/* inicio da parte um */}
         <div>
             <div className=" mrgt-grande">
-                <h4 className="ti-escrita">Nesta meditação você irá se acalmar através da respiração e da percepção
-                    corporal</h4>
+                <h4 className="ti-escrita">Nesta meditação você irá se acalmar através de respirações e de expansão de consciência.</h4>
 
             </div>
 
 
             <div className="responsCardResp  mrgb-media">
                 <div style={{height: '40%'}}>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/aryuZGoOgTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Sh1zXGpZWSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
