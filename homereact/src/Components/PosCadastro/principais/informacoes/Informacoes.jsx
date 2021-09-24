@@ -1,7 +1,6 @@
 import React from 'react'
 import TestEbook from '../../../img/teste-ebook.jpg'
 import TestPreto from '../../../img/pretoteste.png'
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Informacoes() {
 
