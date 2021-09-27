@@ -89,8 +89,7 @@ return(
     </div>
   </div> 
 
-    {/*
-    <!-- inicio rodapé --> */}
+    {/*<!-- inicio rodapé --> */}
     <footer class="bg-dark m-0" id="roda">
         <div class=" rodape">
             <div class="rodape-icone">
@@ -138,8 +137,7 @@ return(
             </div>
         </div>
     </footer>
-    {/*
-    <!-- fim rodapé  --> */}
+    {/*<!-- fim rodapé  --> */}
 
 </>
 )}
