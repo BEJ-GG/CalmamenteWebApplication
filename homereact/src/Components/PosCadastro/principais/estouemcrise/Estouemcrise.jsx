@@ -248,10 +248,10 @@ export default function Estouemcrise() {
       {/* // <!-- inicio card do iframe  --> */}
       <div class="card  quadro-ifra">
         {/* <iframe src="ifra-estoucrise.html" id="ifra-quadro"></iframe> */}
-        <Iframe src={IfraEstouemcrise} id="ifra-quadro" />
-        
+        {/* <Iframe src={IfraEstouemcrise} id="ifra-quadro" /> */}
+        {/* UseState  */}
         {/* <Acrise id="ifra-quadro"/> */}
-        {/* <IfraEstouemcrise id="ifra-quadro" /> */}
+        <IfraEstouemcrise id="ifra-quadro" />
         <div class="card-body">
           <div class="position-relative m-4">
             <div style={{ height: "1px" }}>

@@ -1,15 +1,15 @@
 import React from 'react'
-import logo from '../../../img/logo.png'
-import logoIcon from '../../../img/logo-icon.png'
-import facebook from '../../../img/facebook-logo.png'
-import twitter from '../../../img/twitter-logo.png'
-import instagram from '../../../img/instagram-logo.png'
+import logo from '../../img/logo.png'
+import logoIcon from '../../img/logo-icon.png'
+import facebook from '../../img/facebook-logo.png'
+import twitter from '../../img/twitter-logo.png'
+import instagram from '../../img/instagram-logo.png'
 import { Switch, Route, Link, Redirect } from 'react-router-dom'
-import Home from '../home/Home'
-import Respiracao from '../../exercicios/respiracao/Respiracao'
-import Estouemcrise from '../../../PosCadastro/principais/estouemcrise/Estouemcrise'
-import Queromeacalmar from '../../../PosCadastro/principais/queromeacalmar/Queromeacalmar';
-import Informacoes from '../../../PosCadastro/principais/informacoes/Informacoes';
+import Home from '../../PosCadastro/principais/home/Home'
+import Respiracao from '../../PosCadastro/exercicios/respiracao/Respiracao'
+import Estouemcrise from '../../PosCadastro/principais/estouemcrise/Estouemcrise'
+import Queromeacalmar from '../../PosCadastro/principais/queromeacalmar/Queromeacalmar';
+import Informacoes from '../../PosCadastro/principais/informacoes/Informacoes';
 
 export default function cadastro() {
 
@@ -104,53 +104,47 @@ export default function cadastro() {
             </div >
 
 
-            {/* <!-- inicio rodapé --> */}
-            <footer footer class="bg-dark m-0" id="roda" >
-                <div class=" rodape">
-                    <div class="rodape-icone">
-                        <img src={logoIcon} style={{ width: "100%" }} alt="" />
-                    </div>
+            {/*<!-- inicio rodapé --> */}
+    <footer class="bg-dark m-0" id="roda">
+        <div class=" rodape">
+            <div class="rodape-icone">
+                <img src={logoIcon} style={{width: "100%"}} alt="" />
+            </div>
 
-                    <div class="d-flex justify-content-center align-items-start mrgr-grande" style={{ width: "100%" }}>
-                        <ul class="rodape-itens mx-1">
-                            <li><Link to="/"
-                                class="linkreact text-light roda-link font-weight-bold itens">Estou em
-                                crise</Link>
-                            </li>
-                            <li class="text-muted roda-link roda-link-cel itens">Exercícios para momentos de crise</li>
-                        </ul>
+            <div class="d-flex justify-content-center align-items-start mrgr-grande" style={{width: "100%"}}>
+                <ul class="rodape-itens mx-1">
+                    <li><Link to="/"
+                            class="linkreact text-light roda-link font-weight-bold itens">Estou em
+                            crise</Link>
+                    </li>
+                    <li class="text-muted roda-link roda-link-cel itens">Exercícios para momentos de crise</li>
+                </ul>
 
-                        <ul class="rodape-itens mx-1">
-                            <li><Link to="/"
-                                class="linkreact text-light roda-link font-weight-bold itens">Quero me
-                                acalmar</Link>
-                            </li>
-                            <li class="text-muted roda-link roda-link-cel itens">Exercícios para momentos de pré-crise </li>
-                        </ul>
+                <ul class="rodape-itens mx-1">
+                    <li><Link to="/"
+                            class="linkreact text-light roda-link font-weight-bold itens">Conheça nosso site</Link>
+                    </li>
+                    <li class="text-muted roda-link itens">Estou em crise </li>
+                    <li class="text-muted roda-link itens">Quero me acalmar </li>
+                    <li class="text-muted roda-link itens">Informações </li>
+                </ul>
+            </div>
 
-                        <ul class="rodape-itens mx-1">
-                            <li><Link to="/"
-                                class="linkreact text-light roda-link font-weight-bold itens">Informações</Link>
-                            </li>
-                            <li class="text-muted roda-link itens">E-books</li>
-                            <li class="text-muted roda-link itens">Pesquisas</li>
-                            <li class="text-muted roda-link itens">Vídeos</li>
-                        </ul>
-                    </div>
-
-                    <div class="rodape-contatos ">
-                        <ul class="rodape-itens list-group list-group-horizontal list-group-horizontal-sm list-group-horizontal-md
+            <div class="rodape-contatos ">
+                <ul class="rodape-itens list-group list-group-horizontal list-group-horizontal-sm list-group-horizontal-md
           list-group-horizontal-xl">
-                            <li class="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={instagram}
+                    <li class="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={instagram}
                                 alt="" /></a></li>
-                            <li class="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={twitter}
+                    <li class="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={twitter}
                                 alt="" /></a></li>
-                            <li class="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={facebook}
+                    <li class="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={facebook}
                                 alt="" /></a></li>
-                        </ul>
-                        <p class="text-light roda-email itens">contatobejgg@gmail.com</p>
-                    </div>
-                </div>
+                </ul>
+                <p class="text-light roda-email itens">contatobejgg@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    {/*<!-- fim rodapé  --> */}
 
                 <main>
                     <Switch>
@@ -165,7 +159,7 @@ export default function cadastro() {
 
                     </Switch>
                 </main>
-            </footer >
+           
         </>
     )
 }
