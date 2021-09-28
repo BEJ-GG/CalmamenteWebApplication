@@ -11,9 +11,15 @@ import instagram from '../../../img/instagram-logo.png'
 import { Switch, Route, Link, Redirect } from 'react-router-dom'
 import Home from '../home/Home'
 import Respiracao from '../../exercicios/respiracao/Respiracao'
-import Estouemcrise from '../../../PosCadastro/principais/estouemcrise/Estouemcrise'
-import Queromeacalmar from '../../../PosCadastro/principais/queromeacalmar/Queromeacalmar';
-import Informacoes from '../../../PosCadastro/principais/informacoes/Informacoes';
+import Estouemcrise from '../../../estouemcrise/Estouemcrise'
+import Queromeacalmar from '../../../queromeacalmar/Queromeacalmar';
+import Informacoes from '../../../informacoes/Informacoes';
+import MusicaDeUsoTerapeutico from '../../exercicios/musicaDeUsoTerapeutico/MusicaDeUsoTerapeutico'
+import Meditacao from '../../exercicios/meditacao/Meditacao'
+import MeditacaoGuiada from '../../exercicios/meditacao/MeditacaoGuiada'
+import MeditacaoPranayama from '../../exercicios/meditacao/MeditacaoPranayama';
+import MeditacaoExpansao from '../../exercicios/meditacao/MeditacaoExpansao';
+
 
 
 
@@ -32,7 +38,7 @@ return(
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
                 <Nav className="">
-                    <Link to="/estouemcrise" className="menu-di  mx-1 linkreact">Estou em crise</Link>
+                    <Link to="/musicaTerapia" className="menu-di  mx-1 linkreact">Estou em crise</Link>
                     <Link to="/queromeacalmar" className="menu-di  mx-1 linkreact">Quero me acalmar</Link>
                     <Link to="/informacoes" className="menu-di  mx-1 linkreact">Informações</Link>
                     {/* <!-- inicio do perfil --> */}
@@ -77,10 +83,15 @@ return(
                 <Redirect to="/home" />
             </Route>
             <Route path="/home" component={Home}/>
-            <Route path="/respiracao" component={Respiracao}/>
             <Route path="/estouemcrise" component={Estouemcrise}/>
             <Route path="/queromeacalmar" component={Queromeacalmar}/>
             <Route path="/informacoes" component={Informacoes}/>
+            <Route path="/respiracao" component={Respiracao}/>
+            <Route path="/musicaTerapia" component={MusicaDeUsoTerapeutico}/>
+            <Route path="/meditacao" component={Meditacao}/>
+            <Route path="/meditacaoGuiada" component={MeditacaoGuiada}/>
+            <Route path="/meditacaoPranayama" component={MeditacaoPranayama}/>
+            <Route path="/meditacaoExpansao" component={MeditacaoExpansao}/>
 
         </Switch>
     </main>
