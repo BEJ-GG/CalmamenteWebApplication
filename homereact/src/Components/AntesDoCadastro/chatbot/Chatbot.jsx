@@ -8,7 +8,7 @@ import instagram from '../../img/instagram-logo.png'
 import Estouemcrise from '../../PosCadastro/principais/estouemcrise/Estouemcrise'
 import Queromeacalmar from '../../PosCadastro/principais/queromeacalmar/Queromeacalmar';
 import Informacoes from '../../PosCadastro/principais/informacoes/Informacoes';
-import Iframe from 'react-iframe'
+// import Iframe from 'react-iframe'
 import IfraEstouemcriseCadas from './IfraEstouemcriseCadas'
 import Home from '../../PosCadastro/principais/home/Home'
 
