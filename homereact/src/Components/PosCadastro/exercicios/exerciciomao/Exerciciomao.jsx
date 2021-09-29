@@ -20,7 +20,7 @@ export default function Exerciciomao() {
                 <div class="col-12 row in-ce-se">
                     <div class="col-6">
                         <i class="fas fa-gamepad coex"></i>
-                        <FontAwesomeIcon icon={faCoex} className="laex"/>
+                        <FontAwesomeIcon className="laex"/>
                     </div>
                     <div class="col-6">
                         <i class="fas fa-couch soex"></i>

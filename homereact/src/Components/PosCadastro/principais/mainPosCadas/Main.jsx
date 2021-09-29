@@ -11,15 +11,16 @@ import instagram from '../../../img/instagram-logo.png'
 import { Switch, Route, Link, Redirect } from 'react-router-dom'
 import Home from '../home/Home'
 import Respiracao from '../../exercicios/respiracao/Respiracao'
-import Estouemcrise from '../../../estouemcrise/Estouemcrise'
-import Queromeacalmar from '../../../queromeacalmar/Queromeacalmar';
-import Informacoes from '../../../informacoes/Informacoes';
+import Estouemcrise from '../estouemcrise/Estouemcrise'
+import Queromeacalmar from '../queromeacalmar/Queromeacalmar';
+import Informacoes from '../informacoes/Informacoes';
 import MusicaDeUsoTerapeutico from '../../exercicios/musicaDeUsoTerapeutico/MusicaDeUsoTerapeutico'
 import Meditacao from '../../exercicios/meditacao/Meditacao'
 import MeditacaoGuiada from '../../exercicios/meditacao/MeditacaoGuiada'
 import MeditacaoPranayama from '../../exercicios/meditacao/MeditacaoPranayama';
 import MeditacaoExpansao from '../../exercicios/meditacao/MeditacaoExpansao';
-
+import EstimularCriatividadeHistorias from '../../exercicios/estimulaciatividade/EstimularCriatividadeHistorias'
+import EscritaTerapeutica from '../../exercicios/escritaterapeutica/EscritaTerapeutica';
 
 
 
@@ -38,8 +39,8 @@ return(
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
                 <Nav className="">
-                    <Link to="/musicaTerapia" className="menu-di  mx-1 linkreact">Estou em crise</Link>
-                    <Link to="/queromeacalmar" className="menu-di  mx-1 linkreact">Quero me acalmar</Link>
+                    <Link to="/estimularCriatividade" className="menu-di  mx-1 linkreact">Estou em crise</Link>
+                    <Link to="/escritaTerap" className="menu-di  mx-1 linkreact">Quero me acalmar</Link>
                     <Link to="/informacoes" className="menu-di  mx-1 linkreact">Informações</Link>
                     {/* <!-- inicio do perfil --> */}
                     <div className="perfi-usu">
@@ -92,6 +93,8 @@ return(
             <Route path="/meditacaoGuiada" component={MeditacaoGuiada}/>
             <Route path="/meditacaoPranayama" component={MeditacaoPranayama}/>
             <Route path="/meditacaoExpansao" component={MeditacaoExpansao}/>
+            <Route path="/estimularCriatividade" component={EstimularCriatividadeHistorias}/>
+            <Route path="/escritaTerap" component={EscritaTerapeutica}/>
 
         </Switch>
     </main>
