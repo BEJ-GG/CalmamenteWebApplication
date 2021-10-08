@@ -10,6 +10,8 @@ import { faInfoCircle, faQuestionCircle } from "@fortawesome/free-solid-svg-icon
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function EstimularCriatividadeHistorias() {
+
+  
     return (
         <>
 
@@ -17,13 +19,17 @@ export default function EstimularCriatividadeHistorias() {
                 <div id="main">
                     {/* <!-- inicio informação --> */}
                     <div class="d-flex justify-content-end mrgr-media mrgt-pequena">
-                        <button style={{border: 'none', backgroundColor: 'rgba(240, 248, 255, 0)'}} data-bs-toggle="modal" data-bs-target="#exampleModal"><FontAwesomeIcon icon={faInfoCircle} className="tam-exercicio"/></button>
+                        <button style={{border: 'none', backgroundColor: 'rgba(240, 248, 255, 0)'}} data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <FontAwesomeIcon icon={faInfoCircle} className="tam-exercicio"/></button>
                             
                     </div>
 
                     {/* <!-- Inicio Modal do informação --> */}
                     <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
+                           
+                            
+                           
                         <div class="modal-dialog modal-dialog-scrollable  modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -185,7 +191,7 @@ export default function EstimularCriatividadeHistorias() {
                         </div>
                     </div>
                     {/* <!-- fim modal do informação  --> */}
-
+                
                     {/* <!-- fim informação --> */}
 
                     {/* <!-- inicio estimulo de criatividade através da criação de histórias --> */}
