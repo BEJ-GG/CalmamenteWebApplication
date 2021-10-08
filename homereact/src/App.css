@@ -23,8 +23,8 @@ body,
 
 #main {
     overflow: auto;
+    
 }
-
 
 .textos {
     font-family: 'Open Sans Condensed', sans-serif;
@@ -548,7 +548,7 @@ a:hover,
     /* inicio parallax praia  */
 
     .paralax-praia {
-        /* background-image: url(../img/paralax-praia-ima.jpg); */
+        background-image: url(./Components/img/paralax-praia-ima.jpg);
         background-repeat: no-repeat;
         background-position: center top;
         background-size: cover;
@@ -1980,6 +1980,19 @@ a:hover,
     margin-bottom: 2%;
 }
 
+.hi-escrita{
+    text-align: justify;
+    width: 80%;
+}
+
+.hi{
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    width: 100%;
+    height: 100%;
+}
 
 .formul-exercicios {
     display: flex;
