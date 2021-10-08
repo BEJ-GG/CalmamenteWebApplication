@@ -12,7 +12,7 @@ import Respiracao from './Components/PosCadastro/exercicios/respiracao/Respiraca
 import EscritaTerapeutica from './Components/PosCadastro/exercicios/escritaterapeutica/EscritaTerapeutica';
 import EstouTendoUmacrise from './Components/AntesDoCadastro/estoutendoumacrise/EstouTendoUmacrise';
 import Exerciciomao from './Components/PosCadastro/exercicios/exerciciomao/Exerciciomao';
-
+import ExercicioCheiro from './Components/PosCadastro/exercicios/exerciciocheiro/ExercicioCheiro';
 export default function App() {
 
   const script = document.createElement("script");
@@ -35,5 +35,6 @@ return(
   {/* <EscritaTerapeutica/> */}
   {/* <EstouTendoUmacrise/> */}
   {/* <Exerciciomao/> */}
+  {/* <ExercicioCheiro /> */}
 </>
 )}
