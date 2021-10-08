@@ -181,14 +181,13 @@ export default function EscritaTerapeutica() {
                     {/* <!-- fim informação --> */}
 
                     {/* <!-- inicio escrita terapêutica  --> */}
-                    <h1 class="ti-escrita">Escrita terapêutica</h1>
-                    <div class="formul-exercicios">
-                        <div class="for-exercicios">
+                    <h1 className="ti-escrita">Escrita terapêutica</h1>
+                    <div className="formul-exercicios">
+                        <div className="for-exercicios">
                             <form action="">
                                 <fieldset>
-                                    <textarea class="form-control caixa-escrita" name="limescr" id="limescr"
-                                        aria-label="With textarea"></textarea>
-                                    <input type="button" value="Apagar" onClick="limpaesc()" />
+                                    <textarea className="form-control caixa-escrita" name="limescr" id="limescr"
+                                        aria-label="With textarea" style={{width: '65vw'}}></textarea>
                                 </fieldset>
                             </form>
                         </div>

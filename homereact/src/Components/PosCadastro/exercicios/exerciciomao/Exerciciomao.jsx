@@ -22,6 +22,11 @@ export default function Exerciciomao() {
                     <div className="col-6">
                       
                         <FontAwesomeIcon icon={faGamepad} className="coex"/>
+
+                <div class="col-12 row in-ce-se">
+                    <div class="col-6">
+                        <i class="fas fa-gamepad coex"></i>
+                        <FontAwesomeIcon className="laex"/>
                     </div>
                     <div className="col-6">
                         <FontAwesomeIcon icon={faCouch} className="soex"/>

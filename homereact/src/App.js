@@ -24,7 +24,7 @@ export default function App() {
 return(
   
 <>
-  {/* <Main/> */}
+  <Main/>
   {/* <Queromeacalmar />*/}
   {/* <Login /> */}
   {/* <Cadastro/> */}
@@ -35,6 +35,6 @@ return(
   {/* <EscritaTerapeutica/> */}
   {/* <EstouTendoUmacrise/> */}
   {/* <Exerciciomao/> */}
-  <ExercicioCheiro />
+  {/* <ExercicioCheiro /> */}
 </>
 )}

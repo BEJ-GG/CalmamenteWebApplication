@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Savana from '../../../img/savana.jpg'
 import Surrrealtwo from '../../../img/surreal2.jpg'
@@ -11,12 +11,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function EstimularCriatividadeHistorias() {
 
-  
+    const [Historia, setHistoria] = useState("Selecione sua história ou inicie uma do zero com base nas imagens a baixo.")
+
     return (
         <>
 
             <div id="container">
-                <div id="main">
+                <div id="main" style={{overflowX: 'hidden'}}>
                     {/* <!-- inicio informação --> */}
                     <div class="d-flex justify-content-end mrgr-media mrgt-pequena">
                         <button style={{border: 'none', backgroundColor: 'rgba(240, 248, 255, 0)'}} data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -195,11 +196,24 @@ export default function EstimularCriatividadeHistorias() {
                     {/* <!-- fim informação --> */}
 
                     {/* <!-- inicio estimulo de criatividade através da criação de histórias --> */}
-                    <h1 class="ti-escrita">Criação de Histórias</h1>
+                    <h1 className="ti-escrita">Criação de Histórias</h1>
+                    <div className="hi">
+                        <h4 className="hi-escrita">{Historia}</h4>
+                    </div>
+                    <div className="formul-exercicios">
+                        <div className="for-exercicios">
+                            <form action="">
+                                <fieldset>
+                                    <textarea className="form-control caixa-escrita" name="limescr" id="limescr"
+                                        aria-label="With textarea" style={{width: '65vw'}}></textarea>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
                     <div class="mrgx-grande mrgt-pequena">
                         <div class="row m-0 row-cols-1 row-cols-md-3 g-4">
                             <div class="col">
-                                <a href="" class="linkreact">
+                                <a href="#" class="linkreact" onClick={()=> setHistoria("O explorador está tomando um café reforçado junto com sua esposa e cachorro, pois hoje é um dia muito importante. Eles terminam de comer e partem na sua aventura, em busca de...")} >
                                     <div class="card h-100  ho-bor" >
                                         {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                                         <img src={Savana} class="card-img-top" alt="savana" />
@@ -213,7 +227,7 @@ export default function EstimularCriatividadeHistorias() {
                                 </a>
                             </div>
                             <div class="col">
-                                <a href="" class="linkreact">
+                                <a href="#" class="linkreact" onClick={()=> setHistoria("Seu avô já contava-lhe essa história desde que nasceu, a história de uma ilha nas nuvens, um lugar onde a maldade não existe e onde estão abrigados os últimos seres místicos do planeta, porém apenas um puro de coração poderia achar este local. E então quando o garoto fez 10 anos, desejou passar alguns dias no sítio de seu avô por uma semana como presente de aniversário. Chegando lá, o garoto se vira para o avô e lhe-faz a seguinte proposta...")} >
                                     <div class="card h-100  ho-bor" >
                                         <img src={Surrrealtwo} class="card-img-top" alt="..." />
                                         <div class="d-flex justify-content-center mrgt-media">
@@ -227,7 +241,7 @@ export default function EstimularCriatividadeHistorias() {
                                 </a>
                             </div>
                             <div class="col">
-                                <a href="" class="linkreact">
+                                <a href="#" class="linkreact" onClick={()=> setHistoria("Capitão: 'É dito nas lendas que o ser capaz de encontrar o fim do mundo receberia o tesouro mais precioso dos mares! O poder de controlar a Deusa Calypso! E homens... eu tenho um plano para conseguir chegar lá. Quem está comigo?!'. *Todos riem juntos em alto tom* Marujo: 'Para de ser louco.'")} >
                                     <div class="card h-100  ho-bor" >
                                         <img src={Surrealtree} class="card-img-top" alt="..." />
                                         <div class="d-flex justify-content-center mrgt-media">
@@ -241,7 +255,7 @@ export default function EstimularCriatividadeHistorias() {
                                 </a>
                             </div>
                             <div class="col mrgb-pequena">
-                                <a href="" class="linkreact">
+                                <a href="#" class="linkreact" onClick={()=> setHistoria("Depois de anos da humanidade desmatando a natureza, acabando com as florestas e exterminando a fauna e a flora. Dois seres emergem do chão, utilizando em sua compozição os últimos resquícios de natureza do planeta. 'Vocês são os culpados por toda essa dor e sofrimento!'. E então os seres...")} >
                                     <div class="card h-100  ho-bor" >
                                         <img src={Surrealfor} class="card-img-top" alt="..." />
                                         <div class="d-flex justify-content-center mrgt-media">
@@ -254,7 +268,7 @@ export default function EstimularCriatividadeHistorias() {
                                 </a>
                             </div>
                             <div class="col mrgb-pequena">
-                                <a href="" class="linkreact">
+                                <a href="#" class="linkreact" onClick={()=> setHistoria("O zebroceronte é um animal lendário africano que foi avistado por um caçador em sua região, esse caçador espalhou boatos da criatura por todos os lugares e caçadores do mundo todo começaram a disputar para ver quem conseguia primeiro a cabeça do animal. Um dia o zebroceronte foi gravemente ferido fugindo de um caçador e foi encontrado por um menino que conseguiu se aproximar dele e ajudou a cuidar de seus ferimentos, o menino então começa a ajudar o zebroceronte a achar um novo local para viver, onde os caçadores não poderão acha-lo mas o que o menino não imaginava é que...")} >
                                     <div class="card h-100  ho-bor" >
                                         <img src={Surrealfive} class="card-img-top" alt="rinoceronte com pele de zebra" />
                                         <div class="d-flex justify-content-center mrgt-media">
@@ -269,7 +283,7 @@ export default function EstimularCriatividadeHistorias() {
                                 </a>
                             </div>
                             <div class="col mrgb-pequena">
-                                <a href="" class="linkreact">
+                                <a href="#" class="linkreact" onClick={()=> setHistoria("Zarythos era o mais novo do grupo dos mestres intergaláticos, ele era a representação do amor, e sempre suas decisões eram movidas por esse amor a tudo e a todos. Chegou o momento da reunião de todos os mestres intergaláticos junto com o criador maior, o objetivo da reunião era decidir o destino de uma raça inteira de indivíduos, esta raça estava se desenvolvendo muito rapidamente em tecnologias, chegando a ser capazes de explorar outros lugares da existência pelo espaço, porém tinham o nível de moralidade muito baixo, o que era um risco a outras civilizações e raças. Chegando na reunião tinham aqueles mestres que já demonstravam mais compaixão e compreensão, enquanto outros eram mais racionais e calculistas. E é nesta situação que a reunião se inicia...")} >
                                     <div class="card h-100  ho-bor" >
                                         <img src={Surrealsix} class="card-img-top" alt="..." />
                                         <div class="d-flex justify-content-center mrgt-media">
