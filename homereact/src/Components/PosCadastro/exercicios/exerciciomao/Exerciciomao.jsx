@@ -27,6 +27,7 @@ export default function Exerciciomao() {
                             <FontAwesomeIcon icon={faCouch} className="soex" />
                         </div>
                     </div>
+                    
 
                     {/* <script>
                     </script>
