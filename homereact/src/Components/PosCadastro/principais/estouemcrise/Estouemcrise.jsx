@@ -2,7 +2,7 @@ import React from 'react'
 import { faQuestionCircle, faCog } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import IfraEstouemcrise from './IfraEstouemcrise';
-import Iframe from 'react-iframe'
+// import Iframe from 'react-iframe'
 import Acrise from './Acrise'
 
 
