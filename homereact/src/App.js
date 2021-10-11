@@ -13,6 +13,9 @@ import EscritaTerapeutica from './Components/PosCadastro/exercicios/escritaterap
 import EstouTendoUmacrise from './Components/AntesDoCadastro/estoutendoumacrise/EstouTendoUmacrise';
 import Exerciciomao from './Components/PosCadastro/exercicios/exerciciomao/Exerciciomao';
 import ExercicioCheiro from './Components/PosCadastro/exercicios/exerciciocheiro/ExercicioCheiro';
+import ExercicioGosto from './Components/PosCadastro/exercicios/exerciciogosto/ExercicioGosto';
+import ExercicioSom from './Components/PosCadastro/exercicios/exerciciosom/ExercicioSom';
+import ExercicioVisao from './Components/PosCadastro/exercicios/exerciciovisao/ExercicioVisao';
 export default function App() {
 
   const script = document.createElement("script");
@@ -36,5 +39,8 @@ return(
   {/* <EstouTendoUmacrise/> */}
   {/* <Exerciciomao/> */}
   {/* <ExercicioCheiro /> */}
+  {/* <ExercicioGosto/> */}
+  {/* <ExercicioSom/> */}
+  {/* <ExercicioVisao/> */}
 </>
 )}
