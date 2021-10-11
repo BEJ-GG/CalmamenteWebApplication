@@ -34,7 +34,7 @@ return(
   {/* <Respiracao/> */}
   {/* <EscritaTerapeutica/> */}
   {/* <EstouTendoUmacrise/> */}
-  {/* <Exerciciomao/> */}
-  <ExercicioCheiro />
+  <Exerciciomao/>
+  {/* <ExercicioCheiro /> */}
 </>
 )}
