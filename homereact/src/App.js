@@ -27,12 +27,12 @@ export default function App() {
 return(
   
 <>
-  <Main/>
+  {/* <Main/> */}
   {/* <Queromeacalmar />*/}
   {/* <Login /> */}
   {/* <Cadastro/> */}
   {/* <InicioCal /> */}
-  {/* <Chatbot/> */}
+  <Chatbot/>
   {/* <EstimularCriatividadeHistorias/> */}
   {/* <Respiracao/> */}
   {/* <EscritaTerapeutica/> */}
