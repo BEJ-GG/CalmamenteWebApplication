@@ -43,7 +43,7 @@ return(
                     <Link to="/queromeacalmar" className="menu-di  mx-1 linkreact">Quero me acalmar</Link>
                     <Link to="/informacoes" className="menu-di  mx-1 linkreact">Informações</Link>
                     {/* <!-- inicio do perfil --> */}
-                    <div className="perfi-usu">
+                    {/* <div className="perfi-usu">
                         <button className="menu-dir mx-1" id="bt-perfi" onclick='mostra_ocultaper()' href="#"><img
                                 src={perfil} className="men-home " alt=""></img></button>
                         <div className="per-text" id="bt-quaper">
@@ -66,16 +66,14 @@ return(
                                         className="fas fa-sign-in-alt ic-sape"></i></button>
                             </div>
                         </div>
-                    </div>
-                    {/*
-                    <!-- fim do perfil --> */}
+                    </div> */}
+                    {/* <!-- fim do perfil --> */}
                 </Nav>
             </Navbar.Collapse>
         </div>
     </Navbar>
 
-    {/*
-    <!-- fim menu  --> */}
+    {/* <!-- fim menu  --> */}
     
     {/* Conteudo */}
     <main>     
