@@ -33,7 +33,7 @@ return(
   {/* <Login /> */}
   {/* <Cadastro/> */}
   {/* <Index /> */}
-  {/* <Chatbot/> */}
+  <Chatbot/>
   {/* <EstimularCriatividadeHistorias/> */}
   {/* <Respiracao/> */}
   {/* <EscritaTerapeutica/> */}
@@ -42,7 +42,7 @@ return(
   {/* <ExercicioCheiro /> */}
   {/* <ExercicioGosto/> */}
   {/* <ExercicioSom/> */}
-  <ExercicioVisao/>
+  {/* <ExercicioVisao/> */}
   {/* <Home/> */}
 
 </>
