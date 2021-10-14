@@ -28,7 +28,7 @@ export default function App() {
 return(
   
 <>
-  {/* <Main/> */}
+  <Main/>
   {/* <Queromeacalmar />*/}
   {/* <Login /> */}
   {/* <Cadastro/> */}
@@ -42,7 +42,7 @@ return(
   {/* <ExercicioCheiro /> */}
   {/* <ExercicioGosto/> */}
   {/* <ExercicioSom/> */}
-  <ExercicioVisao/>
+  {/* <ExercicioVisao/> */}
   {/* <Home/> */}
 
 </>
