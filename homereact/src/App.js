@@ -42,7 +42,7 @@ return(
   {/* <ExercicioCheiro /> */}
   {/* <ExercicioGosto/> */}
   {/* <ExercicioSom/> */}
-  {/* <ExercicioVisao/> */}
+  <ExercicioVisao/>
   {/* <Home/> */}
 
 </>
