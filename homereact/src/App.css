@@ -21,6 +21,7 @@ body,
     background-color: #f8f9fa;
 }
 
+
 #main {
     overflow: auto;
     
@@ -627,6 +628,160 @@ a:hover,
         border: solid 1px #0d6efd;
         border-radius: 0 0 5px 5px;
     }
+    .eyes {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .eye {
+        /* border: 1px solid #000; */
+        width: 150px;
+        height: 150px;
+        background: #fff;
+        display: inline-block;
+        margin: 40px;
+        border-radius: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .ball {
+        width: 50px;
+        height: 50px;
+        background: #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        border: 15px solid #03a3ff;
+    }
+    .fundoOl {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background: #034f7a;
+    }
+    .fundo-mao {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        background: #034f7a;
+        cursor: grab;
+    }
+    .escr-olho {
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-top: 2%;
+        color: #fff;
+        text-align: justify;
+        font-size: 31px;
+    }
+    .in-ce {
+        text-align: center;
+        margin-top: 12%;
+    }
+
+    .in-ce-se {
+        text-align: center;
+        margin-top: 12%;
+    }
+
+
+    .laex {
+        display: inline-block;
+        font-size: 50px;
+        color: #15ff00;
+    }
+
+    .laex:hover {
+        color: #0c6300;
+    }
+
+    .soex {
+        display: inline-block;
+        font-size: 50px;
+        color: #ffd900;
+    }
+
+    .soex:hover {
+        color: #c9d42c;
+    }
+
+    .moex {
+        display: inline-block;
+        font-size: 50px;
+        color: #ea00ff;
+    }
+
+    .moex:hover {
+        color: #970090;
+    }
+
+    .coex {
+        display: inline-block;
+        font-size: 50px;
+        color: #ae00ff;
+
+    }
+
+    .coex:hover {
+        color: #6d028d;
+    }
+
+    .topo,
+    .base {
+        background-color: gold;
+        width: 200px;
+        height: 100px;
+        border-radius: 100px 100px 0 0;
+        animation: comex 550ms linear infinite;
+    }
+
+    .base {
+        border-radius: 0 0 100px 100px;
+        animation: comey 550ms linear infinite;
+    }
+
+    @keyframes comex {
+        50% {
+            transform: rotate(-25deg);
+        }
+    }
+
+    @keyframes comey {
+        50% {
+            transform: rotate(25deg);
+        }
+    }
+
+    .margi-to-sabor {
+        width: 80%;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    .im-donut {
+        margin-top: 24%;
+        width: 25%;
+    }
+
+    .im-cereja {
+        margin-left: 10%;
+        margin-top: 24%;
+        width: 25%;
+    }
+
+    .im-sorvete {
+        margin-left: 10%;
+        margin-top: 24%;
+        width: 25%;
+    }
+
 
     .imPensarParar {
         display: flex;
@@ -1110,6 +1265,161 @@ a:hover,
     .ImgResp2 {
         width: 91%;
     }
+    .eyes {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .eye {
+        /* border: 1px solid #000; */
+        width: 150px;
+        height: 150px;
+        background: #fff;
+        display: inline-block;
+        margin: 42px;
+        border-radius: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .ball {
+        width: 50px;
+        height: 50px;
+        background: #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        border: 15px solid #03a3ff;
+    }
+    .fundoOl {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background: #034f7a;
+    }
+    .fundo-mao {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        background: #034f7a;
+        cursor: grab;
+    }
+    .escr-olho {
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-top: 2%;
+        color: #fff;
+        text-align: justify;
+        font-size: 31px;
+    }
+    .in-ce {
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .in-ce-se {
+        text-align: center;
+        margin-top: 10%;
+    }
+
+
+    .laex {
+        display: inline-block;
+        font-size: 50px;
+        color: #15ff00;
+
+    }
+
+    .laex:hover {
+        color: #0c6300;
+    }
+
+    .soex {
+        display: inline-block;
+        font-size: 50px;
+        color: #ffd900;
+    }
+
+    .soex:hover {
+        color: #c9d42c;
+    }
+
+    .moex {
+        display: inline-block;
+        font-size: 50px;
+        color: #ea00ff;
+    }
+
+    .moex:hover {
+        color: #970090;
+    }
+
+    .coex {
+        display: inline-block;
+        font-size: 50px;
+        color: #ae00ff;
+
+    }
+
+    .coex:hover {
+        color: #6d028d;
+    }
+
+    .topo,
+    .base {
+        background-color: gold;
+        width: 200px;
+        height: 100px;
+        border-radius: 100px 100px 0 0;
+        animation: comex 550ms linear infinite;
+    }
+
+    .base {
+        border-radius: 0 0 100px 100px;
+        animation: comey 550ms linear infinite;
+    }
+
+    @keyframes comex {
+        50% {
+            transform: rotate(-25deg);
+        }
+    }
+
+    @keyframes comey {
+        50% {
+            transform: rotate(25deg);
+        }
+    }
+
+    .margi-to-sabor {
+        width: 80%;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    .im-donut {
+        margin-top: 24%;
+        width: 25%;
+    }
+
+    .im-cereja {
+        margin-left: 10%;
+        margin-top: 24%;
+        width: 25%;
+    }
+
+    .im-sorvete {
+        margin-left: 10%;
+        margin-top: 24%;
+        width: 25%;
+    }
+
 
     .imPensarParar {
         display: flex;
@@ -1605,6 +1915,26 @@ a:hover,
     .ImgResp2 {
         width: 100%;
     }
+    .eyes {
+        position: absolute;
+        /* top: 50%; */
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .eye {
+        /* border: 1px solid #000; */
+        width: 75px;
+        height: 75px;
+        background: #fff;
+        display: inline-block;
+        margin: 45% 30px 30px 30px;
+        border-radius: 100%;
+        position: relative;
+        overflow: hidden;
+    }
 
     .imPensarParar {
         display: flex;
@@ -1612,11 +1942,102 @@ a:hover,
         height: 250px;
         margin-top: 2%;
         margin-left: 13%;
+
     }
 
+    .ball {
+        width: 45px;
+        height: 45px;
+        background: #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        border: 13px solid #03a3ff;
+    }
+
+    .fundoOl {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background: #034f7a;
+    }
+
+    .fundo-mao {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        background: #034f7a;
+        cursor: grab;
+    }
+    .escr-olho {
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-top: 2%;
+        color: #fff;
+        text-align: center;
+        font-size: 25px;
+    }
+    .in-ce {
+
+        text-align: center;
+        margin-top: 20%;
+        margin-bottom: 10%;
+        margin-left: 0.1%;
+    }
+
+    .in-ce-se {
+        text-align: center;
+        margin-left: 0.1%;
+    }
+
+
+    .laex {
+        display: inline-block;
+        font-size: 50px;
+        color: #15ff00;
+        ;
+    }
+
+    .laex:hover {
+        color: #0c6300;
+    }
+
+    .soex {
+        display: inline-block;
+        font-size: 50px;
+        color: #ffd900;
+    }
+
+    .soex:hover {
+        color: #c9d42c;
+    }
+
+    .moex {
+        display: inline-block;
+        font-size: 50px;
+        color: #ea00ff;
+    }
+
+    .moex:hover {
+        color: #970090;
+    }
+
+    .coex {
+        display: inline-block;
+        font-size: 50px;
+        color: #ae00ff;
+
+    }
+
+    .coex:hover {
+        color: #6d028d;
+    }
+
+
 }
-
-
 
 
 /* fim media do celular */
@@ -2059,6 +2480,19 @@ a:hover,
 
 .estouMaisCResp:hover {
     color: white;
+}
+
+
+.ar-cheiro {
+    animation: sobe-ar 1s infinite alternate
+}@keyframes sobe-ar {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(10px);
+    }
 }
 
 /* inicio origami   */
