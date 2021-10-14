@@ -32,10 +32,8 @@ return(
   {/* <Queromeacalmar />*/}
   {/* <Login /> */}
   {/* <Cadastro/> */}
-
   {/* <Index /> */}
   {/* <Chatbot/> */}
-
   {/* <EstimularCriatividadeHistorias/> */}
   {/* <Respiracao/> */}
   {/* <EscritaTerapeutica/> */}
