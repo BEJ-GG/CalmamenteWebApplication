@@ -5,7 +5,7 @@ import Main from './Components/PosCadastro/principais/mainPosCadas/Main';
 import Queromeacalmar from './Components/PosCadastro/principais/queromeacalmar/Queromeacalmar';
 import Login from './Components/AntesDoCadastro/login/Login'
 import Cadastro from './Components/AntesDoCadastro/cadastro/Cadastro'
-import InicioCal from './Components/AntesDoCadastro/InicioCal/Index'
+import Index from './Components/AntesDoCadastro/InicioCal/Index'
 import Chatbot from './Components/AntesDoCadastro/chatbot/Chatbot';
 import EstimularCriatividadeHistorias from './Components/PosCadastro/exercicios/estimulaciatividade/EstimularCriatividadeHistorias';
 import Respiracao from './Components/PosCadastro/exercicios/respiracao/Respiracao';
@@ -16,6 +16,7 @@ import ExercicioCheiro from './Components/PosCadastro/exercicios/exerciciocheiro
 import ExercicioGosto from './Components/PosCadastro/exercicios/exerciciogosto/ExercicioGosto';
 import ExercicioSom from './Components/PosCadastro/exercicios/exerciciosom/ExercicioSom';
 import ExercicioVisao from './Components/PosCadastro/exercicios/exerciciovisao/ExercicioVisao';
+import Home from './Components/PosCadastro/principais/home/Home';
 export default function App() {
 
   const script = document.createElement("script");
@@ -27,11 +28,11 @@ export default function App() {
 return(
   
 <>
-  <Main/>
+  {/* <Main/> */}
   {/* <Queromeacalmar />*/}
   {/* <Login /> */}
   {/* <Cadastro/> */}
-  {/* <InicioCal /> */}
+  {/* <Index /> */}
   {/* <Chatbot/> */}
   {/* <EstimularCriatividadeHistorias/> */}
   {/* <Respiracao/> */}
@@ -42,5 +43,7 @@ return(
   {/* <ExercicioGosto/> */}
   {/* <ExercicioSom/> */}
   {/* <ExercicioVisao/> */}
+  {/* <Home/> */}
+
 </>
 )}

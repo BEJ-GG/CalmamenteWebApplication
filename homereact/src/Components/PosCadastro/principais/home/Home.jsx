@@ -6,8 +6,8 @@ import { Switch, Route, Link, Redirect } from 'react-router-dom'
 
 export default function Home() {
 
-   return(
-      <>
+  return (
+    <>
       {/* <!-- inicio dos cards de 3 funcionalidade --> */}
       {/* <!-- card 1 --> */}
       <div className="mrgx-pequena mrgt-pequena">
@@ -15,16 +15,16 @@ export default function Home() {
           <div className="col">
             <div className="ho-bor">
               <Link to="/" className="linkreact">
-                 
-                <div className="card h-100" style={{border: "0px", position: "static"}}> 
+
+                <div className="card h-100" style={{ border: "0px", position: "static" }}>
 
                   {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                   <div className="d-flex justify-content-center mrgt-media">
-                    <FontAwesomeIcon icon={faExclamationTriangle} className="tam-funcprin" style={{color: "crimson"}} />
+                    <FontAwesomeIcon icon={faExclamationTriangle} className="tam-funcprin" style={{ color: "crimson" }} />
                   </div>
                   <div className="card-body esp-car">
                     <h5 className="card-title d-flex justify-content-center titulos">Estou em crise</h5>
-                    <p className="card-text textos " style={{textAlign: 'center'}}>Se estiver em uma crise 
+                    <p className="card-text textos " style={{ textAlign: 'center' }}>Se estiver em uma crise
                       de ansiedade entre
                       aqui
                       para fazer alguns exercícios recomendados pra você, ou personalize seus exercícios.</p>
@@ -39,16 +39,16 @@ export default function Home() {
             <div className="ho-bor">
               <Link to="/" className="linkreact" >
 
-                <div className="card h-100" style={{border: "0px", position: "static"}}> 
+                <div className="card h-100" style={{ border: "0px", position: "static" }}>
 
                   {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                   <div className="d-flex justify-content-center mrgt-media">
-                    <FontAwesomeIcon icon={faMugHot} className="tam-funcprin" style={{color: "rgb(204, 204, 25)"}} />
+                    <FontAwesomeIcon icon={faMugHot} className="tam-funcprin" style={{ color: "rgb(204, 204, 25)" }} />
                   </div>
                   <div className="card-body esp-card">
-                    <h5 className="card-title d-flex justify-content-center titulos" style={{textAlign: 'center'}}>Quero me 
+                    <h5 className="card-title d-flex justify-content-center titulos" style={{ textAlign: 'center' }}>Quero me
                       acalmar</h5>
-                    <p className="card-text textos " style={{textAlign: 'center'}}>Quando estiver 
+                    <p className="card-text textos " style={{ textAlign: 'center' }}>Quando estiver
                       começando
                       a ficar ansioso e
                       precisar se acalmar, entre nessa área para exercícios mais específicos pra esse momento, ou
@@ -65,16 +65,16 @@ export default function Home() {
             <div className="ho-bor">
               <Link to="/" className="linkreact" >
 
-                <div className="card h-100 " style={{border: '0px', position: 'static'}} >
+                <div className="card h-100 " style={{ border: '0px', position: 'static' }} >
 
                   {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
                   <div className="d-flex justify-content-center mrgt-media">
-                    <FontAwesomeIcon icon={faBook} className="tam-funcprin" style={{color: "rgb(69, 165, 202)"}} />
-                    
+                    <FontAwesomeIcon icon={faBook} className="tam-funcprin" style={{ color: "rgb(69, 165, 202)" }} />
+
                   </div>
                   <div className="card-body">
                     <h5 className="card-title d-flex justify-content-center titulos">Informações</h5>
-                    <p className="card-text textos" style={{textAlign: 'center'}} > A chave para diminuir sua 
+                    <p className="card-text textos" style={{ textAlign: 'center' }} > A chave para diminuir sua
                       ansiedade é o
                       autoconhecimento e entender como a ansiedade funciona, portanto nessa área você poderá encontrar
                       e-books, pesquisas e vídeos informacionais.</p>
@@ -93,10 +93,10 @@ export default function Home() {
       {/* <!-- inicio video --> */}
 
       <div class="d-flex justify-content-center mrgt-media">
-        <iframe  width="560" height="315"
+        <iframe width="560" height="315"
           src="https://www.youtube.com/embed/4eoM26ZmHd0" title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen style={{borderRadius: '20px 5px 20px 5px'}}></iframe> 
+          allowfullscreen style={{ borderRadius: '20px 5px 20px 5px' }}></iframe>
       </div>
       {/* <!-- fim video  --> */}
       <div class="paralax-montain mrgt-media">
@@ -109,7 +109,7 @@ export default function Home() {
       </div>
       <div class="d-flex  mrgt-grande row m-0">
         <div class=" mrgl-grande col-12 col-sm-12 col-md-8 col-lg-8 " id="home-book">
-          <img src={ebook} alt="Imagem e-book" title="Imagem e-book" style={{width: '100%'}}></img> 
+          <img src={ebook} alt="Imagem e-book" title="Imagem e-book" style={{ width: '100%' }}></img>
         </div>
         <div class="col-12 col-sm-12 col-md-8 col-lg-8">
           <p class="titulos mrgx-media" id="home-tbook">Titulo do E-book</p>
@@ -141,7 +141,7 @@ export default function Home() {
       {/* <!-- inicio parte institucional --> */}
       <div class="cards-insti mrgx-grande">
         <div class="insti-textos">
-          <p class="textos mrgt-pequena" style={{clear: 'left'}} >Somos um grupo de desenvolvedores que entendemos 
+          <p class="textos mrgt-pequena" style={{ clear: 'left' }} >Somos um grupo de desenvolvedores que entendemos
             que a
             ansiedade no Brasil é um problema real, sério e que aumentou muito durante a pandemia. Por isso
             criamos o
@@ -156,7 +156,7 @@ export default function Home() {
 
 
         <div class="insti-textos">
-          <p class="textos mrgt-pequena" style={{clear: 'left'}} >Ajudar pessoas que possuem problemas com 
+          <p class="textos mrgt-pequena" style={{ clear: 'left' }} >Ajudar pessoas que possuem problemas com
             ansiedade sugerindo
             diversos exercícios de acordo com a personalidade da pessoa, e permitindo que ela personalize suas
             soluções.
@@ -172,7 +172,7 @@ export default function Home() {
 
       <div class="cards-insti mrgx-grande mrgb-media">
         <div class="insti-textos">
-          <p class="textos mrgt-pequena" style={{clear: 'left'}}>Pretendemos nos tornar o maior canal acessível 
+          <p class="textos mrgt-pequena" style={{ clear: 'left' }}>Pretendemos nos tornar o maior canal acessível
             para ajuda
             contra ansiedade do Brasil, sendo bem-visto e recomendado por conselhos de psicologia de todo o
             país. Nosso
@@ -183,23 +183,24 @@ export default function Home() {
 
 
         <div class="insti-textos">
-          <p class="textos mrgt-pequena" style={{clear: 'left'}} ><span style={{fontWeight: 'bold'}}>Humanização:
-            </span>
+          <p class="textos mrgt-pequena" style={{ clear: 'left' }} ><span style={{ fontWeight: 'bold' }}>Humanização:
+          </span>
             Cuidado centrado nas pessoas, respeitando todos os usuários.</p>
-          <p class="textos mrgt-pequena" style={{clear: 'left'}}><span style={{fontWeight: 'bold'}}>Compreensão:
-            </span>
+          <p class="textos mrgt-pequena" style={{ clear: 'left' }}><span style={{ fontWeight: 'bold' }}>Compreensão:
+          </span>
             Compreendemos que a ansiedade é um problema sério e que deve ser tratada com muita atenção.</p>
-          <p class="textos mrgt-pequena" style={{clear: 'left'}}><span style={{fontWeight: 'bold'}}>Gratidão:
-            </span> Somos
+          <p class="textos mrgt-pequena" style={{ clear: 'left' }}><span style={{ fontWeight: 'bold' }}>Gratidão:
+          </span> Somos
             gratos pela possibilidade de auxílio às pessoas principalmente por termos passado por momentos tão
             difíceis.
           </p>
-          <p class="textos mrgt-pequena" style={{clear: 'left'}}><span style={{fontWeight: 'bold'}}>Confiabilidade:
-            </span>
+          <p class="textos mrgt-pequena" style={{ clear: 'left' }}><span style={{ fontWeight: 'bold' }}>Confiabilidade:
+          </span>
             Estabelecer relacionamentos abertos, transparentes e apoiados na confiança mútua.</p>
         </div>
       </div>
 
       {/* fim parte institucional  */}
-      </>
-)}
+    </>
+  )
+}
