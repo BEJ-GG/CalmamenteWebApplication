@@ -33,7 +33,7 @@ return(
   {/* <Login /> */}
   {/* <Cadastro/> */}
   {/* <Index /> */}
-  {/* <Chatbot/> */}
+  <Chatbot/>
   {/* <EstimularCriatividadeHistorias/> */}
   {/* <Respiracao/> */}
   {/* <EscritaTerapeutica/> */}

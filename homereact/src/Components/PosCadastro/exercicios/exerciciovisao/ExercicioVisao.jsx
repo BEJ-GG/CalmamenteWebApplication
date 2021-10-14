@@ -2,13 +2,8 @@ import React from 'react'
 
 class ExercicioVisao extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            x: 0,
-            y: 0
-        }
-    }
+    
+
 
     _onMouseMove = (e) => {
         const width = this.refs.eyes.clientWidth;
@@ -48,5 +43,6 @@ class ExercicioVisao extends React.Component {
             </>
         )
     }
+
 }
 export default ExercicioVisao;
