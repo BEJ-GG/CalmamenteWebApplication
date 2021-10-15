@@ -16,7 +16,9 @@ export default function EscritaTerapeutica() {
                     {/* <!-- Inicio Modal do informação --> */}
                     <div className="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
+
                         <div className="modal-dialog modal-dialog-scrollable  modal-dialog-centered">
+
                             <div className="modal-content">
                                 <div className="modal-header">
                                     <h4 className="modal-title" id="exampleModalLabel">Personalizar</h4>
@@ -68,22 +70,22 @@ export default function EscritaTerapeutica() {
                                         </div>
                                     </div>
                                     {/* <!-- fim 2 --> */}
-                                    <hr class="mod-linha" size="5" />
+                                    <hr className="mod-linha" size="5" />
                                     {/* <!-- inicio 3 --> */}
-                                    <form class="foge-modal">
+                                    <form className="foge-modal">
                                         <fieldset>
-                                            <div class="form-switch che-modal">
-                                                <input type="checkbox" class="form-check-input" id="idAceitar" />
+                                            <div className="form-switch che-modal">
+                                                <input type="checkbox" className="form-check-input" id="idAceitar" />
                                             </div>
                                         </fieldset>
                                     </form>
-                                    <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+                                    <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
                                             <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{ color: "black" }} />
                                         </div>
-                                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                                            <h5 class="titu-modal">lorem</h5>
-                                            <p class="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                            <h5 className="titu-modal">lorem</h5>
+                                            <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
                                                 vero quos
                                                 quidem
                                                 nobis sed earum
@@ -91,22 +93,22 @@ export default function EscritaTerapeutica() {
                                         </div>
                                     </div>
                                     {/* <!-- fim 3 --> */}
-                                    <hr class="mod-linha" size="5" />
+                                    <hr className="mod-linha" size="5" />
                                     {/* <!-- inicio 4 --> */}
-                                    <form class="foge-modal">
+                                    <form className="foge-modal">
                                         <fieldset>
-                                            <div class="form-switch che-modal">
-                                                <input type="checkbox" class="form-check-input" id="idAceitar" />
+                                            <div className="form-switch che-modal">
+                                                <input type="checkbox" className="form-check-input" id="idAceitar" />
                                             </div>
                                         </fieldset>
                                     </form>
-                                    <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+                                    <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
                                             <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{ color: "black" }} />
                                         </div>
-                                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                                            <h5 class="titu-modal">lorem</h5>
-                                            <p class="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                            <h5 className="titu-modal">lorem</h5>
+                                            <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
                                                 vero quos
                                                 quidem
                                                 nobis sed earum
@@ -114,22 +116,22 @@ export default function EscritaTerapeutica() {
                                         </div>
                                     </div>
                                     {/* <!-- fim 4 --> */}
-                                    <hr class="mod-linha" size="5" />
+                                    <hr className="mod-linha" size="5" />
                                     {/* <!-- inicio 5 --> */}
-                                    <form class="foge-modal">
+                                    <form className="foge-modal">
                                         <fieldset>
-                                            <div class="form-switch che-modal">
-                                                <input type="checkbox" class="form-check-input" id="idAceitar" />
+                                            <div className="form-switch che-modal">
+                                                <input type="checkbox" className="form-check-input" id="idAceitar" />
                                             </div>
                                         </fieldset>
                                     </form>
-                                    <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+                                    <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
                                             <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{ color: "black" }} />
                                         </div>
-                                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                                            <h5 class="titu-modal">lorem</h5>
-                                            <p class="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                            <h5 className="titu-modal">lorem</h5>
+                                            <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
                                                 vero quos
                                                 quidem
                                                 nobis sed earum
@@ -137,22 +139,22 @@ export default function EscritaTerapeutica() {
                                         </div>
                                     </div>
                                     {/* <!-- fim 5 --> */}
-                                    <hr class="mod-linha" size="5" />
+                                    <hr className="mod-linha" size="5" />
                                     {/* <!-- inicio 6 --> */}
-                                    <form class="foge-modal">
+                                    <form className="foge-modal">
                                         <fieldset>
-                                            <div class="form-switch che-modal">
-                                                <input type="checkbox" class="form-check-input" id="idAceitar" />
+                                            <div className="form-switch che-modal">
+                                                <input type="checkbox" className="form-check-input" id="idAceitar" />
                                             </div>
                                         </fieldset>
                                     </form>
-                                    <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+                                    <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
                                             <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{ color: "black" }} />
                                         </div>
-                                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                                            <h5 class="titu-modal">lorem</h5>
-                                            <p class="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                            <h5 className="titu-modal">lorem</h5>
+                                            <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
                                                 vero quos
                                                 quidem
                                                 nobis sed earum
@@ -161,12 +163,12 @@ export default function EscritaTerapeutica() {
                                     </div>
                                     {/* <!-- fim 6 --> */}
                                 </div>
-                                <div class="modal-footer" style={{ display: 'flex', justifyContent: 'center' }}>
-                                    <div class="modal-but-ajuda">
-                                        <button class="but-modal-ajuda ">
+                                <div className="modal-footer" style={{ display: 'flex', justifyContent: 'center' }}>
+                                    <div className="modal-but-ajuda">
+                                        <button className="but-modal-ajuda ">
                                             <FontAwesomeIcon icon={faQuestionCircle} className="modal-ajuda" style={{ color: "black" }} />
                                         </button>
-                                        <div class="dicaTexto">Esta é a área para personalizar quais exercícios deseja fazer ou
+                                        <div className="dicaTexto">Esta é a área para personalizar quais exercícios deseja fazer ou
                                             não. Você
                                             pode
                                             ativar ou desativar algum exercício de

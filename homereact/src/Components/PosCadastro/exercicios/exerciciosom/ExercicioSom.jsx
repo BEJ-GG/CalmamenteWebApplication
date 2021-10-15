@@ -4,8 +4,8 @@ import ImgSomFone from '../../../img/img-som-fone.gif'
 export default function ExercicioSom() {
     return (
         <>
-            <body class="fundoOl ">
-                <h1 class="escr-olho">Liste mentalmente 3 sons que você consegue ouvir.</h1>
+            <body className="fundoOl ">
+                <h1 className="escr-olho">Liste mentalmente 3 sons que você consegue ouvir.</h1>
                 <div style={{height: 'auto'}} >
                     <img src={ImgSomFone} style={{width: '100%'}} alt=""/>
                 </div>
