@@ -7,20 +7,20 @@ export default function ExercicioGosto() {
     return (
         <>
 
-        <body class="fundoOl">
+        <body className="fundoOl">
 
-            <h1 class="escr-olho">Pra terminar, procure em volta de você 1 coisa que tem gosto.</h1>
+            <h1 className="escr-olho">Pra terminar, procure em volta de você 1 coisa que tem gosto.</h1>
 
-            <div class="margi-to-sabor ">
-                <div class="col-12 row">
-                    <div class="col-6 ">
-                        <div class="topo" ></div>
-                        <div class="base"></div>
+            <div className="margi-to-sabor ">
+                <div className="col-12 row">
+                    <div className="col-6 ">
+                        <div className="topo" ></div>
+                        <div className="base"></div>
                     </div>
-                    <div class="col-6">
-                        <img src={Donut} class=" im-donut " ></img>
-                        <img src={Cereja} class="im-cereja" alt=""/>
-                        <img src={Sorvete} class ="im-sorvete"></img>
+                    <div className="col-6">
+                        <img src={Donut} className=" im-donut " ></img>
+                        <img src={Cereja} className="im-cereja" alt=""/>
+                        <img src={Sorvete} className ="im-sorvete"></img>
                     </div>
                 </div>
             </div>

@@ -50,7 +50,7 @@ export default function ExercicioOrgiami() {
                 <main className="ori-sel">
 
                     {/* inicio card 1  */}
-                    <div class="gami">
+                    <div className="gami">
                         <Card className="ori-card" >
                             <Card.Img variant="top" src={oriPeixe} />
                             <Card.Body>
@@ -112,7 +112,7 @@ export default function ExercicioOrgiami() {
                     {/* fim card 1  */}
 
                     {/* inicio card 2 */}
-                    <div class="gami">
+                    <div className="gami">
                         <Card className="ori-card" >
                             <Card.Img variant="top" src={oriBorboleta} style={{ marginBottom: '2%', width: '100%', height: '50%' }} />
                             <Card.Body>
@@ -226,7 +226,7 @@ export default function ExercicioOrgiami() {
                     {/* fim card 3 */}
 
                     {/* inicio card 4  */}
-                    <div class="gami">
+                    <div className="gami">
                         <Card className="ori-card" >
                             <Card.Img variant="top" src={oriSapo} />
                             <Card.Body>
@@ -293,7 +293,7 @@ export default function ExercicioOrgiami() {
 
 
                     {/* inicio card 5  */}
-                    <div class="gami">
+                    <div className="gami">
                         <Card className="ori-card" >
                             <Card.Img variant="top" src={oriCachorro} />
                             <Card.Body>

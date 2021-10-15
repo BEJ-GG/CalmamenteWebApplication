@@ -14,7 +14,7 @@ return(
 
     {/*
     <!-- inicio informação --> */}
-    <div class="d-flex justify-content-end mrgr-media mrgt-pequena">
+    <div className="d-flex justify-content-end mrgr-media mrgt-pequena">
         <button style={{border: 'none', backgroundColor: 'rgba(240, 248, 255, 0)'}} data-bs-toggle="modal"
             data-bs-target="#exampleModal">
             <FontAwesomeIcon icon={faInfoCircle} className="tam-exercicio" />
@@ -23,30 +23,30 @@ return(
 
     {/*
     <!-- Inicio Modal do informação --> */}
-    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable  modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="exampleModalLabel">Personalizar</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div className="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-scrollable  modal-dialog-centered">
+            <div className="modal-content">
+                <div className="modal-header">
+                    <h4 className="modal-title" id="exampleModalLabel">Personalizar</h4>
+                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body ">
+                <div className="modal-body ">
                     {/*
                     <!-- inicio 1 --> */}
-                    <form class="foge-modal">
+                    <form className="foge-modal">
                         <fieldset>
-                            <div class="form-switch che-modal">
-                                <input type="checkbox" class="form-check-input" id="idAceitar" />
+                            <div className="form-switch che-modal">
+                                <input type="checkbox" className="form-check-input" id="idAceitar" />
                             </div>
                         </fieldset>
                     </form>
-                    <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                            <i class="fas fa-question-circle ic-modal"></i>
+                    <div clasNames=" row col-12 col-sm-12 col-md-12 col-lg-12">
+                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+                            <i className="fas fa-question-circle ic-modal"></i>
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <h5 class="titu-modal">lorem</h5>
-                            <p class="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <h5 className="titu-modal">lorem</h5>
+                            <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
                                 vero quos
                                 quidem
                                 nobis sed earum
@@ -55,23 +55,23 @@ return(
                     </div>
                     {/*
                     <!-- fim 1 --> */}
-                    <hr class="mod-linha " size="5" />
+                    <hr className="mod-linha " size="5" />
                     {/*
                     <!-- inicio 2 --> */}
-                    <form class="foge-modal">
+                    <form className="foge-modal">
                         <fieldset>
-                            <div class="form-switch che-modal">
-                                <input type="checkbox" class="form-check-input" id="idAceitar" />
+                            <div className="form-switch che-modal">
+                                <input type="checkbox" className="form-check-input" id="idAceitar" />
                             </div>
                         </fieldset>
                     </form>
-                    <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                            <i class="fas fa-question-circle ic-modal"></i>
+                    <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+                            <i clasNames="fas fa-question-circle ic-modal"></i>
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <h5 class="titu-modal">lorem</h5>
-                            <p class="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <h5 clasNames="titu-modal">lorem</h5>
+                            <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
                                 vero quos
                                 quidem
                                 nobis sed earum
@@ -80,23 +80,23 @@ return(
                     </div>
                     {/*
                     <!-- fim 2 --> */}
-                    <hr class="mod-linha" size="5" />
+                    <hr className="mod-linha" size="5" />
                     {/*
                     <!-- inicio 3 --> */}
-                    <form class="foge-modal">
+                    <form className="foge-modal">
                         <fieldset>
-                            <div class="form-switch che-modal">
-                                <input type="checkbox" class="form-check-input" id="idAceitar" />
+                            <div className="form-switch che-modal">
+                                <input type="checkbox" className="form-check-input" id="idAceitar" />
                             </div>
                         </fieldset>
                     </form>
-                    <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                            <i class="fas fa-question-circle ic-modal"></i>
+                    <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+                            <i className="fas fa-question-circle ic-modal"></i>
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <h5 class="titu-modal">lorem</h5>
-                            <p class="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <h5 className="titu-modal">lorem</h5>
+                            <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
                                 vero quos
                                 quidem
                                 nobis sed earum
@@ -105,23 +105,23 @@ return(
                     </div>
                     {/*
                     <!-- fim 3 --> */}
-                    <hr class="mod-linha" size="5" />
+                    <hr className="mod-linha" size="5" />
                     {/*
                     <!-- inicio 4 --> */}
-                    <form class="foge-modal">
+                    <form className="foge-modal">
                         <fieldset>
-                            <div class="form-switch che-modal">
-                                <input type="checkbox" class="form-check-input" id="idAceitar" />
+                            <div className="form-switch che-modal">
+                                <input type="checkbox" className="form-check-input" id="idAceitar" />
                             </div>
                         </fieldset>
                     </form>
-                    <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                            <i class="fas fa-question-circle ic-modal"></i>
+                    <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+                            <i className="fas fa-question-circle ic-modal"></i>
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <h5 class="titu-modal">lorem</h5>
-                            <p class="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <h5 className="titu-modal">lorem</h5>
+                            <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
                                 vero quos
                                 quidem
                                 nobis sed earum
@@ -130,23 +130,23 @@ return(
                     </div>
                     {/*
                     <!-- fim 4 --> */}
-                    <hr class="mod-linha" size="5" />
+                    <hr className="mod-linha" size="5" />
                     {/*
                     <!-- inicio 5 --> */}
-                    <form class="foge-modal">
+                    <form className="foge-modal">
                         <fieldset>
-                            <div class="form-switch che-modal">
+                            <div className="form-switch che-modal">
                                 <input type="checkbox" class="form-check-input" id="idAceitar" />
                             </div>
                         </fieldset>
                     </form>
-                    <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                            <i class="fas fa-question-circle ic-modal"></i>
+                    <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+                            <i className="fas fa-question-circle ic-modal"></i>
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <h5 class="titu-modal">lorem</h5>
-                            <p class="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <h5 className="titu-modal">lorem</h5>
+                            <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
                                 vero quos
                                 quidem
                                 nobis sed earum
@@ -155,23 +155,23 @@ return(
                     </div>
                     {/*
                     <!-- fim 5 --> */}
-                    <hr class="mod-linha" size="5" />
+                    <hr className="mod-linha" size="5" />
                     {/*
                     <!-- inicio 6 --> */}
-                    <form class="foge-modal">
+                    <form className="foge-modal">
                         <fieldset>
-                            <div class="form-switch che-modal">
-                                <input type="checkbox" class="form-check-input" id="idAceitar" />
+                            <div className="form-switch che-modal">
+                                <input type="checkbox" className="form-check-input" id="idAceitar" />
                             </div>
                         </fieldset>
                     </form>
-                    <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                            <i class="fas fa-question-circle ic-modal"></i>
+                    <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+                            <i className="fas fa-question-circle ic-modal"></i>
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <h5 class="titu-modal">lorem</h5>
-                            <p class="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <h5 className="titu-modal">lorem</h5>
+                            <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
                                 vero quos
                                 quidem
                                 nobis sed earum
@@ -181,10 +181,10 @@ return(
                     {/*
                     <!-- fim 6 --> */}
                 </div>
-                <div class="modal-footer" style={{display: 'flex', justifyContent: 'center'}}>
-                    <div class="modal-but-ajuda">
-                        <button class="but-modal-ajuda "><i class="fas fa-question-circle modal-ajuda"></i></button>
-                        <div class="dicaTexto">Esta é a área para personalizar quais exercícios deseja fazer ou
+                <div className="modal-footer" style={{display: 'flex', justifyContent: 'center'}}>
+                    <div className="modal-but-ajuda">
+                        <button className="but-modal-ajuda "><i className="fas fa-question-circle modal-ajuda"></i></button>
+                        <div className="dicaTexto">Esta é a área para personalizar quais exercícios deseja fazer ou
                             não. Você
                             pode
                             ativar ou desativar algum exercício de
@@ -213,7 +213,7 @@ return(
 
                     <div className="card h-100" style={{border: "0px", position: "static"}}>
 
-                    <img src={Medita} class="card-img-top" alt="Pranayama"/>
+                    <img src={Medita} className="card-img-top" alt="Pranayama"/>
                         <div className="d-flex justify-content-center mrgt-media">
                         </div>
                         <div className="card-body esp-car">
@@ -258,7 +258,7 @@ return(
 
                     <div className="card h-100" style={{border: "0px", position: "static"}}>
 
-                    <img src={Nidra} class="card-img-top" alt="Pranayama"/>
+                    <img src={Nidra} className="card-img-top" alt="Pranayama"/>
                         <div className="d-flex justify-content-center mrgt-media">
                         </div>
                         <div className="card-body esp-car">
