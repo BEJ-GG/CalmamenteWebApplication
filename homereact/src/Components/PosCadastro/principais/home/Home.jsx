@@ -14,7 +14,7 @@ export default function Home() {
         <div className="row m-0 row-cols-1 row-cols-md-3 g-4">
           <div className="col">
             <div className="ho-bor">
-              <Link to="/" className="linkreact">
+              <Link to="/estouemcrise" className="linkreact">
 
                 <div className="card h-100" style={{ border: "0px", position: "static" }}>
 
@@ -37,7 +37,7 @@ export default function Home() {
           {/* <!-- card 2 --> */}
           <div className="col ">
             <div className="ho-bor">
-              <Link to="/" className="linkreact" >
+              <Link to="/queromeacalmar" className="linkreact" >
 
                 <div className="card h-100" style={{ border: "0px", position: "static" }}>
 
@@ -63,7 +63,7 @@ export default function Home() {
           {/*  card 3  */}
           <div className="col">
             <div className="ho-bor">
-              <Link to="/" className="linkreact" >
+              <Link to="/informacoes" className="linkreact" >
 
                 <div className="card h-100 " style={{ border: '0px', position: 'static' }} >
 
