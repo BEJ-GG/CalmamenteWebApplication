@@ -18,6 +18,8 @@ import ExercicioSom from './Components/PosCadastro/exercicios/exerciciosom/Exerc
 import ExercicioVisao from './Components/PosCadastro/exercicios/exerciciovisao/ExercicioVisao';
 import Home from './Components/PosCadastro/principais/home/Home';
 import MusicaDeUsoTerapeutico from './Components/PosCadastro/exercicios/musicaDeUsoTerapeutico/MusicaDeUsoTerapeutico';
+import MainAntesCadas from './Components/AntesDoCadastro/mainAntesCadas/MainAntesCadas';
+
 export default function App() {
 
   const script = document.createElement("script");
@@ -29,7 +31,8 @@ export default function App() {
 return(
   
 <>
-  <Main/>
+  {/* <Main/> */}
+  <MainAntesCadas/>
   {/* <Queromeacalmar />*/}
   {/* <Login /> */}
   {/* <Cadastro/> */}

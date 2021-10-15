@@ -19,20 +19,20 @@ export default function EstouTendoUmacrise() {
             <div id="container">
                 <div id="main">
                     {/* <!-- inicio menu  --> */}
-                    <nav class="navbar navbar-expand-lg navbar-light back-menu">
-                        <div class=" container-fluid">
+                    <nav className="navbar navbar-expand-lg navbar-light back-menu">
+                        <div className=" container-fluid">
                             <div>
-                                <a href="../InicioCal/Index.jsx" class="m-0"> <img src={Logo} alt="cerebro meditando, nome: calmamente" class="logo m-0" /> </a>
+                                <a href="../InicioCal/Index.jsx" className="m-0"> <img src={Logo} alt="cerebro meditando, nome: calmamente" className="logo m-0" /> </a>
                             </div>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                                <span className="navbar-toggler-icon"></span>
                             </button>
-                            <div class="justify-content-end collapse navbar-collapse" id="navbarNavAltMarkup">
-                                <div class="navbar-nav">
+                            <div className="justify-content-end collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div className="navbar-nav">
                                     <hr />
-                                    <a class="menu-di  mx-1 linkreact" aria-current="page" href="../login/Login.jsx">Login</a>
-                                    <a class="menu-dir mx-1 linkreact" href="../cadastro/Cadastro.jsx">Cadastre-se</a>
+                                    <a className="menu-di  mx-1 linkreact" aria-current="page" href="../login/Login.jsx">Login</a>
+                                    <a className="menu-dir mx-1 linkreact" href="../cadastro/Cadastro.jsx">Cadastre-se</a>
                                 </div>
                             </div>
                         </div>
@@ -40,19 +40,19 @@ export default function EstouTendoUmacrise() {
                     {/* <!-- fim menu --> */}
 
                     {/* <!-- inicio card do iframe  --> */}
-                    <div class="card  quadro-ifra">
+                    <div className="card  quadro-ifra">
                         {/* <iframe src="ifra-estoucrise.html" id="ifra-quadro"></iframe> */}
                         <IfraEstoutendoUmaCrise id="ifra-quadro"/>
-                        <div class="card-body">
-                            <div class="position-relative m-4">
+                        <div className="card-body">
+                            <div className="position-relative m-4">
                                 <div style={{height: '1px'}}>
                                     <div style={{width: '50%'}}></div>
                                 </div>
-                                <button type="button" class="position-absolute  translate-middle btn btn-primary"
+                                <button type="button" className="position-absolute  translate-middle btn btn-primary"
                                     id="inicio">Voltar</button>
-                                <a href="index.html"><button type="button" class="position-absolute translate-middle btn btn-primary"
+                                <a href="index.html"><button type="button" className="position-absolute translate-middle btn btn-primary"
                                     id="estouCalmo">Estou mais calmo</button></a>
-                                <button type="button" class="position-absolute  translate-middle btn btn-primary"
+                                <button type="button" className="position-absolute  translate-middle btn btn-primary"
                                     id="estouCrise">Próximo</button>
                             </div>
 
@@ -66,42 +66,42 @@ export default function EstouTendoUmacrise() {
 
 
             {/*<!-- inicio rodapé --> */}
-            <footer class="bg-dark m-0" id="roda">
-                <div class=" rodape">
-                    <div class="rodape-icone">
+            <footer className="bg-dark m-0" id="roda">
+                <div className=" rodape">
+                    <div className="rodape-icone">
                         <img src={logoIcon} style={{ width: "100%" }} alt="" />
                     </div>
 
-                    <div class="d-flex justify-content-center align-items-start mrgr-grande" style={{ width: "100%" }}>
-                        <ul class="rodape-itens mx-1">
+                    <div className="d-flex justify-content-center align-items-start mrgr-grande" style={{ width: "100%" }}>
+                        <ul className="rodape-itens mx-1">
                             <li><Link to="/"
-                                class="linkreact text-light roda-link font-weight-bold itens">Estou em
+                                className="linkreact text-light roda-link font-weight-bold itens">Estou em
                                 crise</Link>
                             </li>
-                            <li class="text-muted roda-link roda-link-cel itens">Exercícios para momentos de crise</li>
+                            <li className="text-muted roda-link roda-link-cel itens">Exercícios para momentos de crise</li>
                         </ul>
 
-                        <ul class="rodape-itens mx-1">
+                        <ul className="rodape-itens mx-1">
                             <li><Link to="/"
-                                class="linkreact text-light roda-link font-weight-bold itens">Conheça nosso site</Link>
+                                className="linkreact text-light roda-link font-weight-bold itens">Conheça nosso site</Link>
                             </li>
-                            <li class="text-muted roda-link itens">Estou em crise </li>
-                            <li class="text-muted roda-link itens">Quero me acalmar </li>
-                            <li class="text-muted roda-link itens">Informações </li>
+                            <li className="text-muted roda-link itens">Estou em crise </li>
+                            <li className="text-muted roda-link itens">Quero me acalmar </li>
+                            <li className="text-muted roda-link itens">Informações </li>
                         </ul>
                     </div>
 
-                    <div class="rodape-contatos ">
-                        <ul class="rodape-itens list-group list-group-horizontal list-group-horizontal-sm list-group-horizontal-md
+                    <div className="rodape-contatos ">
+                        <ul className="rodape-itens list-group list-group-horizontal list-group-horizontal-sm list-group-horizontal-md
           list-group-horizontal-xl">
-                            <li class="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={instagram}
+                            <li className="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={instagram}
                                 alt="" /></a></li>
-                            <li class="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={twitter}
+                            <li className="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={twitter}
                                 alt="" /></a></li>
-                            <li class="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={facebook}
+                            <li className="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={facebook}
                                 alt="" /></a></li>
                         </ul>
-                        <p class="text-light roda-email itens">contatobejgg@gmail.com</p>
+                        <p className="text-light roda-email itens">contatobejgg@gmail.com</p>
                     </div>
                 </div>
             </footer>

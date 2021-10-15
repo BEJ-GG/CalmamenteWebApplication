@@ -16,7 +16,9 @@ export default function EscritaTerapeutica() {
                     {/* <!-- Inicio Modal do informação --> */}
                     <div className="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable  modal-dialog-centered">
+
+                        <div className="modal-dialog modal-dialog-scrollable  modal-dialog-centered">
+
                             <div className="modal-content">
                                 <div className="modal-header">
                                     <h4 className="modal-title" id="exampleModalLabel">Personalizar</h4>
@@ -24,7 +26,7 @@ export default function EscritaTerapeutica() {
                                 </div>
                                 <div className="modal-body ">
                                     {/* <!-- inicio 1 --> */}
-                                    <form class="foge-modal">
+                                    <form className="foge-modal">
                                         <fieldset>
                                             <div className="form-switch che-modal">
                                                 <input type="checkbox" className="form-check-input" id="idAceitar" />
