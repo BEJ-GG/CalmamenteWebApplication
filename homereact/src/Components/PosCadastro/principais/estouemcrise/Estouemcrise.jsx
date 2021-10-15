@@ -1,9 +1,7 @@
 import React from 'react'
 import { faQuestionCircle, faCog } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import IfraEstouemcrise from './IfraEstouemcrise';
-// import Iframe from 'react-iframe'
-import Acrise from './Acrise'
+
 
 
 export default function Estouemcrise() {
@@ -15,45 +13,45 @@ export default function Estouemcrise() {
 
       {/* <!-- inicio personalizar --> */}
 
-      <div class=" d-flex justify-content-end mrgr-media mrgt-pequena ">
+      <div className=" d-flex justify-content-end mrgr-media mrgt-pequena ">
         <button style={{ border: "none", backgroundColor: "rgba(240, 248, 255, 0)" }}>
           <FontAwesomeIcon icon={faCog} className="tam-personalizar" style={{ color: "black" }} data-bs-toggle="modal" data-bs-target="#exampleModal" /></button>
       </div>
 
       {/* <!-- Inicio Modal do personalizar --> */}
-      <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable  modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title" id="exampleModalLabel">Personalizar</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div className="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-scrollable  modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h4 className="modal-title" id="exampleModalLabel">Personalizar</h4>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body ">
+            <div className="modal-body ">
               {/* <!-- inicio 1 --> */}
-              <form class="foge-modal">
+              <form className="foge-modal">
                 <fieldset>
-                  <div class="modal-nume">
-                    <select name="txtNumero" id="idNumero" class="form-select form-select-sm ">
-                      <option value="um" class="itens">1°</option>
-                      <option value="dois" class="itens">2°</option>
-                      <option value="tres" class="itens">3°</option>
-                      <option value="quatro" class="itens">4°</option>
-                      <option value="cinco" class="itens">5°</option>
-                      <option value="seis" class="itens">6°</option>
+                  <div className="modal-nume">
+                    <select name="txtNumero" id="idNumero" className="form-select form-select-sm ">
+                      <option value="um" className="itens">1°</option>
+                      <option value="dois" className="itens">2°</option>
+                      <option value="tres" className="itens">3°</option>
+                      <option value="quatro" className="itens">4°</option>
+                      <option value="cinco" className="itens">5°</option>
+                      <option value="seis" className="itens">6°</option>
                     </select>
                   </div>
-                  <div class="form-switch che-modal">
-                    <input type="checkbox" class="form-check-input" id="idAceitar" />
+                  <div className="form-switch che-modal">
+                    <input type="checkbox" className="form-check-input" id="idAceitar" />
                   </div>
                 </fieldset>
               </form>
-              <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+              <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
                   <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{ color: "black" }} />
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                  <h5 class="titu-modal">lorem</h5>
-                  <p class="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero
+                <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                  <h5 className="titu-modal">lorem</h5>
+                  <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero
                     quos
                     quidem
                     nobis sed earum
@@ -61,32 +59,32 @@ export default function Estouemcrise() {
                 </div>
               </div>
               {/* <!-- fim 1 --> */}
-              <hr class="mod-linha " size="5" />
+              <hr className="mod-linha " size="5" />
               {/* <!-- inicio 2 --> */}
-              <form class="foge-modal">
+              <form className="foge-modal">
                 <fieldset>
-                  <div class="modal-nume">
-                    <select name="txtNumero" id="idNumero" class="form-select form-select-sm ">
-                      <option value="um" class="itens">1°</option>
-                      <option value="dois" class="itens">2°</option>
-                      <option value="tres" class="itens">3°</option>
-                      <option value="quatro" class="itens">4°</option>
-                      <option value="cinco" class="itens">5°</option>
-                      <option value="seis" class="itens">6°</option>
+                  <div className="modal-nume">
+                    <select name="txtNumero" id="idNumero" className="form-select form-select-sm ">
+                      <option value="um" className="itens">1°</option>
+                      <option value="dois" className="itens">2°</option>
+                      <option value="tres" className="itens">3°</option>
+                      <option value="quatro" className="itens">4°</option>
+                      <option value="cinco" className="itens">5°</option>
+                      <option value="seis" className="itens">6°</option>
                     </select>
                   </div>
-                  <div class="form-switch che-modal">
-                    <input type="checkbox" class="form-check-input" id="idAceitar" />
+                  <div className="form-switch che-modal">
+                    <input type="checkbox" className="form-check-input" id="idAceitar" />
                   </div>
                 </fieldset>
               </form>
-              <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+              <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
                   <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{ color: "black" }} />
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                  <h5 class="titu-modal">lorem</h5>
-                  <p class="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero
+                <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                  <h5 className="titu-modal">lorem</h5>
+                  <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero
                     quos
                     quidem
                     nobis sed earum
@@ -94,32 +92,32 @@ export default function Estouemcrise() {
                 </div>
               </div>
               {/* <!-- fim 2 --> */}
-              <hr class="mod-linha" size="5" />
+              <hr className="mod-linha" size="5" />
               {/* <!-- inicio 3 --> */}
-              <form class="foge-modal">
+              <form className="foge-modal">
                 <fieldset>
-                  <div class="modal-nume">
-                    <select name="txtNumero" id="idNumero" class="form-select form-select-sm ">
-                      <option value="um" class="itens">1°</option>
-                      <option value="dois" class="itens">2°</option>
-                      <option value="tres" class="itens">3°</option>
-                      <option value="quatro" class="itens">4°</option>
-                      <option value="cinco" class="itens">5°</option>
-                      <option value="seis" class="itens">6°</option>
+                  <div className="modal-nume">
+                    <select name="txtNumero" id="idNumero" className="form-select form-select-sm ">
+                      <option value="um" className="itens">1°</option>
+                      <option value="dois" className="itens">2°</option>
+                      <option value="tres" className="itens">3°</option>
+                      <option value="quatro" className="itens">4°</option>
+                      <option value="cinco" className="itens">5°</option>
+                      <option value="seis" className="itens">6°</option>
                     </select>
                   </div>
-                  <div class="form-switch che-modal">
-                    <input type="checkbox" class="form-check-input" id="idAceitar" />
+                  <div className="form-switch che-modal">
+                    <input type="checkbox" className="form-check-input" id="idAceitar" />
                   </div>
                 </fieldset>
               </form>
-              <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+              <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
                   <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{ color: "black" }} />
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                  <h5 class="titu-modal">lorem</h5>
-                  <p class="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero
+                <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                  <h5 className="titu-modal">lorem</h5>
+                  <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero
                     quos
                     quidem
                     nobis sed earum
@@ -127,32 +125,32 @@ export default function Estouemcrise() {
                 </div>
               </div>
               {/* <!-- fim 3 --> */}
-              <hr class="mod-linha" size="5" />
+              <hr className="mod-linha" size="5" />
               {/* <!-- inicio 4 --> */}
-              <form class="foge-modal">
+              <form className="foge-modal">
                 <fieldset>
-                  <div class="modal-nume">
-                    <select name="txtNumero" id="idNumero" class="form-select form-select-sm ">
-                      <option value="um" class="itens">1°</option>
-                      <option value="dois" class="itens">2°</option>
-                      <option value="tres" class="itens">3°</option>
-                      <option value="quatro" class="itens">4°</option>
-                      <option value="cinco" class="itens">5°</option>
-                      <option value="seis" class="itens">6°</option>
+                  <div className="modal-nume">
+                    <select name="txtNumero" id="idNumero" className="form-select form-select-sm ">
+                      <option value="um" className="itens">1°</option>
+                      <option value="dois" className="itens">2°</option>
+                      <option value="tres" className="itens">3°</option>
+                      <option value="quatro" className="itens">4°</option>
+                      <option value="cinco" className="itens">5°</option>
+                      <option value="seis" className="itens">6°</option>
                     </select>
                   </div>
-                  <div class="form-switch che-modal">
-                    <input type="checkbox" class="form-check-input" id="idAceitar" />
+                  <div className="form-switch che-modal">
+                    <input type="checkbox" className="form-check-input" id="idAceitar" />
                   </div>
                 </fieldset>
               </form>
-              <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+              <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
                   <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{ color: "black" }} />
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                  <h5 class="titu-modal">lorem</h5>
-                  <p class="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero
+                <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                  <h5 className="titu-modal">lorem</h5>
+                  <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero
                     quos
                     quidem
                     nobis sed earum
@@ -160,32 +158,32 @@ export default function Estouemcrise() {
                 </div>
               </div>
               {/* <!-- fim 4 --> */}
-              <hr class="mod-linha" size="5" />
+              <hr className="mod-linha" size="5" />
               {/* <!-- inicio 5 --> */}
-              <form class="foge-modal">
+              <form className="foge-modal">
                 <fieldset>
-                  <div class="modal-nume">
-                    <select name="txtNumero" id="idNumero" class="form-select form-select-sm ">
-                      <option value="um" class="itens">1°</option>
-                      <option value="dois" class="itens">2°</option>
-                      <option value="tres" class="itens">3°</option>
-                      <option value="quatro" class="itens">4°</option>
-                      <option value="cinco" class="itens">5°</option>
-                      <option value="seis" class="itens">6°</option>
+                  <div className="modal-nume">
+                    <select name="txtNumero" id="idNumero" className="form-select form-select-sm ">
+                      <option value="um" className="itens">1°</option>
+                      <option value="dois" className="itens">2°</option>
+                      <option value="tres" className="itens">3°</option>
+                      <option value="quatro" className="itens">4°</option>
+                      <option value="cinco" className="itens">5°</option>
+                      <option value="seis" className="itens">6°</option>
                     </select>
                   </div>
-                  <div class="form-switch che-modal">
-                    <input type="checkbox" class="form-check-input" id="idAceitar" />
+                  <div className="form-switch che-modal">
+                    <input type="checkbox" className="form-check-input" id="idAceitar" />
                   </div>
                 </fieldset>
               </form>
-              <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+              <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
                   <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{ color: "black" }} />
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                  <h5 class="titu-modal">lorem</h5>
-                  <p class="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero
+                <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                  <h5 className="titu-modal">lorem</h5>
+                  <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero
                     quos
                     quidem
                     nobis sed earum
@@ -193,32 +191,32 @@ export default function Estouemcrise() {
                 </div>
               </div>
               {/* <!-- fim 5 --> */}
-              <hr class="mod-linha" size="5" />
+              <hr className="mod-linha" size="5" />
               {/* <!-- inicio 6 --> */}
-              <form class="foge-modal">
+              <form className="foge-modal">
                 <fieldset>
-                  <div class="modal-nume">
-                    <select name="txtNumero" id="idNumero" class="form-select form-select-sm ">
-                      <option value="um" class="itens">1°</option>
-                      <option value="dois" class="itens">2°</option>
-                      <option value="tres" class="itens">3°</option>
-                      <option value="quatro" class="itens">4°</option>
-                      <option value="cinco" class="itens">5°</option>
-                      <option value="seis" class="itens">6°</option>
+                  <div className="modal-nume">
+                    <select name="txtNumero" id="idNumero" className="form-select form-select-sm ">
+                      <option value="um" className="itens">1°</option>
+                      <option value="dois" className="itens">2°</option>
+                      <option value="tres" className="itens">3°</option>
+                      <option value="quatro" className="itens">4°</option>
+                      <option value="cinco" className="itens">5°</option>
+                      <option value="seis" className="itens">6°</option>
                     </select>
                   </div>
-                  <div class="form-switch che-modal">
-                    <input type="checkbox" class="form-check-input" id="idAceitar" />
+                  <div className="form-switch che-modal">
+                    <input type="checkbox" className="form-check-input" id="idAceitar" />
                   </div>
                 </fieldset>
               </form>
-              <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+              <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
                   <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{ color: "black" }} />
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                  <h5 class="titu-modal">lorem</h5>
-                  <p class="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero
+                <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                  <h5 className="titu-modal">lorem</h5>
+                  <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero
                     quos
                     quidem
                     nobis sed earum
@@ -227,12 +225,12 @@ export default function Estouemcrise() {
               </div>
               {/* <!-- fim 6 --> */}
             </div>
-            <div class="modal-footer" style={{ display: "flex", justifyContent: "center" }}>
-              <div class="modal-but-ajuda">
-                <button class="but-modal-ajuda ">
+            <div className="modal-footer" style={{ display: "flex", justifyContent: "center" }}>
+              <div className="modal-but-ajuda">
+                <button className="but-modal-ajuda ">
                   <FontAwesomeIcon icon={faQuestionCircle} className="modal-ajuda" style={{ color: "black" }} />
                 </button>
-                <div class="dicaTexto">Esta é a área para personalizar quais exercícios deseja fazer ou não.
+                <div className="dicaTexto">Esta é a área para personalizar quais exercícios deseja fazer ou não.
                   Na caixa de
                   seleção é onde você personalizará a ordem que eles aparecerão no quadro, e você também
                   pode
@@ -246,11 +244,11 @@ export default function Estouemcrise() {
       {/* // <!-- fim modal do personalizar --> */}
       {/* // <!-- fim personalizar --> */}
       {/* // <!-- inicio card do iframe  --> */}
-      <div class="card  quadro-ifra">
-        {/* <iframe src="ifra-estoucrise.html" id="ifra-quadro"></iframe> */}
-        {/* <Iframe src={IfraEstouemcrise} id="ifra-quadro" /> */}
-        {/* UseState  */}
-        {/* <Acrise id="ifra-quadro"/> */}
+      {/* <div class="card  quadro-ifra">
+        <iframe src="ifra-estoucrise.html" id="ifra-quadro"></iframe>
+        <Iframe src={IfraEstouemcrise} id="ifra-quadro" />
+        UseState 
+        <Acrise id="ifra-quadro"/>
         <IfraEstouemcrise id="ifra-quadro" />
         <div class="card-body">
           <div class="position-relative m-4">
@@ -267,22 +265,22 @@ export default function Estouemcrise() {
           </div>
 
         </div>
-      </div>
+      </div> */}
       {/* // <!-- fim card do iframe  --> */}
 
       {/* // <!-- inicio dos cards de soluções --> */}
-      <div class="mrgx-pequena mrgt-pequena">
-        <div class="row m-0 row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
+      <div className="mrgx-pequena mrgt-pequena">
+        <div className="row m-0 row-cols-1 row-cols-md-3 g-4">
+          <div className="col">
             <a href="" className="linkreact">
-              <div class="card h-100  ho-bor" >
+              <div className="card h-100  ho-bor" >
                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
-                <div class="d-flex justify-content-center mrgt-media">
+                <div className="d-flex justify-content-center mrgt-media">
                   <FontAwesomeIcon icon={faQuestionCircle} className="tam-funcprin" style={{ color: "black" }} />
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
-                  <p class="card-text textos" style={{ textAlign: "justify" }}>Lorem, ipsum dolor sit amet
+                <div className="card-body">
+                  <h5 className="card-title d-flex justify-content-center titulos">exercícios</h5>
+                  <p className="card-text textos" style={{ textAlign: "justify" }}>Lorem, ipsum dolor sit amet
                     consectetur
                     adipisicing elit. Sed, optio! Dolorem consectetur quibusdam quas odit at! Ipsa eos
                     recusandae </p>
@@ -290,16 +288,16 @@ export default function Estouemcrise() {
               </div>
             </a>
           </div>
-          <div class="col">
+          <div className="col">
             <a href="" className="linkreact">
-              <div class="card h-100  ho-bor" >
+              <div className="card h-100  ho-bor" >
                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
-                <div class="d-flex justify-content-center mrgt-media">
+                <div className="d-flex justify-content-center mrgt-media">
                   <FontAwesomeIcon icon={faQuestionCircle} className="tam-funcprin" style={{ color: "black" }} />
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
-                  <p class="card-text textos" style={{ textAlign: "justify" }}>Lorem, ipsum dolor sit amet
+                <div className="card-body">
+                  <h5 className="card-title d-flex justify-content-center titulos">exercícios</h5>
+                  <p className="card-text textos" style={{ textAlign: "justify" }}>Lorem, ipsum dolor sit amet
                     consectetur
                     adipisicing elit. Sed, optio! Dolorem consectetur quibusdam quas odit at! Ipsa eos
                     recusandae </p>
@@ -307,16 +305,16 @@ export default function Estouemcrise() {
               </div>
             </a>
           </div>
-          <div class="col">
+          <div className="col">
             <a href="" className="linkreact">
-              <div class="card h-100  ho-bor" >
+              <div className="card h-100  ho-bor" >
                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
-                <div class="d-flex justify-content-center mrgt-media">
+                <div className="d-flex justify-content-center mrgt-media">
                   <FontAwesomeIcon icon={faQuestionCircle} className="tam-funcprin" style={{ color: "black" }} />
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
-                  <p class="card-text textos" style={{ textAlign: "justify" }}>Lorem, ipsum dolor sit amet
+                <div className="card-body">
+                  <h5 className="card-title d-flex justify-content-center titulos">exercícios</h5>
+                  <p className="card-text textos" style={{ textAlign: "justify" }}>Lorem, ipsum dolor sit amet
                     consectetur
                     adipisicing elit. Sed, optio! Dolorem consectetur quibusdam quas odit at! Ipsa eos
                     recusandae </p>
@@ -324,16 +322,16 @@ export default function Estouemcrise() {
               </div>
             </a>
           </div>
-          <div class="col mrgb-pequena">
+          <div className="col mrgb-pequena">
             <a href="" className="linkreact">
-              <div class="card h-100  ho-bor" >
+              <div className="card h-100  ho-bor" >
                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
-                <div class="d-flex justify-content-center mrgt-media">
+                <div className="d-flex justify-content-center mrgt-media">
                   <FontAwesomeIcon icon={faQuestionCircle} className="tam-funcprin" style={{ color: "black" }} />
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
-                  <p class="card-text textos" style={{ textAlign: "justify" }}>Lorem, ipsum dolor sit amet
+                <div className="card-body">
+                  <h5 className="card-title d-flex justify-content-center titulos">exercícios</h5>
+                  <p className="card-text textos" style={{ textAlign: "justify" }}>Lorem, ipsum dolor sit amet
                     consectetur
                     adipisicing elit. Sed, optio! Dolorem consectetur quibusdam quas odit at! Ipsa eos
                     recusandae </p>
@@ -341,16 +339,16 @@ export default function Estouemcrise() {
               </div>
             </a>
           </div>
-          <div class="col mrgb-pequena">
+          <div className="col mrgb-pequena">
             <a href="" className="linkreact">
-              <div class="card h-100  ho-bor" >
+              <div className="card h-100  ho-bor" >
                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
-                <div class="d-flex justify-content-center mrgt-media">
+                <div className="d-flex justify-content-center mrgt-media">
                   <FontAwesomeIcon icon={faQuestionCircle} className="tam-funcprin" style={{ color: "black" }} />
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
-                  <p class="card-text textos" style={{ textAlign: "justify" }}>Lorem, ipsum dolor sit amet
+                <div className="card-body">
+                  <h5 className="card-title d-flex justify-content-center titulos">exercícios</h5>
+                  <p className="card-text textos" style={{ textAlign: "justify" }}>Lorem, ipsum dolor sit amet
                     consectetur
                     adipisicing elit. Sed, optio! Dolorem consectetur quibusdam quas odit at! Ipsa eos
                     recusandae </p>
@@ -358,16 +356,16 @@ export default function Estouemcrise() {
               </div>
             </a>
           </div>
-          <div class="col mrgb-pequena">
+          <div className="col mrgb-pequena">
             <a href="" className="linkreact">
-              <div class="card h-100  ho-bor" >
+              <div className="card h-100  ho-bor" >
                 {/* <!-- <img src="..." class="card-img-top" alt="..."> --> */}
-                <div class="d-flex justify-content-center mrgt-media">
+                <div className="d-flex justify-content-center mrgt-media">
                   <FontAwesomeIcon icon={faQuestionCircle} className="tam-funcprin" style={{ color: "black" }} />
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title d-flex justify-content-center titulos">exercícios</h5>
-                  <p class="card-text textos" style={{ textAlign: "justify" }}>Lorem, ipsum dolor sit amet
+                <div className="card-body">
+                  <h5 className="card-title d-flex justify-content-center titulos">exercícios</h5>
+                  <p className="card-text textos" style={{ textAlign: "justify" }}>Lorem, ipsum dolor sit amet
                     consectetur
                     adipisicing elit. Sed, optio! Dolorem consectetur quibusdam quas odit at! Ipsa eos
                     recusandae </p>

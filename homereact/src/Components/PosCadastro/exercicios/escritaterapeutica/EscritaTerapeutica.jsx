@@ -8,36 +8,36 @@ export default function EscritaTerapeutica() {
                 <div id="main">
 
                     {/* <!-- inicio informação --> */}
-                    <div class="d-flex justify-content-end mrgr-media mrgt-pequena">
+                    <div className="d-flex justify-content-end mrgr-media mrgt-pequena">
                         <button style={{ border: 'none', backgroundColor: 'rgba(240, 248, 255, 0)' }} data-bs-toggle="modal" data-bs-target="#exampleModal"><FontAwesomeIcon icon={faInfoCircle} className="tam-exercicio" /></button>
 
                     </div>
 
                     {/* <!-- Inicio Modal do informação --> */}
-                    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div className="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable  modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="exampleModalLabel">Personalizar</h4>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div className="modal-dialog modal-dialog-scrollable  modal-dialog-centered">
+                            <div className="modal-content">
+                                <div className="modal-header">
+                                    <h4 className="modal-title" id="exampleModalLabel">Personalizar</h4>
+                                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body ">
+                                <div className="modal-body ">
                                     {/* <!-- inicio 1 --> */}
-                                    <form class="foge-modal">
+                                    <form className="foge-modal">
                                         <fieldset>
-                                            <div class="form-switch che-modal">
-                                                <input type="checkbox" class="form-check-input" id="idAceitar" />
+                                            <div className="form-switch che-modal">
+                                                <input type="checkbox" className="form-check-input" id="idAceitar" />
                                             </div>
                                         </fieldset>
                                     </form>
-                                    <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+                                    <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
                                             <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{ color: "black" }} />
                                         </div>
-                                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                                            <h5 class="titu-modal">lorem</h5>
-                                            <p class="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                            <h5 className="titu-modal">lorem</h5>
+                                            <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
                                                 vero quos
                                                 quidem
                                                 nobis sed earum
@@ -45,22 +45,22 @@ export default function EscritaTerapeutica() {
                                         </div>
                                     </div>
                                     {/* <!-- fim 1 --> */}
-                                    <hr class="mod-linha " size="5" />
+                                    <hr className="mod-linha " size="5" />
                                     {/* <!-- inicio 2 --> */}
-                                    <form class="foge-modal">
+                                    <form className="foge-modal">
                                         <fieldset>
-                                            <div class="form-switch che-modal">
-                                                <input type="checkbox" class="form-check-input" id="idAceitar" />
+                                            <div className="form-switch che-modal">
+                                                <input type="checkbox" className="form-check-input" id="idAceitar" />
                                             </div>
                                         </fieldset>
                                     </form>
-                                    <div class=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+                                    <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
                                             <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{ color: "black" }} />
                                         </div>
-                                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                                            <h5 class="titu-modal">lorem</h5>
-                                            <p class="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                            <h5 className="titu-modal">lorem</h5>
+                                            <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
                                                 vero quos
                                                 quidem
                                                 nobis sed earum
