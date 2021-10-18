@@ -791,6 +791,13 @@ a:hover,
         margin-left: 15%;
         justify-content: center;
     }
+    .modPerfil{
+        text-align: center; 
+        margin-top: 2.5%;
+        margin-left: 72.5%;
+        max-width: 25%;
+        color: #000000;
+    }
 
 
 }
@@ -1430,6 +1437,11 @@ a:hover,
         justify-content: center;
     }
 
+    .modPerfil{
+        text-align: center; 
+        color: #000000;
+    }
+
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -2036,6 +2048,11 @@ a:hover,
         color: #6d028d;
     }
 
+    .modPerfil{
+        text-align: center; 
+        color: #000000;
+    }
+
 
 }
 
@@ -2259,6 +2276,17 @@ a:hover,
     width: 100%;
     background: linear-gradient(90deg, rgba(3, 163, 255, 0) 0%, rgba(0, 0, 0, 1) 50%, rgba(3, 163, 255, 0) 100%);
 }
+.modLinha {
+
+    border-top: 2px solid transparent;
+    margin-left: 20; 
+    border-image: linear-gradient(90deg, rgba(3, 163, 255, 0) 0%, rgba(0, 0, 0, 1) 50%, rgba(3, 163, 255, 0) 100%);
+    border-image-slice: 1;
+    width: 80%;
+    margin-left: 10%;
+    padding: 5%;  
+
+}
 
 .modal-but-ajuda {
     position: relative;
@@ -2310,6 +2338,7 @@ a:hover,
 .perfi-usu {
     position: relative;
     display: inline-block;
+   
 }
 
 /* .perfi-usu:hover .per-text{
@@ -2319,6 +2348,7 @@ a:hover,
 .i-per-fil {
     display: flex;
     justify-content: flex-end;
+    margin-left: 90%;
     font-size: 15px;
     margin-top: 1%;
     margin-right: 1%;
@@ -2388,13 +2418,15 @@ a:hover,
     color: #03a3ff;
 }
 
-.hr-per {
-    margin-left: 10%;
-    border: none;
+.hrPer{
+    border-top: 2px solid transparent;
+    margin-left: 20; 
+    border-image: linear-gradient(90deg, rgba(3, 163, 255, 0.3) 0%, rgba(17, 64, 207, 1) 50%, rgba(3, 163, 255, 0.3) 100%);
+    border-image-slice: 1;
     width: 80%;
-    background: linear-gradient(90deg, rgba(3, 163, 255, 0.3) 0%, rgba(17, 64, 207, 1) 50%, rgba(3, 163, 255, 0.3) 100%);
+    margin-left: 10%;
+    padding: 5%;    
 }
-
 .ti-escrita {
     text-align: center;
     margin-top: 1%;

@@ -19,7 +19,7 @@ import ExercicioVisao from './Components/PosCadastro/exercicios/exerciciovisao/E
 import Home from './Components/PosCadastro/principais/home/Home';
 import MusicaDeUsoTerapeutico from './Components/PosCadastro/exercicios/musicaDeUsoTerapeutico/MusicaDeUsoTerapeutico';
 import MainAntesCadas from './Components/AntesDoCadastro/mainAntesCadas/MainAntesCadas';
-
+import Example from './Components/PosCadastro/principais/mainPosCadas/ModTeste';
 export default function App() {
 
   const script = document.createElement("script");
@@ -32,8 +32,8 @@ return(
   
 <>
   {/* <Main/> */}
-  <MainAntesCadas/>
-  {/* <Queromeacalmar />*/}
+  {/* <MainAntesCadas/> */}
+  <Queromeacalmar />
   {/* <Login /> */}
   {/* <Cadastro/> */}
   {/* <Index /> */}
@@ -49,5 +49,6 @@ return(
   {/* <ExercicioVisao/> */}
   {/* <Home/> */}
   {/* <MusicaDeUsoTerapeutico/> */}
+  {/* <Example /> */}
 </>
 )}
