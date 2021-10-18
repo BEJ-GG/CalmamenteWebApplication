@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { faQuestionCircle, faCog } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import Modal from 'react-bootstrap/Modal'
+import Form from 'react-bootstrap/Form'
 
 
 export default function Estouemcrise() {
-
-
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
     <>
@@ -14,233 +16,210 @@ export default function Estouemcrise() {
       {/* <!-- inicio personalizar --> */}
 
       <div className=" d-flex justify-content-end mrgr-media mrgt-pequena ">
-        <button style={{ border: "none", backgroundColor: "rgba(240, 248, 255, 0)" }}>
+        <button onClick={handleShow} style={{ border: "none", backgroundColor: "rgba(240, 248, 255, 0)" }}>
           <FontAwesomeIcon icon={faCog} className="tam-personalizar" style={{ color: "black" }} data-bs-toggle="modal" data-bs-target="#exampleModal" /></button>
       </div>
-
       {/* <!-- Inicio Modal do personalizar --> */}
-      <div className="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div className="modal-dialog modal-dialog-scrollable  modal-dialog-centered">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h4 className="modal-title" id="exampleModalLabel">Personalizar</h4>
-              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Personalisar</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {/* <!-- inicio 1 --> */}
+          <Form className="foge-modal">
+            <fieldset>
+            <div className="modal-nume">
+                  <Form.Select name="txtNumero" id="idNumero" class="form-select form-select-sm " aria-label="Default select example">
+                    <option value="1" className="itens">1°</option>
+                    <option value="2" className="itens">2°</option>
+                    <option value="3" className="itens">3°</option>
+                    <option value="4" className="itens">4°</option>
+                    <option value="5" className="itens">5°</option>
+                    <option value="6" className="itens">6°</option>
+                  </Form.Select>
+              </div>
+              <div className="che-modal ">              
+                <Form.Check type="switch" id="custom-switch" label="" />
+              </div>
+            </fieldset>
+          </Form>
+          <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+              <FontAwesomeIcon icon={faQuestionCircle} style={{ color: 'black' }} className="fas ic-modal" />
             </div>
-            <div className="modal-body ">
-              {/* <!-- inicio 1 --> */}
-              <form className="foge-modal">
-                <fieldset>
-                  <div className="modal-nume">
-                    <select name="txtNumero" id="idNumero" className="form-select form-select-sm ">
-                      <option value="um" className="itens">1°</option>
-                      <option value="dois" className="itens">2°</option>
-                      <option value="tres" className="itens">3°</option>
-                      <option value="quatro" className="itens">4°</option>
-                      <option value="cinco" className="itens">5°</option>
-                      <option value="seis" className="itens">6°</option>
-                    </select>
-                  </div>
-                  <div className="form-switch che-modal">
-                    <input type="checkbox" className="form-check-input" id="idAceitar" />
-                  </div>
-                </fieldset>
-              </form>
-              <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                  <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{ color: "black" }} />
-                </div>
-                <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                  <h5 className="titu-modal">lorem</h5>
-                  <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero
-                    quos
-                    quidem
-                    nobis sed earum
-                    aliquam provident sequi eaque fugit</p>
-                </div>
-              </div>
-              {/* <!-- fim 1 --> */}
-              <hr className="mod-linha " size="5" />
-              {/* <!-- inicio 2 --> */}
-              <form className="foge-modal">
-                <fieldset>
-                  <div className="modal-nume">
-                    <select name="txtNumero" id="idNumero" className="form-select form-select-sm ">
-                      <option value="um" className="itens">1°</option>
-                      <option value="dois" className="itens">2°</option>
-                      <option value="tres" className="itens">3°</option>
-                      <option value="quatro" className="itens">4°</option>
-                      <option value="cinco" className="itens">5°</option>
-                      <option value="seis" className="itens">6°</option>
-                    </select>
-                  </div>
-                  <div className="form-switch che-modal">
-                    <input type="checkbox" className="form-check-input" id="idAceitar" />
-                  </div>
-                </fieldset>
-              </form>
-              <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                  <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{ color: "black" }} />
-                </div>
-                <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                  <h5 className="titu-modal">lorem</h5>
-                  <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero
-                    quos
-                    quidem
-                    nobis sed earum
-                    aliquam provident sequi eaque fugit</p>
-                </div>
-              </div>
-              {/* <!-- fim 2 --> */}
-              <hr className="mod-linha" size="5" />
-              {/* <!-- inicio 3 --> */}
-              <form className="foge-modal">
-                <fieldset>
-                  <div className="modal-nume">
-                    <select name="txtNumero" id="idNumero" className="form-select form-select-sm ">
-                      <option value="um" className="itens">1°</option>
-                      <option value="dois" className="itens">2°</option>
-                      <option value="tres" className="itens">3°</option>
-                      <option value="quatro" className="itens">4°</option>
-                      <option value="cinco" className="itens">5°</option>
-                      <option value="seis" className="itens">6°</option>
-                    </select>
-                  </div>
-                  <div className="form-switch che-modal">
-                    <input type="checkbox" className="form-check-input" id="idAceitar" />
-                  </div>
-                </fieldset>
-              </form>
-              <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                  <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{ color: "black" }} />
-                </div>
-                <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                  <h5 className="titu-modal">lorem</h5>
-                  <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero
-                    quos
-                    quidem
-                    nobis sed earum
-                    aliquam provident sequi eaque fugit</p>
-                </div>
-              </div>
-              {/* <!-- fim 3 --> */}
-              <hr className="mod-linha" size="5" />
-              {/* <!-- inicio 4 --> */}
-              <form className="foge-modal">
-                <fieldset>
-                  <div className="modal-nume">
-                    <select name="txtNumero" id="idNumero" className="form-select form-select-sm ">
-                      <option value="um" className="itens">1°</option>
-                      <option value="dois" className="itens">2°</option>
-                      <option value="tres" className="itens">3°</option>
-                      <option value="quatro" className="itens">4°</option>
-                      <option value="cinco" className="itens">5°</option>
-                      <option value="seis" className="itens">6°</option>
-                    </select>
-                  </div>
-                  <div className="form-switch che-modal">
-                    <input type="checkbox" className="form-check-input" id="idAceitar" />
-                  </div>
-                </fieldset>
-              </form>
-              <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                  <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{ color: "black" }} />
-                </div>
-                <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                  <h5 className="titu-modal">lorem</h5>
-                  <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero
-                    quos
-                    quidem
-                    nobis sed earum
-                    aliquam provident sequi eaque fugit</p>
-                </div>
-              </div>
-              {/* <!-- fim 4 --> */}
-              <hr className="mod-linha" size="5" />
-              {/* <!-- inicio 5 --> */}
-              <form className="foge-modal">
-                <fieldset>
-                  <div className="modal-nume">
-                    <select name="txtNumero" id="idNumero" className="form-select form-select-sm ">
-                      <option value="um" className="itens">1°</option>
-                      <option value="dois" className="itens">2°</option>
-                      <option value="tres" className="itens">3°</option>
-                      <option value="quatro" className="itens">4°</option>
-                      <option value="cinco" className="itens">5°</option>
-                      <option value="seis" className="itens">6°</option>
-                    </select>
-                  </div>
-                  <div className="form-switch che-modal">
-                    <input type="checkbox" className="form-check-input" id="idAceitar" />
-                  </div>
-                </fieldset>
-              </form>
-              <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                  <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{ color: "black" }} />
-                </div>
-                <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                  <h5 className="titu-modal">lorem</h5>
-                  <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero
-                    quos
-                    quidem
-                    nobis sed earum
-                    aliquam provident sequi eaque fugit</p>
-                </div>
-              </div>
-              {/* <!-- fim 5 --> */}
-              <hr className="mod-linha" size="5" />
-              {/* <!-- inicio 6 --> */}
-              <form className="foge-modal">
-                <fieldset>
-                  <div className="modal-nume">
-                    <select name="txtNumero" id="idNumero" className="form-select form-select-sm ">
-                      <option value="um" className="itens">1°</option>
-                      <option value="dois" className="itens">2°</option>
-                      <option value="tres" className="itens">3°</option>
-                      <option value="quatro" className="itens">4°</option>
-                      <option value="cinco" className="itens">5°</option>
-                      <option value="seis" className="itens">6°</option>
-                    </select>
-                  </div>
-                  <div className="form-switch che-modal">
-                    <input type="checkbox" className="form-check-input" id="idAceitar" />
-                  </div>
-                </fieldset>
-              </form>
-              <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                  <FontAwesomeIcon icon={faQuestionCircle} className="ic-modal" style={{ color: "black" }} />
-                </div>
-                <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                  <h5 className="titu-modal">lorem</h5>
-                  <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero
-                    quos
-                    quidem
-                    nobis sed earum
-                    aliquam provident sequi eaque fugit</p>
-                </div>
-              </div>
-              {/* <!-- fim 6 --> */}
-            </div>
-            <div className="modal-footer" style={{ display: "flex", justifyContent: "center" }}>
-              <div className="modal-but-ajuda">
-                <button className="but-modal-ajuda ">
-                  <FontAwesomeIcon icon={faQuestionCircle} className="modal-ajuda" style={{ color: "black" }} />
-                </button>
-                <div className="dicaTexto">Esta é a área para personalizar quais exercícios deseja fazer ou não.
-                  Na caixa de
-                  seleção é onde você personalizará a ordem que eles aparecerão no quadro, e você também
-                  pode
-                  ativar ou
-                  desativar algum exercício de acordo com sua preferência. </div>
-              </div>
+            <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+              <h5 className="titu-modal" style={{ fontWeight: 'bold' }}>lorem</h5>
+              <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero quos quidem
+                nobis sed earum
+                aliquam provident sequi eaque fugit</p>
             </div>
           </div>
-        </div>
-      </div>
+          {/* <!-- fim 1 --> */}
+          <div className="modLinha"></div>
+          {/* <!-- inicio 2 --> */}
+          <Form className="foge-modal">
+            <fieldset>
+            <div className="modal-nume">
+                  <Form.Select name="txtNumero" id="idNumero" class="form-select form-select-sm " aria-label="Default select example">
+                    <option value="1" className="itens">1°</option>
+                    <option value="2" className="itens">2°</option>
+                    <option value="3" className="itens">3°</option>
+                    <option value="4" className="itens">4°</option>
+                    <option value="5" className="itens">5°</option>
+                    <option value="6" className="itens">6°</option>
+                  </Form.Select>
+              </div>
+              <div className="che-modal">
+                <Form.Check type="switch" id="custom-switch" label="" />
+              </div>
+            </fieldset>
+          </Form>
+          <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+              <FontAwesomeIcon icon={faQuestionCircle} style={{ color: 'black' }} className="fas ic-modal" />
+            </div>
+            <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+              <h5 className="titu-modal" style={{ fontWeight: 'bold' }}>lorem</h5>
+              <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero quos quidem
+                nobis sed earum
+                aliquam provident sequi eaque fugit</p>
+            </div>
+          </div>
+          {/* <!-- fim 2 --> */}
+          <div className="modLinha"></div>
+          {/* <!-- inicio 3 --> */}
+          <Form className="foge-modal">
+            <fieldset>
+            <div className="modal-nume">
+                  <Form.Select name="txtNumero" id="idNumero" class="form-select form-select-sm " aria-label="Default select example">
+                    <option value="1" className="itens">1°</option>
+                    <option value="2" className="itens">2°</option>
+                    <option value="3" className="itens">3°</option>
+                    <option value="4" className="itens">4°</option>
+                    <option value="5" className="itens">5°</option>
+                    <option value="6" className="itens">6°</option>
+                  </Form.Select>
+              </div>
+              <div className=" che-modal">
+                <Form.Check type="switch" id="custom-switch" label="" />
+              </div>
+            </fieldset>
+          </Form>
+          <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+              <FontAwesomeIcon icon={faQuestionCircle} style={{ color: 'black' }} className="fas ic-modal" />
+            </div>
+            <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+              <h5 className="titu-modal" style={{ fontWeight: 'bold' }}>lorem</h5>
+              <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero quos quidem
+                nobis sed earum
+                aliquam provident sequi eaque fugit</p>
+            </div>
+          </div>
+          {/* <!-- fim 3 --> */}
+          <div className="modLinha"></div>
+          {/* <!-- inicio 4 --> */}
+          <Form className="foge-modal">
+            <fieldset>
+            <div className="modal-nume">
+                  <Form.Select name="txtNumero" id="idNumero" class="form-select form-select-sm " aria-label="Default select example">
+                    <option value="1" className="itens">1°</option>
+                    <option value="2" className="itens">2°</option>
+                    <option value="3" className="itens">3°</option>
+                    <option value="4" className="itens">4°</option>
+                    <option value="5" className="itens">5°</option>
+                    <option value="6" className="itens">6°</option>
+                  </Form.Select>
+              </div>
+              <div className="che-modal">
+                <Form.Check type="switch" id="custom-switch" label="" />
+              </div>
+            </fieldset>
+          </Form>
+          <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+              <FontAwesomeIcon icon={faQuestionCircle} style={{ color: 'black' }} className="fas ic-modal" />
+            </div>
+            <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+              <h5 className="titu-modal" style={{ fontWeight: 'bold' }}>lorem</h5>
+              <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero quos quidem
+                nobis sed earum
+                aliquam provident sequi eaque fugit</p>
+            </div>
+          </div>
+          {/* <!-- fim 4 --> */}
+          <div className="modLinha"></div>
+          {/* <!-- inicio 5 --> */}
+          <Form className="foge-modal">
+            <fieldset>
+            <div className="modal-nume">
+                  <Form.Select name="txtNumero" id="idNumero" class="form-select form-select-sm " aria-label="Default select example">
+                    <option value="1" className="itens">1°</option>
+                    <option value="2" className="itens">2°</option>
+                    <option value="3" className="itens">3°</option>
+                    <option value="4" className="itens">4°</option>
+                    <option value="5" className="itens">5°</option>
+                    <option value="6" className="itens">6°</option>
+                  </Form.Select>
+              </div>
+              <div className="che-modal">
+                <Form.Check type="switch" id="custom-switch" label="" />
+              </div>
+            </fieldset>
+          </Form>
+          <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+              <FontAwesomeIcon icon={faQuestionCircle} style={{ color: 'black' }} className="fas ic-modal" />
+            </div>
+            <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+              <h5 className="titu-modal" style={{ fontWeight: 'bold' }}>lorem</h5>
+              <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero quos quidem
+                nobis sed earum
+                aliquam provident sequi eaque fugit</p>
+            </div>
+          </div>
+          {/* <!-- fim 5 --> */}
+          <div className="modLinha"></div>
+          {/* <!-- inicio 6 --> */}
+          <Form className="foge-modal">
+            <fieldset>
+            <div className="modal-nume">
+                  <Form.Select name="txtNumero" id="idNumero" class="form-select form-select-sm " aria-label="Default select example">
+                    <option value="1" className="itens">1°</option>
+                    <option value="2" className="itens">2°</option>
+                    <option value="3" className="itens">3°</option>
+                    <option value="4" className="itens">4°</option>
+                    <option value="5" className="itens">5°</option>
+                    <option value="6" className="itens">6°</option>
+                  </Form.Select>
+              </div>
+              <div className=" che-modal">
+                <Form.Check type="switch" id="custom-switch" label="" />
+              </div>
+            </fieldset>
+          </Form>
+          <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
+            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
+              <FontAwesomeIcon icon={faQuestionCircle} style={{ color: 'black' }} className="fas ic-modal" />
+            </div>
+            <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+              <h5 className="titu-modal" style={{ fontWeight: 'bold' }}>lorem</h5>
+              <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero quos quidem
+                nobis sed earum
+                aliquam provident sequi eaque fugit</p>
+            </div>
+          </div>
+          {/* <!-- fim 6 --> */}
+
+
+        </Modal.Body>
+        <Modal.Footer style={{ display: "flex", justifyContent: "center" }}>
+          <div className="modal-but-ajuda">
+            <button className="but-modal-ajuda"> <FontAwesomeIcon icon={faQuestionCircle} style={{ color: 'black' }} className="fas modal-ajuda" /></button>
+            <div className="dicaTexto">Esta é a área para personalizar quais exercícios deseja fazer ou não. Você pode ativar ou desativar algum exercício de acordo com sua preferência. </div>
+          </div>
+        </Modal.Footer>
+      </Modal>
       {/* // <!-- fim modal do personalizar --> */}
       {/* // <!-- fim personalizar --> */}
       {/* // <!-- inicio card do iframe  --> */}

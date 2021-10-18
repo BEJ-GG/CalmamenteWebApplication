@@ -15,7 +15,6 @@ export default function Queromeacalmar() {
             <div className="d-flex justify-content-end mrgr-media mrgt-pequena">
                 <button onClick={handleShow} style={{ border: "none", backgroundColor: "rgba(240, 248, 255, 0)" }}>
                     <FontAwesomeIcon icon={faCog} className="tam-personalizar" data-bs-toggle="modal" data-bs-target="#exampleModal" />
-
                 </button>
             </div>
 
