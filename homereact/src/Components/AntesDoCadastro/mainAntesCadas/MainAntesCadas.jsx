@@ -23,7 +23,7 @@ return(
             <Navbar collapseOnSelect expand="lg" variant="light"
                 className="back-menu m-0 p-0 d-flex justify-content-between">
                 <div className="m-0 container-fluid ">
-                    <Link to="/"><img src={Logo} alt="cerebro meditando, nome: calmamente" className="logo m-0"></img>
+                    <Link to="/index"><img src={Logo} alt="cerebro meditando, nome: calmamente" className="logo m-0"></img>
                     </Link>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">

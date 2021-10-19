@@ -28,7 +28,6 @@ export default function EstouTendoUmacrise() {
                                 <button type="button" className="position-absolute  translate-middle btn btn-primary"
                                     id="estouCrise">Próximo</button>
                             </div>
-
                         </div>
                     </div>
                     {/* <!-- fim card do iframe  --> */}
