@@ -24,6 +24,8 @@ import ExercicioImaGuia from './Components/PosCadastro/exercicios/imaginacaoGuia
 import Meditacao from './Components/PosCadastro/exercicios/meditacao/Meditacao';
 import MeditacaoPranayama from './Components/PosCadastro/exercicios/meditacao/MeditacaoPranayama';
 import MeditacaoGuiada from './Components/PosCadastro/exercicios/meditacao/MeditacaoGuiada';
+import ExercicioOrgiami from './Components/PosCadastro/exercicios/origami/ExercicioOrgiami';
+import ExercicioParadaPensamento from './Components/PosCadastro/exercicios/paradaPensamento/ExercicioParadaPensamento';
 
 export default function App() {
 
@@ -36,13 +38,13 @@ export default function App() {
 return(
   
 <>
-  <Main/>
+  {/* <Main/> */}
   {/* <Estouemcrise/> */}
   {/* <MainAntesCadas/> */}
   {/* <Queromeacalmar /> */}
   {/* <Login /> */}
   {/* <Cadastro/> */}
-  {/* <Index /> */}
+  <Index />
   {/* <Chatbot/> */}
   {/* <EstimularCriatividadeHistorias/> */}
   {/* <Respiracao/> */}
@@ -59,5 +61,7 @@ return(
   {/* <Meditacao/> */}
   {/* <MeditacaoPranayama/> */}
   {/* <MeditacaoGuiada/> */}
+  {/* <ExercicioOrgiami/> */}
+  {/* <ExercicioParadaPensamento/> */}
 </>
 )}

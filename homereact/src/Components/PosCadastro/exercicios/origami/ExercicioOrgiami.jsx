@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
+import Modal from 'react-bootstrap/Modal'
 import { faInfoCircle, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button'
-import Modal from 'react-bootstrap/Modal'
 import Card from 'react-bootstrap/Card'
 import oriPassaro from '../../../img/origami-passaro.jpg'
 import passoPassaro from '../../../img/passo-passaro.png'
@@ -16,7 +16,13 @@ import passoSapo from '../../../img/passo-sapo.png'
 import oriPeixe from '../../../img/origami-peixe.jpg'
 import passoPeixe from '../../../img/passo-peixe.jpg'
 
+
 export default function ExercicioOrgiami() {
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+    
     const [passaro, setPassaro] = useState(false);
     const handleClosePas = () => setPassaro(false);
     const handleShowPas = () => setPassaro(true);
@@ -38,6 +44,21 @@ export default function ExercicioOrgiami() {
     const handleShowCac = () => setCachorro(true);
     return (
         <>
+          {/* <!-- inicio informação --> */}
+          <div className="d-flex justify-content-end mrgr-media mrgt-pequena">
+            <button onClick={handleShow} style={{ border: 'none', backgroundColor: 'rgba(240, 248, 255, 0)' }} data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <FontAwesomeIcon icon={faInfoCircle} className="tam-exercicio" /></button>
+         </div>
+
+         {/* <!-- Inicio Modal do informação --> */}
+         <Modal show={show} onHide={handleClose} style={{ marginTop: '16%' }}>
+            <Modal.Header closeButton>
+               <Modal.Title>Personalisar</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>Exercício Origami</Modal.Body>
+         </Modal>
+         {/* <!-- fim modal do informação  --> */}
+         {/* <!-- fim informação --> */}
 
             <div className="ori-tu-tes">
 
