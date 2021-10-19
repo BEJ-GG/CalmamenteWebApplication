@@ -29,8 +29,8 @@ export default function App() {
 return(
   
 <>
-  {/* <Main/> */}
-  <MainAntesCadas/>
+  <Main/>
+  {/* <MainAntesCadas/> */}
   {/* <Queromeacalmar />*/}
   {/* <Login /> */}
   {/* <Cadastro/> */}
