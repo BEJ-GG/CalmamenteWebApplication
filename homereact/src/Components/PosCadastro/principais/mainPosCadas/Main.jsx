@@ -53,7 +53,7 @@ export default function Main() {
                                         <Modal className="modPerfil" show={show} onHide={handleClose}>
                                             <Modal.Body>
                                                 <a href="#" ><FontAwesomeIcon icon={faUserEdit} className=" ic-modal i-per-fil linkreact" style={{ color: "black" }} /></a>
-                                                <FontAwesomeIcon  icon={faQuestionCircle} style={{color: 'black'}} className="fas i-imusu" />
+                                                <FontAwesomeIcon  icon={faQuestionCircle} style={{color: 'black', marginLeft:'37%'}} className="fas i-imusu" />
                                                 <h4 className="p-nomus ">Calmamente</h4>
                                                 <div className="hrPer"></div>                                             
                                                 <h5 className="nomus-p" >contatobejgg@gmail.com</h5>
