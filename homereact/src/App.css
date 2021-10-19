@@ -2666,3 +2666,22 @@ input:nth-of-type(5):checked~main.ori-sel {
 .ima-guiada {
     border-radius: 100px;
 }
+
+.di-bt-ex {
+    display: flex;
+    justify-content: center;
+}
+
+.bt-exercicios {
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: #1140cf 3px solid;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    margin-left: 40%;
+}
+
+.bt-exercicios:hover {
+    border: #03a3ff 3px solid;
+}

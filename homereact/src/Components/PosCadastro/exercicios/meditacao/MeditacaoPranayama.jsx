@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { faInfoCircle, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import gifRespira from '../../../img/respiracao.gif'
@@ -7,15 +7,20 @@ import instruEntrelaca from '../../../img/postura.png'
 import { Link } from 'react-router-dom';
 import VisnhuMudra from '../../../img/vishnu.jpg'
 import cicloVish from '../../../img/vishnu.gif'
-
+import Modal from 'react-bootstrap/Modal'
 
 export default function MeditacaoPranayama() {
+
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     // primeira parte 
     const [secondsX, setSecondsX] = useState(30);
     const [secondsY, setSecondsY] = useState('');
     const [comecar, setComecar] = useState(false);
     const [continuar, setContinuar] = useState(true);
-    const [aparecer, setAparecer] = useState({display: 'none'})
+    const [aparecer, setAparecer] = useState({ display: 'none' })
     const [invisiIco, setInvisiIco] = useState('icoContinuarRespInvi')
     const [invisiBtn, setInvisiBtn] = useState('btnContinuarRespInvi')
     // fim da primeira parte 
@@ -24,7 +29,7 @@ export default function MeditacaoPranayama() {
     const [secondsY2, setSecondsY2] = useState('');
     const [comecar2, setComecar2] = useState(false);
     const [continuar2, setContinuar2] = useState(true);
-    const [aparecer2, setAparecer2] = useState({display: 'none'})
+    const [aparecer2, setAparecer2] = useState({ display: 'none' })
     const [invisiIco2, setInvisiIco2] = useState('icoContinuarRespInvi')
     const [invisiBtn2, setInvisiBtn2] = useState('btnContinuarRespInvi')
     // fim parte dois 
@@ -32,310 +37,114 @@ export default function MeditacaoPranayama() {
     const [secondsX3, setSecondsX3] = useState(30);
     const [secondsY3, setSecondsY3] = useState('');
     const [comecar3, setComecar3] = useState(false);
-    const [continuar3, setContinuar3] = useState({pointerEvents: 'none'});
+    const [continuar3, setContinuar3] = useState({ pointerEvents: 'none' });
     const [continuar3X, setContinuar3X] = useState(true);
     // fim parte três 
 
     // ------------------------------------
 
-    React.useEffect(() => {  
-    // inicio parte um 
-    if (comecar == true){  
-      if(secondsX > 0){
-        setTimeout(() => setSecondsX(secondsX - 1), 1000)
-      }
-      if (secondsX == 9){
-        setSecondsY(0)
-      }
-      if(secondsX == 0){
-        setContinuar(false)
-        setInvisiIco('icoContinuarResp')
-        setInvisiBtn('btnContinuarResp')
-      }
-    }
-    // fim parte um 
-    // inicio parte dois 
-    if (comecar2 == true){  
-        if(secondsX2 > 0){
-          setTimeout(() => setSecondsX2(secondsX2 - 1), 1000)
+    React.useEffect(() => {
+        // inicio parte um 
+        if (comecar == true) {
+            if (secondsX > 0) {
+                setTimeout(() => setSecondsX(secondsX - 1), 1000)
+            }
+            if (secondsX == 9) {
+                setSecondsY(0)
+            }
+            if (secondsX == 0) {
+                setContinuar(false)
+                setInvisiIco('icoContinuarResp')
+                setInvisiBtn('btnContinuarResp')
+            }
         }
-        if (secondsX2 == 9){
-          setSecondsY2(0)
+        // fim parte um 
+        // inicio parte dois 
+        if (comecar2 == true) {
+            if (secondsX2 > 0) {
+                setTimeout(() => setSecondsX2(secondsX2 - 1), 1000)
+            }
+            if (secondsX2 == 9) {
+                setSecondsY2(0)
+            }
+            if (secondsX2 == 0) {
+                setContinuar2(false)
+                setInvisiIco2('icoContinuarResp')
+                setInvisiBtn2('btnContinuarResp')
+            }
         }
-        if(secondsX2 == 0){
-          setContinuar2(false)
-          setInvisiIco2('icoContinuarResp')
-          setInvisiBtn2('btnContinuarResp')
+        // fim parte dois
+        // inicio parte três 
+        if (comecar3 == true) {
+            if (secondsX3 > 0) {
+                setTimeout(() => setSecondsX3(secondsX3 - 1), 1000)
+            }
+            if (secondsX3 == 9) {
+                setSecondsY3(0)
+            }
+            if (secondsX3 == 0) {
+                setContinuar3({ pointerEvents: 'auto' })
+                setContinuar3X(false)
+            }
         }
-      }
-      // fim parte dois
-      // inicio parte três 
-    if (comecar3 == true){  
-        if(secondsX3 > 0){
-          setTimeout(() => setSecondsX3(secondsX3 - 1), 1000)
-        }
-        if (secondsX3 == 9){
-          setSecondsY3(0)
-        }
-        if(secondsX3 == 0){
-            setContinuar3({pointerEvents: 'auto'})
-            setContinuar3X(false)
-          }
-      }
-      // fim parte três  
-  });
+        // fim parte três  
+    });
 
-return(
-<>
-
-    {/*
-    <!-- inicio informação --> */}
-    <div className="d-flex justify-content-end mrgr-media mrgt-pequena">
-        <button style={{border: 'none', backgroundColor: 'rgba(240, 248, 255, 0)'}} data-bs-toggle="modal"
-            data-bs-target="#exampleModal">
-            <FontAwesomeIcon icon={faInfoCircle} className="tam-exercicio" />
-        </button>
-    </div>
-
-    {/*
-    <!-- Inicio Modal do informação --> */}
-    <div className="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div className="modal-dialog modal-dialog-scrollable  modal-dialog-centered">
-            <div className="modal-content">
-                <div className="modal-header">
-                    <h4 className="modal-title" id="exampleModalLabel">Personalizar</h4>
-                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div className="modal-body ">
-                    {/*
-                    <!-- inicio 1 --> */}
-                    <form className="foge-modal">
-                        <fieldset>
-                            <div className="form-switch che-modal">
-                                <input type="checkbox" className="form-check-input" id="idAceitar" />
-                            </div>
-                        </fieldset>
-                    </form>
-                    <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                            <i className="fas fa-question-circle ic-modal"></i>
-                        </div>
-                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <h5 className="titu-modal">lorem</h5>
-                            <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                                vero quos
-                                quidem
-                                nobis sed earum
-                                aliquam provident sequi eaque fugit</p>
-                        </div>
-                    </div>
-                    {/*
-                    <!-- fim 1 --> */}
-                    <hr className="mod-linha " size="5" />
-                    {/*
-                    <!-- inicio 2 --> */}
-                    <form className="foge-modal">
-                        <fieldset>
-                            <div className="form-switch che-modal">
-                                <input type="checkbox" className="form-check-input" id="idAceitar" />
-                            </div>
-                        </fieldset>
-                    </form>
-                    <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                            <i className="fas fa-question-circle ic-modal"></i>
-                        </div>
-                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <h5 className="titu-modal">lorem</h5>
-                            <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                                vero quos
-                                quidem
-                                nobis sed earum
-                                aliquam provident sequi eaque fugit</p>
-                        </div>
-                    </div>
-                    {/*
-                    <!-- fim 2 --> */}
-                    <hr className="mod-linha" size="5" />
-                    {/*
-                    <!-- inicio 3 --> */}
-                    <form className="foge-modal">
-                        <fieldset>
-                            <div className="form-switch che-modal">
-                                <input type="checkbox" className="form-check-input" id="idAceitar" />
-                            </div>
-                        </fieldset>
-                    </form>
-                    <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                            <i className="fas fa-question-circle ic-modal"></i>
-                        </div>
-                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <h5 className="titu-modal">lorem</h5>
-                            <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                                vero quos
-                                quidem
-                                nobis sed earum
-                                aliquam provident sequi eaque fugit</p>
-                        </div>
-                    </div>
-                    {/*
-                    <!-- fim 3 --> */}
-                    <hr className="mod-linha" size="5" />
-                    {/*
-                    <!-- inicio 4 --> */}
-                    <form className="foge-modal">
-                        <fieldset>
-                            <div className="form-switch che-modal">
-                                <input type="checkbox" className="form-check-input" id="idAceitar" />
-                            </div>
-                        </fieldset>
-                    </form>
-                    <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                            <i className="fas fa-question-circle ic-modal"></i>
-                        </div>
-                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <h5 className="titu-modal">lorem</h5>
-                            <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                                vero quos
-                                quidem
-                                nobis sed earum
-                                aliquam provident sequi eaque fugit</p>
-                        </div>
-                    </div>
-                    {/*
-                    <!-- fim 4 --> */}
-                    <hr className="mod-linha" size="5" />
-                    {/*
-                    <!-- inicio 5 --> */}
-                    <form className="foge-modal">
-                        <fieldset>
-                            <div className="form-switch che-modal">
-                                <input type="checkbox" className="form-check-input" id="idAceitar" />
-                            </div>
-                        </fieldset>
-                    </form>
-                    <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                            <i className="fas fa-question-circle ic-modal"></i>
-                        </div>
-                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <h5 className="titu-modal">lorem</h5>
-                            <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                                vero quos
-                                quidem
-                                nobis sed earum
-                                aliquam provident sequi eaque fugit</p>
-                        </div>
-                    </div>
-                    {/*
-                    <!-- fim 5 --> */}
-                    <hr className="mod-linha" size="5" />
-                    {/*
-                    <!-- inicio 6 --> */}
-                    <form className="foge-modal">
-                        <fieldset>
-                            <div className="form-switch che-modal">
-                                <input type="checkbox" className="form-check-input" id="idAceitar" />
-                            </div>
-                        </fieldset>
-                    </form>
-                    <div className=" row col-12 col-sm-12 col-md-12 col-lg-12">
-                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ic-ge-modal">
-                            <i className="fas fa-question-circle ic-modal"></i>
-                        </div>
-                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <h5 className="titu-modal">lorem</h5>
-                            <p className="te-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                                vero quos
-                                quidem
-                                nobis sed earum
-                                aliquam provident sequi eaque fugit</p>
-                        </div>
-                    </div>
-                    {/*
-                    <!-- fim 6 --> */}
-                </div>
-                <div className="modal-footer" style={{display: 'flex', justifyContent: 'center'}}>
-                    <div className="modal-but-ajuda">
-                        <button className="but-modal-ajuda "><i className="fas fa-question-circle modal-ajuda"></i></button>
-                        <div className="dicaTexto">Esta é a área para personalizar quais exercícios deseja fazer ou
-                            não. Você
-                            pode
-                            ativar ou desativar algum exercício de
-                            acordo com sua preferência. </div>
-                    </div>
-                </div>
+    return (
+        <>
+            {/* <!-- inicio informação --> */}
+            <div onClick={handleShow} className="d-flex justify-content-end mrgr-media mrgt-pequena">
+                <button onClick={handleShow} style={{ border: 'none', backgroundColor: 'rgba(240, 248, 255, 0)' }} data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <FontAwesomeIcon icon={faInfoCircle} className="tam-exercicio" /></button>
             </div>
-        </div>
-    </div>
-    {/*
-    <!-- fim modal do informação  --> */}
+            {/* <!-- Inicio Modal do informação --> */}
+            <Modal show={show} onHide={handleClose} style={{marginTop: '16%'}}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Personalisar</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Exercício de respiração</Modal.Body>
+            </Modal>
+            {/* <!-- fim modal do informação  --> */}
+            {/* <!-- fim informação --> */}
 
-    {/*
-    <!-- fim informação --> */}
-
-    {/*
-    <!-- inicio respiração --> */}
-    <h1 className="ti-escrita">Exercício de respiração</h1>
-
-    <div style={{paddingLeft: '5%', paddingRight: '5%'}}>
-    {/* inicio da parte um  */}
-    <div>
-    <div className=" mrgt-grande">
-        <h4 className="ti-escrita">Primeiro entenda como fazer um pranayama, primeiramente deve-se posicionar a mão em vishnu mudra, posteriormente seguir o ritmo de respiração, alternando entre as narinas. Veja o vídeo de explicação</h4>
-
-    </div>
-
-    <div className=" responsCardResp  mrgb-media">
-        <div style={{width: '40%'}}>
-            <img src={VisnhuMudra} alt="gif de respiração" className="ImgResp1"  />
-
-        </div>
-        <div style={{width: '35%'}}>
-            <img src={cicloVish} alt="gif de respiração" className="ImgResp2"  />
-
-        </div>
-
-    </div>
-        
-    <div className="d-flex justify-content-center mrgb-media">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/SZ8Hrhc4XZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    
-
-    <div className="d-flex justify-content-center">
-        <button  className="btnContinuarResp" onClick={()=> setAparecer({display: 'block'})}><FontAwesomeIcon icon={faChevronDown} className={invisiIco}></FontAwesomeIcon></button>
-    </div>
-    </div>
-    {/* fim da parte um  */}
-
-
-    {/* inicio da parte dois  */}
-    <div style={aparecer}>
-    <div className=" mrgt-grande">
-        <h4 className="ti-escrita">Agora que já sabe fazer um pranayama, inicie a meditação guiada. Obs: Você pode inspirar e expirar no tempo que desejar, desde que seja mais longo do que o normal, e no mesmo tempo.</h4>
-
-    </div>
-
-
-    <div className="responsCardResp  mrgb-media">
-        <div style={{height: '40%'}}>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/V7ijbyyKEbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        </div>
-
-    </div>
-
-    </div>
-    {/* fim da parte dois  */}
-
-    </div>
-    {/* <!-- fim respiração  --> */}
-
-
-
-</>
-)}
+            {/*<!-- inicio respiração --> */}
+            <h1 className="ti-escrita">Exercício de respiração</h1>
+            <div style={{ paddingLeft: '5%', paddingRight: '5%' }}>
+                {/* inicio da parte um  */}
+                <div>
+                    <div className=" mrgt-grande">
+                        <h4 className="ti-escrita">Primeiro entenda como fazer um pranayama, primeiramente deve-se posicionar a mão em vishnu mudra, posteriormente seguir o ritmo de respiração, alternando entre as narinas. Veja o vídeo de explicação</h4>
+                    </div>
+                    <div className=" responsCardResp  mrgb-media">
+                        <div style={{ width: '40%' }}>
+                            <img src={VisnhuMudra} alt="gif de respiração" className="ImgResp1" />
+                        </div>
+                        <div style={{ width: '35%' }}>
+                            <img src={cicloVish} alt="gif de respiração" className="ImgResp2" />
+                        </div>
+                    </div>
+                    <div className="d-flex justify-content-center mrgb-media">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SZ8Hrhc4XZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div className="d-flex justify-content-center">
+                        <button className="btnContinuarResp" onClick={() => setAparecer({ display: 'block' })}><FontAwesomeIcon icon={faChevronDown} className={invisiIco}></FontAwesomeIcon></button>
+                    </div>
+                </div>
+                {/* fim da parte um  */}
+                {/* inicio da parte dois  */}
+                <div style={aparecer}>
+                    <div className=" mrgt-grande">
+                        <h4 className="ti-escrita">Agora que já sabe fazer um pranayama, inicie a meditação guiada. Obs: Você pode inspirar e expirar no tempo que desejar, desde que seja mais longo do que o normal, e no mesmo tempo.</h4>
+                    </div>
+                    <div className="responsCardResp  mrgb-media">
+                        <div style={{ height: '40%' }}>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/V7ijbyyKEbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                {/* fim da parte dois  */}
+            </div>
+            {/* <!-- fim respiração  --> */}
+        </>
+    )
+}

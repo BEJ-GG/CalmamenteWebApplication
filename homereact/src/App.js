@@ -20,6 +20,11 @@ import Home from './Components/PosCadastro/principais/home/Home';
 import MusicaDeUsoTerapeutico from './Components/PosCadastro/exercicios/musicaDeUsoTerapeutico/MusicaDeUsoTerapeutico';
 import MainAntesCadas from './Components/AntesDoCadastro/mainAntesCadas/MainAntesCadas';
 import Estouemcrise from './Components/PosCadastro/principais/estouemcrise/Estouemcrise';
+import ExercicioImaGuia from './Components/PosCadastro/exercicios/imaginacaoGuiada/ExercicioImaginacaoGuiada';
+import Meditacao from './Components/PosCadastro/exercicios/meditacao/Meditacao';
+import MeditacaoPranayama from './Components/PosCadastro/exercicios/meditacao/MeditacaoPranayama';
+import MeditacaoGuiada from './Components/PosCadastro/exercicios/meditacao/MeditacaoGuiada';
+
 export default function App() {
 
   const script = document.createElement("script");
@@ -50,5 +55,9 @@ return(
   {/* <ExercicioVisao/> */}
   {/* <Home/> */}
   {/* <MusicaDeUsoTerapeutico/> */}
+  {/* <ExercicioImaGuia/> */}
+  {/* <Meditacao/> */}
+  {/* <MeditacaoPranayama/> */}
+  {/* <MeditacaoGuiada/> */}
 </>
 )}

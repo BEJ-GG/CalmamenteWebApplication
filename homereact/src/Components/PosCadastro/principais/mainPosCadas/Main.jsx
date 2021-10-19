@@ -20,7 +20,6 @@ import MusicaDeUsoTerapeutico from '../../exercicios/musicaDeUsoTerapeutico/Musi
 import Meditacao from '../../exercicios/meditacao/Meditacao'
 import MeditacaoGuiada from '../../exercicios/meditacao/MeditacaoGuiada'
 import MeditacaoPranayama from '../../exercicios/meditacao/MeditacaoPranayama';
-import MeditacaoExpansao from '../../exercicios/meditacao/MeditacaoExpansao';
 import EstimularCriatividadeHistorias from '../../exercicios/estimulaciatividade/EstimularCriatividadeHistorias'
 import EscritaTerapeutica from '../../exercicios/escritaterapeutica/EscritaTerapeutica';
 import Modal from 'react-bootstrap/Modal'
@@ -28,7 +27,6 @@ import Modal from 'react-bootstrap/Modal'
 
 export default function Main() {
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
@@ -44,8 +42,8 @@ export default function Main() {
                             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                             <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
                                 <Nav className="">
-                                    <Link to="/estimularCriatividade" className="menu-di  mx-1 linkreact">Estou em crise</Link>
-                                    <Link to="/escritaTerap" className="menu-di  mx-1 linkreact">Quero me acalmar</Link>
+                                    <Link to="/escritaTerap" className="menu-di  mx-1 linkreact">Estou em crise</Link>
+                                    <Link to="/queromeacalmar" className="menu-di  mx-1 linkreact">Quero me acalmar</Link>
                                     <Link to="/informacoes" className="menu-di  mx-1 linkreact">Informações</Link>
                                     {/* <!-- inicio do perfil --> */}
                                     <div className="perfi-usu">
@@ -91,8 +89,7 @@ export default function Main() {
                             <Route path="/musicaTerapia" component={MusicaDeUsoTerapeutico} />
                             <Route path="/meditacao" component={Meditacao} />
                             <Route path="/meditacaoGuiada" component={MeditacaoGuiada} />
-                            <Route path="/meditacaoPranayama" component={MeditacaoPranayama} />
-                            <Route path="/meditacaoExpansao" component={MeditacaoExpansao} />
+                            <Route path="/meditacaoPranayama" component={MeditacaoPranayama} />                       
                             <Route path="/estimularCriatividade" component={EstimularCriatividadeHistorias} />
                             <Route path="/escritaTerap" component={EscritaTerapeutica} />
 
