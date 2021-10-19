@@ -10,6 +10,7 @@ import logoIcon from '../../img/logo-icon.png'
 import facebook from '../../img/facebook-logo.png'
 import twitter from '../../img/twitter-logo.png'
 import instagram from '../../img/instagram-logo.png'
+import EstouTendoUmacrise from '../../AntesDoCadastro/estoutendoumacrise/EstouTendoUmacrise'
 
 export default function MainAntesCadas() {
 
@@ -47,7 +48,7 @@ return(
                     <Route path="/index" component={Index} />
                     <Route path="/login" component={Login} />
                     <Route path="/cadastro" component={Cadastro} />
-                    
+                    <Route path="/estoutendoumacrise" component={EstouTendoUmacrise} />
                     
 
                 </Switch>
@@ -66,7 +67,7 @@ return(
 
                     <div className="d-flex justify-content-center align-items-start mrgr-grande" style={{ width: "100%" }}>
                         <ul className="rodape-itens mx-1">
-                            <li><Link to="/"
+                            <li><Link to="/estoutendoumacrise"
                                 className="linkreact text-light roda-link font-weight-bold itens">Estou em
                                 crise</Link>
                             </li>
@@ -74,7 +75,7 @@ return(
                         </ul>
 
                         <ul className="rodape-itens mx-1">
-                            <li><Link to="/"
+                            <li><Link to="/cadastro"
                                 className="linkreact text-light roda-link font-weight-bold itens">Conheça nosso site</Link>
                             </li>
                             <li className="text-muted roda-link itens">Estou em crise </li>

@@ -36,25 +36,23 @@ return (
     <Carousel fade>
         <Carousel.Item>
             <img className="d-block w-100" src={Carousel2} alt="First slide" />
-            <div className={CarouselCaption}>
-              <Link to="/cadastro"><button type="button" className="btn btn-outline-info btn-inicial-enter">Conheça nosso site</button></Link>
-              <button type="button" className="btn btn-outline-danger btn-inicial-crise"> <Link to="/login"> Estou em crise </Link></button>
+            <div className={CarouselCaption}>                  
+              <Link to="/cadastro" className="linkreact btn btn-outline-info btn-inicial-enter" style={{padding: '2%'}}>Conheça nosso site</Link>
+              <Link to="/estoutendoumacrise" className="linkreact btn btn-outline-danger btn-inicial-crise" style={{padding: '2%'}}> Estou em crise</Link>                
             </div>
         </Carousel.Item>
         <Carousel.Item>
             <img className="d-block w-100" src={Carousel1} alt="Second slide" />
-
             <div className={CarouselCaption}>
-              <button type="button" className="btn btn-outline-info btn-inicial-enter">Conheça nosso site</button>
-              <button type="button" className="btn btn-outline-danger btn-inicial-crise">Estou em crise</button>
+            <Link to="/cadastro" className="linkreact btn btn-outline-info btn-inicial-enter" style={{padding: '2%'}}>Conheça nosso site</Link>
+              <Link to="/estoutendoumacrise" className="linkreact btn btn-outline-danger btn-inicial-crise" style={{padding: '2%'}}> Estou em crise</Link> 
             </div>
         </Carousel.Item>
         <Carousel.Item>
             <img className="d-block w-100" src={Carousel3} alt="Third slide" />
-
             <div className={CarouselCaption}>
-              <button type="button" className="btn btn-outline-info btn-inicial-enter">Conheça nosso site</button>
-              <button type="button" className="btn btn-outline-danger btn-inicial-crise">Estou em crise</button>
+            <Link to="/cadastro" className="linkreact btn btn-outline-info btn-inicial-enter" style={{padding: '2%'}}>Conheça nosso site</Link>
+            <Link to="/estoutendoumacrise" className="linkreact btn btn-outline-danger btn-inicial-crise" style={{padding: '2%'}}> Estou em crise</Link> 
             </div>
         </Carousel.Item>
     </Carousel>

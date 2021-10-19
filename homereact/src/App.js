@@ -5,7 +5,6 @@ import Main from './Components/PosCadastro/principais/mainPosCadas/Main';
 import Queromeacalmar from './Components/PosCadastro/principais/queromeacalmar/Queromeacalmar';
 import Login from './Components/AntesDoCadastro/login/Login'
 import Cadastro from './Components/AntesDoCadastro/cadastro/Cadastro'
-import Index from './Components/AntesDoCadastro/InicioCal/Index'
 import Chatbot from './Components/AntesDoCadastro/chatbot/Chatbot';
 import EstimularCriatividadeHistorias from './Components/PosCadastro/exercicios/estimulaciatividade/EstimularCriatividadeHistorias';
 import Respiracao from './Components/PosCadastro/exercicios/respiracao/Respiracao';
@@ -40,11 +39,10 @@ return(
 <>
   {/* <Main/> */}
   {/* <Estouemcrise/> */}
-  {/* <MainAntesCadas/> */}
+  <MainAntesCadas/>
   {/* <Queromeacalmar /> */}
   {/* <Login /> */}
   {/* <Cadastro/> */}
-  <Index />
   {/* <Chatbot/> */}
   {/* <EstimularCriatividadeHistorias/> */}
   {/* <Respiracao/> */}
