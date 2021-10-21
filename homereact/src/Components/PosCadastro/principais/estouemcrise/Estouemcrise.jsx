@@ -28,16 +28,6 @@ export default function Estouemcrise() {
           {/* <!-- inicio 1 --> */}
           <Form className="foge-modal">
             <fieldset>
-            <div className="modal-nume">
-                  <Form.Select name="txtNumero" id="idNumero" class="form-select form-select-sm " aria-label="Default select example">
-                    <option value="1" className="itens">1°</option>
-                    <option value="2" className="itens">2°</option>
-                    <option value="3" className="itens">3°</option>
-                    <option value="4" className="itens">4°</option>
-                    <option value="5" className="itens">5°</option>
-                    <option value="6" className="itens">6°</option>
-                  </Form.Select>
-              </div>
               <div className="che-modal ">              
                 <Form.Check type="switch" id="custom-switch" label="" />
               </div>
@@ -59,16 +49,6 @@ export default function Estouemcrise() {
           {/* <!-- inicio 2 --> */}
           <Form className="foge-modal">
             <fieldset>
-            <div className="modal-nume">
-                  <Form.Select name="txtNumero" id="idNumero" class="form-select form-select-sm " aria-label="Default select example">
-                    <option value="1" className="itens">1°</option>
-                    <option value="2" className="itens">2°</option>
-                    <option value="3" className="itens">3°</option>
-                    <option value="4" className="itens">4°</option>
-                    <option value="5" className="itens">5°</option>
-                    <option value="6" className="itens">6°</option>
-                  </Form.Select>
-              </div>
               <div className="che-modal">
                 <Form.Check type="switch" id="custom-switch" label="" />
               </div>
@@ -90,16 +70,6 @@ export default function Estouemcrise() {
           {/* <!-- inicio 3 --> */}
           <Form className="foge-modal">
             <fieldset>
-            <div className="modal-nume">
-                  <Form.Select name="txtNumero" id="idNumero" class="form-select form-select-sm " aria-label="Default select example">
-                    <option value="1" className="itens">1°</option>
-                    <option value="2" className="itens">2°</option>
-                    <option value="3" className="itens">3°</option>
-                    <option value="4" className="itens">4°</option>
-                    <option value="5" className="itens">5°</option>
-                    <option value="6" className="itens">6°</option>
-                  </Form.Select>
-              </div>
               <div className=" che-modal">
                 <Form.Check type="switch" id="custom-switch" label="" />
               </div>
@@ -121,16 +91,6 @@ export default function Estouemcrise() {
           {/* <!-- inicio 4 --> */}
           <Form className="foge-modal">
             <fieldset>
-            <div className="modal-nume">
-                  <Form.Select name="txtNumero" id="idNumero" class="form-select form-select-sm " aria-label="Default select example">
-                    <option value="1" className="itens">1°</option>
-                    <option value="2" className="itens">2°</option>
-                    <option value="3" className="itens">3°</option>
-                    <option value="4" className="itens">4°</option>
-                    <option value="5" className="itens">5°</option>
-                    <option value="6" className="itens">6°</option>
-                  </Form.Select>
-              </div>
               <div className="che-modal">
                 <Form.Check type="switch" id="custom-switch" label="" />
               </div>
@@ -152,16 +112,6 @@ export default function Estouemcrise() {
           {/* <!-- inicio 5 --> */}
           <Form className="foge-modal">
             <fieldset>
-            <div className="modal-nume">
-                  <Form.Select name="txtNumero" id="idNumero" class="form-select form-select-sm " aria-label="Default select example">
-                    <option value="1" className="itens">1°</option>
-                    <option value="2" className="itens">2°</option>
-                    <option value="3" className="itens">3°</option>
-                    <option value="4" className="itens">4°</option>
-                    <option value="5" className="itens">5°</option>
-                    <option value="6" className="itens">6°</option>
-                  </Form.Select>
-              </div>
               <div className="che-modal">
                 <Form.Check type="switch" id="custom-switch" label="" />
               </div>
@@ -183,16 +133,6 @@ export default function Estouemcrise() {
           {/* <!-- inicio 6 --> */}
           <Form className="foge-modal">
             <fieldset>
-            <div className="modal-nume">
-                  <Form.Select name="txtNumero" id="idNumero" class="form-select form-select-sm " aria-label="Default select example">
-                    <option value="1" className="itens">1°</option>
-                    <option value="2" className="itens">2°</option>
-                    <option value="3" className="itens">3°</option>
-                    <option value="4" className="itens">4°</option>
-                    <option value="5" className="itens">5°</option>
-                    <option value="6" className="itens">6°</option>
-                  </Form.Select>
-              </div>
               <div className=" che-modal">
                 <Form.Check type="switch" id="custom-switch" label="" />
               </div>

@@ -1,3 +1,8 @@
+/* .testIndex{
+  background-color: #e20;
+  color: #000000;
+} */
+/*# sourceMappingURL=App.css.map */
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Noto+Sans+TC&family=Open+Sans+Condensed:wght@300&display=swap');
 /* -Fontes do site
 font-family: 'Didact Gothic', sans-serif; - MENU
@@ -2679,4 +2684,18 @@ input:nth-of-type(5):checked~main.ori-sel {
 /* começo imaginação guiada */
 .ima-guiada {
     border-radius: 100px;
+}
+
+.bt-exercicios {
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: #1140cf 3px solid;
+  margin-bottom: 2%;
+  margin-top: 1%;
+  margin-left: 65%;
+}
+
+.bt-exercicios:hover {
+  border: #03a3ff 3px solid;
 }
