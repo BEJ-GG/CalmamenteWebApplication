@@ -302,16 +302,21 @@ a:hover,
 
     .minl-ebooks {
         
-        width: 10%;
-        height: 10%;
+        display: flex;
+        flex-direction: row;
+        margin-left: 25%;
+        /* margin-right: 25%; */
+
+       width: 100%;
 
     }
 
     .min-ebooks {
         margin-left: 1%;
+        clear: both;
         /* perguntar se fica bom assim ou sem o margin-left: 1%; */
-        width: 10%;
-        height: 10%;
+        width: 15%;
+        height: 15%;
     }
 
     .min-ti-eb {
@@ -980,18 +985,24 @@ a:hover,
     }
 
     .minl-ebooks {
-        margin-left: 13%;
-        width: 15%;
+        
+        display: flex;
+        flex-direction: row;
+        margin-left: 20%;
+        margin-right: 30%;
 
+       width: 100%;
 
     }
 
     .min-ebooks {
         margin-left: 1%;
+        clear: both;
         /* perguntar se fica bom assim ou sem o margin-left: 1%; */
-        width: 15%;
-
+        width: 20%;
+        height: 20%;
     }
+
 
     .min-ti-eb {
         text-align: center;
@@ -1626,21 +1637,24 @@ a:hover,
     }
 
     .minl-ebooks {
-        margin-left: 32%;
-        margin-right: 18%;
-        width: 35%;
-        display: block;
+        
+        display: flex;
+        flex-direction: column;
+        margin-left: 25%;
+        margin-right: 25%;
 
+       width: 100%;
 
     }
 
     .min-ebooks {
-        margin-left: 32%;
-        margin-right: 18%;
-        width: 35%;
-        display: block;
-
+        margin-left: 1%;
+        clear: both;
+        /* perguntar se fica bom assim ou sem o margin-left: 1%; */
+        width: 45%;
+        height: 45%;
     }
+
 
     .min-ti-eb {
         text-align: center;

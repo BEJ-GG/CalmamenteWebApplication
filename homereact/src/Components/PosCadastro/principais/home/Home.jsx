@@ -1,8 +1,8 @@
 import React from 'react'
 import { faBook, faExclamationTriangle, faMugHot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ebook from '../../../img/teste-ebook.jpg'
-import { Switch, Route, Link, Redirect } from 'react-router-dom'
+import book3 from '../../../img/3book.PNG'
+import {Link} from 'react-router-dom'
 
 export default function Home() {
 
@@ -93,10 +93,8 @@ export default function Home() {
       {/* <!-- inicio video --> */}
 
       <div class="d-flex justify-content-center mrgt-media">
-        <iframe width="560" height="315"
-          src="https://www.youtube.com/embed/4eoM26ZmHd0" title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen style={{ borderRadius: '20px 5px 20px 5px' }}></iframe>
+       
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/8YG8HABY25w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style={{ borderRadius: '20px 5px 20px 5px' }}></iframe>
       </div>
       {/* <!-- fim video  --> */}
       <div class="paralax-montain mrgt-media">
@@ -109,27 +107,25 @@ export default function Home() {
       </div>
       <div class="d-flex  mrgt-grande row m-0">
         <div class=" mrgl-grande col-12 col-sm-12 col-md-8 col-lg-8 " id="home-book">
-          <img src={ebook} alt="Imagem e-book" title="Imagem e-book" style={{ width: '100%' }}></img>
+        <Link to="/informacoes" class="linkreact">
+          <img src={book3} alt="Imagem e-book" style={{ width: '100%' }}></img>
+          </Link>
         </div>
         <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-          <p class="titulos mrgx-media" id="home-tbook">Titulo do E-book</p>
-          <p class="textos mrgx-media">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
-            eligendi
-            sapiente, totam in qui
-            veniam. Dicta vero voluptas maxime nesciunt excepturi libero! Perspiciatis esse ad commodi
-            maiores odio quia
-            eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sit, molestiae
-            laudantium modi
-            pariatur
-            sapiente nesciunt ipsa quas nam cum alias totam architecto vero est vel animi doloribus,
-            similique quia.
-            Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Enim, rerum ab! Deserunt temporibus rem
-            impedit
-            consectetur
-            illo, consequatur distinctio atque at sapiente provident, porro ducimus eum libero nam, sequi
-            dolorem?</p>
+          <p class="titulos mrgx-media" id="home-tbook">20 Estratégias Práticas e Eficientes Para Você Constrolar a Ansiedade</p>
+          <p class="textos mrgx-media">A ansiedade é uma sensação comum para a grande maioria das pessoas na atualidade: muitos compromissos, responsabilidades, família, filhos, trabalho.
+
+São muitos os motivos que podem levar uma pessoa a desenvolver ansiedade.
+
+Por isso, cada vez mais pessoas estão em busca do auxílio de um psicólogo e de estratégias para melhorar a qualidade de vida.
+
+E não só pensando em si mesmas, mas, também, nas pessoas ao seu redor, já que a ansiedade tende a afetar não somente quem a sente, afinal, comumente afeta todos àqueles que estão à nossa volta.
+
+Isso porque uma pessoa que sofre de ansiedade pode responder de forma ríspida a uma simples pergunta, agir de maneira agressiva em situações comuns do dia a dia, entre tantos outros episódios que podem ser desencadeados em decorrência da ansiedade, que podem vir acompanhados de sintomas de depressão.
+
+Montei este ebook com um único objetivo: ajudar você a saber lidar com a ansiedade mas, mais do que isso, ajudar você a ter uma vida o mais tranquila possível para que você possa desfrutar dos bons momentos com sua família, amigos e até mesmo sozinho ou sozinha, porque você merece isso.</p>
         </div>
+        
       </div>
       {/* <!-- fim do e-book --> */}
 
