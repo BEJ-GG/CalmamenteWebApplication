@@ -6,7 +6,6 @@ import IfraEstoutendoUmaCrise from './IfraEstoutendoumaCrise'
 
 export default function EstouTendoUmacrise() {
     return (
-
         <>
             <div id="container">
                 <div id="main">

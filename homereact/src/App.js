@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import './App.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './Components/PosCadastro/principais/mainPosCadas/Main';
 import Queromeacalmar from './Components/PosCadastro/principais/queromeacalmar/Queromeacalmar';
@@ -39,14 +40,14 @@ return(
 <>
   {/* <Main/> */}
   {/* <Estouemcrise/> */}
-  <MainAntesCadas/>
+  {/* <MainAntesCadas/> */}
   {/* <Queromeacalmar /> */}
   {/* <Login /> */}
   {/* <Cadastro/> */}
   {/* <Chatbot/> */}
   {/* <EstimularCriatividadeHistorias/> */}
   {/* <Respiracao/> */}
-  {/* <EscritaTerapeutica/> */}
+  <EscritaTerapeutica/>
   {/* <EstouTendoUmacrise/> */}
   {/* <Exerciciomao/> */}
   {/* <ExercicioCheiro /> */}

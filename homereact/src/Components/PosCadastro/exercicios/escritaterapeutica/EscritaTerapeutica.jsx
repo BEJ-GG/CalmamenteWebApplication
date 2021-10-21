@@ -9,7 +9,7 @@ export default function EscritaTerapeutica() {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
+  
     return (
         <>
             <div id="container">
@@ -39,6 +39,7 @@ export default function EscritaTerapeutica() {
                                     <textarea className="form-control caixa-escrita" name="limescr" id="limescr" aria-label="With textarea" style={{ width: '65vw' }}></textarea>
                                     <div class="di-bt-ex">
                                         <input className="bt-exercicios" type="reset" value="Limpar"/>
+                                       
                                     </div>
                                 </fieldset>
                             </form>

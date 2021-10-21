@@ -28,16 +28,14 @@ return(
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
                         <Nav className="">
-                            <hr />
-                            {/* HR? */}
+                            <hr />               
                             <Link to="/login" className="menu-di  mx-1 linkreact" aria-current="page">Login</Link>
                             <Link to="/cadastro" className="menu-dir mx-1 linkreact">Cadastre-se</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </div>
             </Navbar>
-            {/*
-            <!-- fim menu --> */}
+            {/*<!-- fim menu --> */}
 
             {/* Conteudo */}
             <main>
@@ -78,21 +76,17 @@ return(
                             <li><Link to="/cadastro"
                                 className="linkreact text-light roda-link font-weight-bold itens">Conheça nosso site</Link>
                             </li>
-                            <li className="text-muted roda-link itens">Estou em crise </li>
+                            {/* <li className="text-muted roda-link itens">Estou em crise </li> */}
                             <li className="text-muted roda-link itens">Quero me acalmar </li>
                             <li className="text-muted roda-link itens">Informações </li>
                         </ul>
                     </div>
 
                     <div className="rodape-contatos ">
-                        <ul className="rodape-itens list-group list-group-horizontal list-group-horizontal-sm list-group-horizontal-md
-          list-group-horizontal-xl">
-                            <li className="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={instagram}
-                                alt="" /></a></li>
-                            <li className="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={twitter}
-                                alt="" /></a></li>
-                            <li className="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={facebook}
-                                alt="" /></a></li>
+                        <ul className="rodape-itens list-group list-group-horizontal list-group-horizontal-sm list-group-horizontal-md list-group-horizontal-xl">
+                            <li className="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={instagram} alt="" /></a></li>
+                            <li className="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={twitter} alt="" /></a></li>
+                            <li className="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={facebook} alt="" /></a></li>
                         </ul>
                         <p className="text-light roda-email itens">contatobejgg@gmail.com</p>
                     </div>

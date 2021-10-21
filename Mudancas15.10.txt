@@ -1,13 +1,10 @@
 Site Calmamente
 
-1 - Modal "abrir fechar" bootstrap
-2 - ClassName em todo o site 
 3 - Botao "index" css e  link
 4 - Carrousellcaption carousel 
 5 - Como fazer um media querys atraves do react "Index"
 6 - Canot / POST chatbot / Action Form 
 7 - Perguntar sobre main Depois do Chat Bot 
-8 - Paralax mobile outros ebooks / informacoes
 9 - Funções javascript do formulario Validação 
 
 
