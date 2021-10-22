@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Modal from 'react-bootstrap/Modal'
+import HeaderPosCadas from '../../../Headers/HeaderPosCadas';
+import FooterPosCadas from '../../../Footers/FooterPosCadas';
 
 export default function ExercicioGrounding() {
     const [show, setShow] = useState(false);
@@ -10,6 +12,7 @@ export default function ExercicioGrounding() {
 
 return(
 <>
+<HeaderPosCadas/>
     {/*
     <!-- inicio informação --> */}
     <div className="d-flex justify-content-end mrgr-media mrgt-pequena">
@@ -30,5 +33,6 @@ return(
     <!-- fim modal do informação  --> */}
     {/*
     <!-- fim informação --> */}
+    <FooterPosCadas/>
 </>
 )}

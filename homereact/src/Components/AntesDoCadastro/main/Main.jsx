@@ -49,15 +49,14 @@ return(
                 <RoutesPrivate path="/respiracao" component={Respiracao} />
                 <RoutesPrivate path="/musicaTerapia" component={MusicaDeUsoTerapeutico} />
                 <RoutesPrivate path="/meditacao" component={Meditacao} />
-                <RoutesPrivate path="/meditacaoGuiada" component={MeditacaoGuiada} />
-                <RoutesPrivate path="/meditacaoPranayama" component={MeditacaoPranayama} />
+                <Route path="/meditacaoGuiada" component={MeditacaoGuiada} />
+                <Route path="/meditacaoPranayama" component={MeditacaoPranayama} />
                 <RoutesPrivate path="/estimularCriatividade" component={EstimularCriatividadeHistorias} />
                 <RoutesPrivate path="/escritaTerap" component={EscritaTerapeutica} />
                 <RoutesPrivate path="/imaginacaoGuiada" component={ImaginacaoGuiada} />
                 <RoutesPrivate path="/origami" component={Origami} />
                 <RoutesPrivate path="/pradaDePensa" component={ParadaDePensamento} />
-                <RoutesPrivate path="/exercicioGrounding" component={ExercicioGrounding} />
-                
+                <RoutesPrivate path="/exercicioGrounding" component={ExercicioGrounding} />              
             </Switch>
         </Provider>
     </main>

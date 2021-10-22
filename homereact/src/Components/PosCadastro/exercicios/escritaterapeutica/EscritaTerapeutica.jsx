@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Modal from 'react-bootstrap/Modal'
+import HeaderPosCadas from '../../../Headers/HeaderPosCadas';
+import FooterPosCadas from '../../../Footers/FooterPosCadas';
 
 
 export default function EscritaTerapeutica() {
@@ -15,7 +17,7 @@ export default function EscritaTerapeutica() {
             <div id="container">
                 <div id="main">
 
-
+                    <HeaderPosCadas/>
                     {/* <!-- inicio informação --> */}
                     <div className="d-flex justify-content-end mrgr-media mrgt-pequena">
                         <button onClick={handleShow} style={{ border: 'none', backgroundColor: 'rgba(240, 248, 255, 0)' }} data-bs-toggle="modal" data-bs-target="#exampleModal"><FontAwesomeIcon icon={faInfoCircle} className="tam-exercicio" /></button>
@@ -48,6 +50,7 @@ export default function EscritaTerapeutica() {
                     {/* <!-- fim escrita terapeutica  --> */}
                 </div>
             </div>
+            <FooterPosCadas/>
         </>
     )
 }

@@ -15,6 +15,8 @@ import oriSapo from '../../../img/origami-sapo.jpg'
 import passoSapo from '../../../img/passo-sapo.png'
 import oriPeixe from '../../../img/origami-peixe.jpg'
 import passoPeixe from '../../../img/passo-peixe.jpg'
+import HeaderPosCadas from '../../../Headers/HeaderPosCadas';
+import FooterPosCadas from '../../../Footers/FooterPosCadas';
 
 
 export default function ExercicioOrgiami() {
@@ -44,6 +46,7 @@ export default function ExercicioOrgiami() {
     const handleShowCac = () => setCachorro(true);
     return (
         <>
+        <HeaderPosCadas/>
           {/* <!-- inicio informação --> */}
           <div className="d-flex justify-content-end mrgr-media mrgt-pequena">
             <button onClick={handleShow} style={{ border: 'none', backgroundColor: 'rgba(240, 248, 255, 0)' }} data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -358,6 +361,7 @@ export default function ExercicioOrgiami() {
 
                 </main>
             </div>
+            <FooterPosCadas/>
         </>
     );
 }

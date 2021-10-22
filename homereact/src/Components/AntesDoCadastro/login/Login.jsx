@@ -10,7 +10,7 @@ return {email: '', senha: ''}
 }
 
 function login({email, senha}) {
-if (email === 'enzo@gmail.com' && senha === 'enzo'){
+if (email === 'admin@gmail.com' && senha === 'admin'){
 return {token: '1234'}
 }
 return {error: 'Usuário ou senha incorretos'}
