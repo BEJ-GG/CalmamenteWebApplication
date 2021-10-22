@@ -1,6 +1,5 @@
 import React from 'react'
 import './App.css'
-import './App.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './Components/PosCadastro/principais/mainPosCadas/Main';
 import Queromeacalmar from './Components/PosCadastro/principais/queromeacalmar/Queromeacalmar';
@@ -29,25 +28,25 @@ import ExercicioParadaPensamento from './Components/PosCadastro/exercicios/parad
 
 export default function App() {
 
-  const script = document.createElement("script");
-  script.src = "../public/static/javascript.js";
-  script.async = true;
-  script.document = document;
-  document.body.appendChild(script);
+  // const script = document.createElement("script");
+  // script.src = "../public/static/javascript.js";
+  // script.async = true;
+  // script.document = document;
+  // document.body.appendChild(script);
 
 return(
   
 <>
   {/* <Main/> */}
+  <MainAntesCadas/>
   {/* <Estouemcrise/> */}
-  {/* <MainAntesCadas/> */}
   {/* <Queromeacalmar /> */}
   {/* <Login /> */}
   {/* <Cadastro/> */}
   {/* <Chatbot/> */}
   {/* <EstimularCriatividadeHistorias/> */}
   {/* <Respiracao/> */}
-  <EscritaTerapeutica/>
+  {/* <EscritaTerapeutica/> */}
   {/* <EstouTendoUmacrise/> */}
   {/* <Exerciciomao/> */}
   {/* <ExercicioCheiro /> */}
