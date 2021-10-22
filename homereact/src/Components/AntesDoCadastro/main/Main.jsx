@@ -22,6 +22,7 @@ import MeditacaoPranayama from '../../PosCadastro/exercicios/meditacao/Meditacao
 import ImaginacaoGuiada from '../../PosCadastro/exercicios/imaginacaoGuiada/ExercicioImaginacaoGuiada'
 import Origami from '../../PosCadastro/exercicios/origami/ExercicioOrgiami'
 import ParadaDePensamento from '../../PosCadastro/exercicios/paradaPensamento/ExercicioParadaPensamento'
+import ExercicioGrounding from '../../PosCadastro/exercicios/exercicioGrounding/ExercicioGrounding'
 
 export default function Main() {
 
@@ -55,6 +56,7 @@ return(
                 <RoutesPrivate path="/imaginacaoGuiada" component={ImaginacaoGuiada} />
                 <RoutesPrivate path="/origami" component={Origami} />
                 <RoutesPrivate path="/pradaDePensa" component={ParadaDePensamento} />
+                <RoutesPrivate path="/exercicioGrounding" component={ExercicioGrounding} />
                 
             </Switch>
         </Provider>
