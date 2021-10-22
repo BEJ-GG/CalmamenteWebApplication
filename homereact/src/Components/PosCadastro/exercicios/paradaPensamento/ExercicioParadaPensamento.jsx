@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import ImgParada from '../../../img/paradaBalao.png'
 import ImgPensar from '../../../img/balaoPensar.png'
 import Modal from 'react-bootstrap/Modal'
+import HeaderPosCadas from '../../../Headers/HeaderPosCadas';
+import FooterPosCadas from '../../../Footers/FooterPosCadas';
 
 export default function ExercicioParadaPensamento() {
 
@@ -38,6 +40,7 @@ export default function ExercicioParadaPensamento() {
 
     return (
         <>
+        <HeaderPosCadas/>
             {/* <!-- inicio informação --> */}
             <div className="d-flex justify-content-end mrgr-media mrgt-pequena">
                 <button onClick={handleShow} style={{ border: 'none', backgroundColor: 'rgba(240, 248, 255, 0)' }} data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -76,6 +79,7 @@ export default function ExercicioParadaPensamento() {
                     </div>
                 </div>
             </div>
+            <FooterPosCadas/>
         </>
     )
 }

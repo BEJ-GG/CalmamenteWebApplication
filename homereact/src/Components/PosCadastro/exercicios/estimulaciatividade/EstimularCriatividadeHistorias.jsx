@@ -9,6 +9,8 @@ import Surrealsix from '../../../img/surreal6.jpg'
 import { faInfoCircle} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Modal from 'react-bootstrap/Modal'
+import HeaderPosCadas from '../../../Headers/HeaderPosCadas';
+import FooterPosCadas from '../../../Footers/FooterPosCadas'
 
 export default function EstimularCriatividadeHistorias() {
 
@@ -20,7 +22,7 @@ export default function EstimularCriatividadeHistorias() {
 
     return (
         <>
-
+        <HeaderPosCadas/>
             <div id="container">
                 <div id="main" style={{overflowX: 'hidden'}}>
                     {/* <!-- inicio informação --> */}
@@ -146,6 +148,7 @@ export default function EstimularCriatividadeHistorias() {
 
                 </div>
             </div>
+            <FooterPosCadas/>
         </ >
     )
 }

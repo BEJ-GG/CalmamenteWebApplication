@@ -8,6 +8,8 @@ import { Link } from 'react-router-dom';
 import VisnhuMudra from '../../../img/vishnu.jpg'
 import cicloVish from '../../../img/vishnu.gif'
 import Modal from 'react-bootstrap/Modal'
+import FooterPosCadas from '../../../Footers/FooterPosCadas';
+import HeaderPosCadas from '../../../Headers/HeaderPosCadas';
 
 export default function MeditacaoPranayama() {
 
@@ -92,6 +94,7 @@ export default function MeditacaoPranayama() {
 
     return (
         <>
+        <HeaderPosCadas/>
             {/* <!-- inicio informação --> */}
             <div onClick={handleShow} className="d-flex justify-content-end mrgr-media mrgt-pequena">
                 <button onClick={handleShow} style={{ border: 'none', backgroundColor: 'rgba(240, 248, 255, 0)' }} data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -102,7 +105,7 @@ export default function MeditacaoPranayama() {
                 <Modal.Header closeButton>
                     <Modal.Title>Personalisar</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Exercício de respiração</Modal.Body>
+                <Modal.Body>Exercício de meditação com pranayama</Modal.Body>
             </Modal>
             {/* <!-- fim modal do informação  --> */}
             {/* <!-- fim informação --> */}
@@ -145,6 +148,7 @@ export default function MeditacaoPranayama() {
                 {/* fim da parte dois  */}
             </div>
             {/* <!-- fim respiração  --> */}
+            <FooterPosCadas/>
         </>
     )
 }

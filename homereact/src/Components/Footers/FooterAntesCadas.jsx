@@ -5,7 +5,7 @@ import twitter from '../img/twitter-logo.png'
 import instagram from '../img/instagram-logo.png'
 import { Link } from 'react-router-dom'
 
-export default function FooterPosCadas() {
+export default function FooterAntesCadas() {
 
    return(
       <>

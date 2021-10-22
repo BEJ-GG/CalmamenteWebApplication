@@ -7,6 +7,8 @@ import IGuiada4 from '../../../img/i-guiada.jpg';
 import Modal from 'react-bootstrap/Modal'
 import { faInfoCircle} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import HeaderPosCadas from '../../../Headers/HeaderPosCadas';
+import FooterPosCadas from '../../../Footers/FooterPosCadas';
 
 export default function ExercicioImaGuia() {
     const [show, setShow] = useState(false);
@@ -15,6 +17,7 @@ export default function ExercicioImaGuia() {
 
     return (
         <>
+        <HeaderPosCadas/>
          {/* <!-- inicio informação --> */}
          <div className="d-flex justify-content-end mrgr-media mrgt-pequena">
                         <button onClick={handleShow} style={{border: 'none', backgroundColor: 'rgba(240, 248, 255, 0)'}} data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -66,6 +69,7 @@ export default function ExercicioImaGuia() {
                     />
                 </Carousel.Item>
             </Carousel>
+            <FooterPosCadas/>
         </>
     )
 }

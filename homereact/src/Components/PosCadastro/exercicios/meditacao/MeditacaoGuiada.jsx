@@ -3,13 +3,16 @@ import gifRespira from '../../../img/respiracao.gif'
 import Modal from 'react-bootstrap/Modal'
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import HeaderPosCadas from '../../../Headers/HeaderPosCadas';
+import FooterPosCadas from '../../../Footers/FooterPosCadas';
 
-export default function Respiracao() {
+export default function MeditacaoGuiada() {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     return (
         <>
+        <HeaderPosCadas/>
             {/* <!-- inicio informação --> */}
             <div className="d-flex justify-content-end mrgr-media mrgt-pequena">
                 <button onClick={handleShow} style={{ border: 'none', backgroundColor: 'rgba(240, 248, 255, 0)' }} data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -42,6 +45,7 @@ export default function Respiracao() {
                 </div>
             </div>
             {/*<!-- fim respiração  --> */}
+            <FooterPosCadas/>
         </>
     )
 }

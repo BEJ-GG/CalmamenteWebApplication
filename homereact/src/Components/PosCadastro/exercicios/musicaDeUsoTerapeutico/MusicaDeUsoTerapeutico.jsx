@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Modal from 'react-bootstrap/Modal'
+import HeaderPosCadas from '../../../Headers/HeaderPosCadas';
+import FooterPosCadas from '../../../Footers/FooterPosCadas';
 
 
 export default function MusicaDeUsoTerapeutico() {
@@ -12,6 +14,7 @@ export default function MusicaDeUsoTerapeutico() {
 
    return (
       <>
+      <HeaderPosCadas/>
 
          {/* <!-- inicio informação --> */}
          <div className="d-flex justify-content-end mrgr-media mrgt-pequena">
@@ -213,6 +216,7 @@ export default function MusicaDeUsoTerapeutico() {
             </div>
          </div>
          {/*<!-- fim Musica de uso terapeutico --> */}
+         <FooterPosCadas/>
       </>
    )
 }

@@ -2,15 +2,9 @@ import React from 'react'
 import Index from '../InicioCal/Index'
 import Login from '../login/Login'
 import Cadastro from '../cadastro/Cadastro'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import { Switch, Route, Link, Redirect } from 'react-router-dom'
-import Logo from '../../img/logo.png'
-import logoIcon from '../../img/logo-icon.png'
-import facebook from '../../img/facebook-logo.png'
-import twitter from '../../img/twitter-logo.png'
-import instagram from '../../img/instagram-logo.png'
-import EstouTendoUmacrise from '../../AntesDoCadastro/estoutendoumacrise/EstouTendoUmacrise'
+
+import { Switch, Route, Redirect } from 'react-router-dom'
+import EstouTendoUmacrise from '../estoutendoumacrise/EstouTendoUmacrise'
 import Chatbot from '../chatbot/Chatbot'
 import Provider from '../../provider/Provider'
 import RoutesPrivate from '../../Routes/private/Private'
@@ -25,8 +19,12 @@ import EscritaTerapeutica from '../../PosCadastro/exercicios/escritaterapeutica/
 import EstimularCriatividadeHistorias from '../../PosCadastro/exercicios/estimulaciatividade/EstimularCriatividadeHistorias'
 import MeditacaoGuiada from '../../PosCadastro/exercicios/meditacao/MeditacaoGuiada'
 import MeditacaoPranayama from '../../PosCadastro/exercicios/meditacao/MeditacaoPranayama'
+import ImaginacaoGuiada from '../../PosCadastro/exercicios/imaginacaoGuiada/ExercicioImaginacaoGuiada'
+import Origami from '../../PosCadastro/exercicios/origami/ExercicioOrgiami'
+import ParadaDePensamento from '../../PosCadastro/exercicios/paradaPensamento/ExercicioParadaPensamento'
+import ExercicioGrounding from '../../PosCadastro/exercicios/exercicioGrounding/ExercicioGrounding'
 
-export default function MainAntesCadas() {
+export default function Main() {
 
 return(
 <>
@@ -45,17 +43,20 @@ return(
                 <Route path="/estoutendoumacrise" component={EstouTendoUmacrise} />
                 <RoutesPrivate path="/chatbot" component={Chatbot} />
                 <RoutesPrivate path="/home" component={Home} />
-                <RoutesPrivate path="/home" component={Home} />
                 <RoutesPrivate path="/estouemcrise" component={Estouemcrise} />
                 <RoutesPrivate path="/queromeacalmar" component={Queromeacalmar} />
                 <RoutesPrivate path="/informacoes" component={Informacoes} />
                 <RoutesPrivate path="/respiracao" component={Respiracao} />
                 <RoutesPrivate path="/musicaTerapia" component={MusicaDeUsoTerapeutico} />
                 <RoutesPrivate path="/meditacao" component={Meditacao} />
-                <RoutesPrivate path="/meditacaoGuiada" component={MeditacaoGuiada} />
-                <RoutesPrivate path="/meditacaoPranayama" component={MeditacaoPranayama} />
+                <Route path="/meditacaoGuiada" component={MeditacaoGuiada} />
+                <Route path="/meditacaoPranayama" component={MeditacaoPranayama} />
                 <RoutesPrivate path="/estimularCriatividade" component={EstimularCriatividadeHistorias} />
                 <RoutesPrivate path="/escritaTerap" component={EscritaTerapeutica} />
+                <RoutesPrivate path="/imaginacaoGuiada" component={ImaginacaoGuiada} />
+                <RoutesPrivate path="/origami" component={Origami} />
+                <RoutesPrivate path="/pradaDePensa" component={ParadaDePensamento} />
+                <RoutesPrivate path="/exercicioGrounding" component={ExercicioGrounding} />              
             </Switch>
         </Provider>
     </main>
