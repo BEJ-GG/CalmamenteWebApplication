@@ -28,15 +28,12 @@ import ExercicioParadaPensamento from './Components/PosCadastro/exercicios/parad
 
 export default function App() {
 
-  // const script = document.createElement("script");
-  // script.src = "../public/static/javascript.js";
-  // script.async = true;
-  // script.document = document;
-  // document.body.appendChild(script);
+
 
 return(
   
 <>
+  <MainAntesCadas/>
   {/* <Main/> */}
   <MainAntesCadas/>
   {/* <Estouemcrise/> */}

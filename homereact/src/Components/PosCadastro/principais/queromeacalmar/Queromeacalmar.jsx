@@ -3,6 +3,8 @@ import { faQuestionCircle, faCog } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Modal from 'react-bootstrap/Modal'
 import Form from 'react-bootstrap/Form'
+import HeaderPosCadas from '../../../Headers/HeaderPosCadas';
+import FooterPosCadas from '../../../Footers/FooterPosCadas'
 
 export default function Queromeacalmar() {
     const [show, setShow] = useState(false);
@@ -11,6 +13,7 @@ export default function Queromeacalmar() {
 
     return (
         <>
+        <HeaderPosCadas/>
             {/* <!-- inicio personalizar --> */}
             <div className="d-flex justify-content-end mrgr-media mrgt-pequena">
                 <button onClick={handleShow} style={{ border: "none", backgroundColor: "rgba(240, 248, 255, 0)" }}>
@@ -275,6 +278,7 @@ export default function Queromeacalmar() {
             </div>
             {/* <!-- fim dos cards de soluções --> */}
             {/* </hr> */}
+            <FooterPosCadas/>
         </>
     )
 }

@@ -3,11 +3,14 @@ import { faBook, faExclamationTriangle, faMugHot } from "@fortawesome/free-solid
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import book3 from '../../../img/3book.PNG'
 import {Link} from 'react-router-dom'
+import HeaderPosCadas from '../../../Headers/HeaderPosCadas';
+import FooterPosCadas from '../../../Footers/FooterPosCadas';
 
 export default function Home() {
 
   return (
     <>
+      <HeaderPosCadas/>
       {/* <!-- inicio dos cards de 3 funcionalidade --> */}
       {/* <!-- card 1 --> */}
       <div className="mrgx-pequena mrgt-pequena">
@@ -197,6 +200,8 @@ Montei este ebook com um único objetivo: ajudar você a saber lidar com a ansie
       </div>
 
       {/* fim parte institucional  */}
+
+      <FooterPosCadas/>
     </>
   )
 }

@@ -12,13 +12,16 @@ import vid3 from '../../../img/vid3.PNG'
 import vid4 from '../../../img/vid4.PNG'
 import vid5 from '../../../img/vid5.PNG'
 import vid6 from '../../../img/vid6.PNG'
+import HeaderPosCadas from '../../../Headers/HeaderPosCadas';
+import FooterPosCadas from '../../../Footers/FooterPosCadas';
 
 
 export default function Informacoes() {
 
 
 return (
-<>
+<div style={{overflowX: 'hidden'}}>
+<HeaderPosCadas/>
     <div className="paralax-praia">
         <h1 className=" tieb  titulos t-home d-flex justify-content-center">E-Books</h1>
     </div>
@@ -187,6 +190,8 @@ return (
 
         </div>
     </div>
-</>
+
+    <FooterPosCadas/>
+</div>
 )
 }

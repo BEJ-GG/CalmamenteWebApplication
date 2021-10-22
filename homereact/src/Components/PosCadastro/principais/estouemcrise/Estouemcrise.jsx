@@ -3,6 +3,8 @@ import { faQuestionCircle, faCog } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Modal from 'react-bootstrap/Modal'
 import Form from 'react-bootstrap/Form'
+import HeaderPosCadas from '../../../Headers/HeaderPosCadas';
+import FooterPosCadas from '../../../Footers/FooterPosCadas';
 
 
 export default function Estouemcrise() {
@@ -12,7 +14,7 @@ export default function Estouemcrise() {
 
   return (
     <>
-
+      <HeaderPosCadas/>
       {/* <!-- inicio personalizar --> */}
 
       <div className=" d-flex justify-content-end mrgr-media mrgt-pequena ">
@@ -296,6 +298,8 @@ export default function Estouemcrise() {
       </div>
       {/* <!-- fim dos cards de soluções --> */}
       {/* </hr> */}
+
+      <FooterPosCadas/>
     </>
   )
 }
