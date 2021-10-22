@@ -1,6 +1,5 @@
 import React from 'react'
 import './App.css'
-// import './App.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './Components/PosCadastro/principais/mainPosCadas/Main';
 import Queromeacalmar from './Components/PosCadastro/principais/queromeacalmar/Queromeacalmar';
@@ -30,11 +29,13 @@ import ExercicioParadaPensamento from './Components/PosCadastro/exercicios/parad
 export default function App() {
 
 
+
 return(
   
 <>
   <MainAntesCadas/>
   {/* <Main/> */}
+  <MainAntesCadas/>
   {/* <Estouemcrise/> */}
   {/* <Queromeacalmar /> */}
   {/* <Login /> */}
