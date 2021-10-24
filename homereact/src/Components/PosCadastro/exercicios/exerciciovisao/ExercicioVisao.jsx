@@ -28,7 +28,7 @@ export default function ExercicioVisao() {
 
         return (
             <>
-                <div className="fundoOl">
+                <div className="fundoOl" style={{marginBottom: '42%'}}>
                     <h1 className="escr-olho">Observe o ambiente a sua volta.
                         Liste mentalmente 5 coisas que você consegue enxergar.</h1>
                     <div className="eyes" /*onMouseMove={this._onMouseMove} ref="eyes" /*style={maskStyle}*/>

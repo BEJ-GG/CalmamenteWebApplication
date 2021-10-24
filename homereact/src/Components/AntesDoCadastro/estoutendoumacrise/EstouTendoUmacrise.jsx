@@ -24,34 +24,29 @@ import instagram from '../../img/instagram-logo.png'
 export default function EstouTendoUmacrise() {
 
     const [show, setShow] = useState(0);
-    const [pagi, setPagi] = useState();
+    const [pagi, setPagi] = useState(<ExercicioVisao />);
     const atribuidor = (valor) => {
         setShow(valor)
-        switch (show) {
+        switch (show) {      
             case 1:
-                setPagi(<ExercicioCheiro />)
-                break;
-            case 2:
-                setPagi(<Exerciciomao />)
-                break;
-            case 3:
-                setPagi(<ExercicioVisao />)
-                break;
-            case 4:
                 setPagi(<ExercicioSom />)
                 break;
-            case 5:
+            case 2:
+                setPagi(<ExercicioCheiro/>)
+                break;
+            case 3:
                 setPagi(<ExercicioGosto />)
                 break;
             default:
-                setPagi(<div>Nada Encontrado</div>)
+                setPagi(<Exerciciomao />)
                 break;
         }
     }
 
+    
     return (
         <>
-        {/*
+            {/*
             <!-- inicio menu  --> */}
             <Navbar collapseOnSelect expand="lg" variant="light"
                 className="back-menu m-0 p-0 d-flex justify-content-between">
@@ -80,7 +75,7 @@ export default function EstouTendoUmacrise() {
                             {pagi}
                         </div>
                         <div className="card-body">
-                            <div className="position-relative m-4">
+                            <div className="position-relative m-4">                            
                                 <div style={{ height: '1px' }}>
                                     <div style={{ width: '50%' }}></div>
                                 </div>
@@ -101,48 +96,48 @@ export default function EstouTendoUmacrise() {
 
             {/*
     <!-- inicio rodapé --> */}
-    <footer className="bg-dark m-0" id="roda">
-        <div className=" rodape">
-            <div className="rodape-icone">
-                <img src={logoIcon} style={{ width: "100%" }} alt="" />
-            </div>
+            <footer className="bg-dark m-0" id="roda">
+                <div className=" rodape">
+                    <div className="rodape-icone">
+                        <img src={logoIcon} style={{ width: "100%" }} alt="" />
+                    </div>
 
-            <div className="d-flex justify-content-center align-items-start mrgr-grande" style={{ width: "100%" }}>
-                <ul className="rodape-itens mx-1">
-                    <li>
-                        <Link to="/estoutendoumacrise"
-                            className="linkreact text-light roda-link font-weight-bold itens">Estou em
-                        crise</Link>
-                    </li>
-                    <li className="text-muted roda-link roda-link-cel itens">Exercícios para momentos de crise</li>
-                </ul>
+                    <div className="d-flex justify-content-center align-items-start mrgr-grande" style={{ width: "100%" }}>
+                        <ul className="rodape-itens mx-1">
+                            <li>
+                                <Link to="/estoutendoumacrise"
+                                    className="linkreact text-light roda-link font-weight-bold itens">Estou em
+                                    crise</Link>
+                            </li>
+                            <li className="text-muted roda-link roda-link-cel itens">Exercícios para momentos de crise</li>
+                        </ul>
 
-                <ul className="rodape-itens mx-1">
-                    <li>
-                        <Link to="/cadastro" className="linkreact text-light roda-link font-weight-bold itens">Conheça
-                        nosso site</Link>
-                    </li>
-                    {/* <li className="text-muted roda-link itens">Estou em crise </li> */}
-                    <li className="text-muted roda-link itens">Quero me acalmar </li>
-                    <li className="text-muted roda-link itens">Informações </li>
-                </ul>
-            </div>
+                        <ul className="rodape-itens mx-1">
+                            <li>
+                                <Link to="/cadastro" className="linkreact text-light roda-link font-weight-bold itens">Conheça
+                                    nosso site</Link>
+                            </li>
+                            {/* <li className="text-muted roda-link itens">Estou em crise </li> */}
+                            <li className="text-muted roda-link itens">Quero me acalmar </li>
+                            <li className="text-muted roda-link itens">Informações </li>
+                        </ul>
+                    </div>
 
-            <div className="rodape-contatos ">
-                <ul
-                    className="rodape-itens list-group list-group-horizontal list-group-horizontal-sm list-group-horizontal-md list-group-horizontal-xl">
-                    <li className="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={instagram}
+                    <div className="rodape-contatos ">
+                        <ul
+                            className="rodape-itens list-group list-group-horizontal list-group-horizontal-sm list-group-horizontal-md list-group-horizontal-xl">
+                            <li className="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={instagram}
                                 alt="" /></a></li>
-                    <li className="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={twitter}
+                            <li className="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={twitter}
                                 alt="" /></a></li>
-                    <li className="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={facebook}
+                            <li className="text-light roda-link-redes mx-1"><a href="" target="_blank"><img src={facebook}
                                 alt="" /></a></li>
-                </ul>
-                <p className="text-light roda-email itens">contatobejgg@gmail.com</p>
-            </div>
-        </div>
-    </footer>
-    {/*
+                        </ul>
+                        <p className="text-light roda-email itens">contatobejgg@gmail.com</p>
+                    </div>
+                </div>
+            </footer>
+            {/*
     <!-- fim rodapé  --> */}
         </>
     )

@@ -7,7 +7,7 @@ export default function ExercicioSom() {
             <body className="fundoOl ">
                 <h1 className="escr-olho">Liste mentalmente 3 sons que você consegue ouvir.</h1>
                 <div style={{height: 'auto'}} >
-                    <img src={ImgSomFone} style={{width: '100%'}} alt=""/>
+                    <img src={ImgSomFone} style={{width: '86%', marginLeft: '8%'}} alt=""/>
                 </div>
                 {/* 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
