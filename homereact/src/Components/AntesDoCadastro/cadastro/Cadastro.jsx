@@ -2,12 +2,17 @@ import React from 'react'
 import {useState} from 'react'
 import FooterAntesCadas from '../../Footers/FooterAntesCadas'
 import HeaderAntesCadas from '../../Headers/HeaderAntesCadas'
-
+import { useForm } from "react-hook-form";
 
 export default function Cadastro() {
 
-
-
+    // const {
+    //     register,
+    //     watch,
+    //     formState: { errors }
+    //   } = useForm();
+    
+    
 const [novo, setNovo] = useState({
 nome: "",
 senha: "",
@@ -41,6 +46,16 @@ console.log(novo)
 window.location = "/chatbot"
 })
 }
+// const [status, setStatus] = useState({
+//     type: '',
+//     mensagem: ''
+// });
+
+// function validate(){
+//     if(!novo.name) return setStatus({type: 'error', mensagem: ''})
+// }
+
+
 
 return (
 <>
@@ -64,7 +79,7 @@ return (
                             <div className="nome-sobrenome">
                                 <label htmlFor="idNome" className="form-label lbl-noso itens">Nome: </label>
                                 <input type="text" className="form-control nm-nome" id="idNome" name="nome"
-                                    value={novo.nome} onChange={handleChange} />
+                                    value={novo.nome} onChange={handleChange}/>
                             </div>
                             <div className="d-flex justify-content-between">
                                 <span id="msgNome" style={{ marginLeft: '3%' }}></span>
@@ -98,16 +113,16 @@ return (
                                 <label htmlFor="genero" className="form-label lbl-noso itens">Gênero: </label>
 
                                 <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                    <input type="radio" className="btn-check" name="genero" id="btnradio1"
+                                    <input type="radio" className="btn-check"  id="btnradio1"
                                         autoComplete="off" value="MA" checked={novo.genero} onChange={handleChange}
                                         required />
                                     <label className="btn btn-outline-primary" htmlFor="btnradio1">MA</label>
-                                    <input type="radio" className="btn-check" name="genero" id="btnradio2"
+                                    <input type="radio" className="btn-check"  id="btnradio2"
                                         autoComplete="off" value="FE" checked={novo.genero} onChange={handleChange}
                                         required />
                                     <label className="btn btn-outline-primary" htmlFor="btnradio2">FE</label>
-                                    <input type="radio" className="btn-check" name="genero" id="btnradio3"
-                                        autoComplete="off" value="NB" hecked={novo.genero} onChange={handleChange}
+                                    <input type="radio" className="btn-check"  id="btnradio3"
+                                        autoComplete="off" value="NB" checked={novo.genero} onChange={handleChange}
                                         required />
                                     <label className="btn btn-outline-primary" htmlFor="btnradio3">NB</label>
                                 </div>

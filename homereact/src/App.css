@@ -1458,6 +1458,50 @@ a:hover,
 /* ------------------------------------------------------------------------------ */
 /* media celular */
 @media screen and (max-width: 709px) {
+    .topo,
+    .base {
+        background-color: gold;
+        width: 100px;
+        height: 50px;
+        border-radius: 100px 100px 0 0;
+        animation: comex 550ms linear infinite;
+    }
+
+    .base {
+        border-radius: 0 0 100px 100px;
+        animation: comey 550ms linear infinite;
+    }
+
+    @keyframes comex {
+        50% {
+            transform: rotate(-25deg);
+        }
+    }
+
+    @keyframes comey {
+        50% {
+            transform: rotate(25deg);
+        }
+    }
+
+    .im-donut {
+        margin-top: 24%;
+        width: 20%;
+    }
+
+    .im-cereja {
+        margin-left: 10%;
+        margin-top: 24%;
+        width: 20%;
+    }
+
+    .im-sorvete {
+        margin-left: 10%;
+        margin-top: 24%;
+        width: 20%;
+    }
+
+
     .menu-di {
         font-size: 15px;
         padding-bottom: 4px;

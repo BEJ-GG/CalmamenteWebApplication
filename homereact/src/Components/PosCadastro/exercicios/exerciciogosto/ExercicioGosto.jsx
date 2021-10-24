@@ -7,7 +7,7 @@ export default function ExercicioGosto() {
     return (
         <>
 
-        <body className="fundoOl">
+        <body className="fundoOl" style={{marginBottom: '8%'}}>
 
             <h1 className="escr-olho">Pra terminar, procure em volta de você 1 coisa que tem gosto.</h1>
 
@@ -18,9 +18,9 @@ export default function ExercicioGosto() {
                         <div className="base"></div>
                     </div>
                     <div className="col-6">
-                        <img src={Donut} className=" im-donut " ></img>
+                        <img src={Donut} className=" im-donut " alt=""/>
                         <img src={Cereja} className="im-cereja" alt=""/>
-                        <img src={Sorvete} className ="im-sorvete"></img>
+                        <img src={Sorvete} className ="im-sorvete" alt=""/>
                     </div>
                 </div>
             </div>
