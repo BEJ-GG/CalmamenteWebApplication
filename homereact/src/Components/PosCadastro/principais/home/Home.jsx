@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import CalmamenteContext from '../../../context/CalmamenteContext'
 import { faBook, faExclamationTriangle, faMugHot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import book3 from '../../../img/3book.PNG'
@@ -8,16 +9,20 @@ import FooterPosCadas from '../../../Footers/FooterPosCadas';
 
 export default function Home() {
 
+  const { token } = useContext(CalmamenteContext);
+  console.log(token)
+
   return (
     <>
       <HeaderPosCadas/>
+      
       {/* <!-- inicio dos cards de 3 funcionalidade --> */}
       {/* <!-- card 1 --> */}
       <div className="mrgx-pequena mrgt-pequena">
         <div className="row m-0 row-cols-1 row-cols-md-3 g-4">
           <div className="col">
             <div className="ho-bor">
-              <Link to="/estouemcrise" className="linkreact">
+              <Link to={`/estouemcrise/${token}`} className="linkreact">
 
                 <div className="card h-100" style={{ border: "0px", position: "static" }}>
 

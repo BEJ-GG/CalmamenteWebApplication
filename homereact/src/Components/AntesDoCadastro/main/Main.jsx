@@ -41,10 +41,10 @@ return(
                 <Route path="/login" component={Login} />
                 <Route path="/cadastro" component={Cadastro} />
                 <Route path="/estoutendoumacrise" component={EstouTendoUmacrise} />
-                <RoutesPrivate path="/chatbot" component={Chatbot} />
+                <RoutesPrivate path="/chatbot" component={Chatbot} /> {/*/chatbot/:id*/}
                 <RoutesPrivate path="/home" component={Home} />
-                <RoutesPrivate path="/estouemcrise" component={Estouemcrise} />
-                <RoutesPrivate path="/queromeacalmar" component={Queromeacalmar} />
+                <RoutesPrivate path="/estouemcrise/:id" component={Estouemcrise} />
+                <RoutesPrivate path="/queromeacalmar/:id" component={Queromeacalmar} />
                 <RoutesPrivate path="/informacoes" component={Informacoes} />
                 <RoutesPrivate path="/respiracao" component={Respiracao} />
                 <RoutesPrivate path="/musicaTerapia" component={MusicaDeUsoTerapeutico} />
