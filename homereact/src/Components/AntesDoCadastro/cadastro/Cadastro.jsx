@@ -6,6 +6,12 @@ import HeaderAntesCadas from '../../Headers/HeaderAntesCadas'
 
 export default function Cadastro() {
 
+// const handleInput = () => {
+// let name = document.getElementById('idNome')
+
+
+// }
+
 
 
 const [novo, setNovo] = useState({
@@ -138,6 +144,7 @@ return (
             </div>
             {/*
             <!-- fim formulario --> */}
+            {/* <button onClick={() => } className="btn-cadas btn btn-primary">Cadastrar</button> */}
         </div>
     </div>
 

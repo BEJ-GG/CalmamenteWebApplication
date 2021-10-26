@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
+import CalmamenteContext from '../../../context/CalmamenteContext'
 import { faQuestionCircle, faCog } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Modal from 'react-bootstrap/Modal'
@@ -7,10 +8,71 @@ import HeaderPosCadas from '../../../Headers/HeaderPosCadas';
 import FooterPosCadas from '../../../Footers/FooterPosCadas';
 
 
-export default function Estouemcrise() {
+export default function Estouemcrise(props) {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const { token } = useContext(CalmamenteContext);
+  
+  const [novo, setNovo] = useState({
+    cd_diagnostico_usuario: "",
+    cd_diagnostico: "",
+    cd_usuario: token,
+    dt_inicio: ""
+  })
+
+  useEffect(() => {
+    if (token) {
+        fetch("/rest/DiagnosticoUsuario/" + token).then(resp => {
+            return (resp.json())
+        }).then(data => {
+            setNovo(data)
+        })
+    }
+  }, [token])
+
+  // console.log(novo.cd_diagnostico_usuario)
+
+  const [tratamento, setTratamento] = useState({})
+  const [retEx, setRetEx] = useState()
+
+    useEffect(() => {
+      fetch("/rest/tratamento").then((resp) => {
+          return resp.json()
+      }).then((resp) => {
+          setTratamento(tratamento => ({
+              ...tratamento,
+              cd_tratamento: resp.map(( p ) => p.cd_tratamento),
+              cod_diagnostico_usuario: resp.map(( p ) => p.cd_diagnostico_usuario),
+              cd_exercicio: resp.map(( p ) => p.cd_exercicio),
+              ds_tratamento: resp.map(( p ) => p.ds_tratamento)
+          }))
+      }).catch((error) => {
+            console.error(error)
+        })
+      }, [])
+    // if(tratamento.cod_diagnostico_usuario){
+    //   setRetEx(selecionaEX(tratamento, novo)) 
+    //   console.log(tratamento.cod_diagnostico_usuario)
+    // }
+    // console.log(tratamento.cd_diagnostico_usuario)
+    
+    function selecionaEX({cd_tratamento, cod_diagnostico_usuario},{cd_diagnostico_usuario}){
+      
+      for (let i = 0; i < cod_diagnostico_usuario.length; i++) {
+        if (cod_diagnostico_usuario[i] === cd_diagnostico_usuario) {          
+          console.log(cd_tratamento[i])
+        }
+      }
+      
+    
+    }
+    
+
+    
+   
+
 
   return (
     <>
@@ -162,32 +224,7 @@ export default function Estouemcrise() {
           </div>
         </Modal.Footer>
       </Modal>
-      {/* // <!-- fim modal do personalizar --> */}
-      {/* // <!-- fim personalizar --> */}
-      {/* // <!-- inicio card do iframe  --> */}
-      {/* <div class="card  quadro-ifra">
-        <iframe src="ifra-estoucrise.html" id="ifra-quadro"></iframe>
-        <Iframe src={IfraEstouemcrise} id="ifra-quadro" />
-        UseState 
-        <Acrise id="ifra-quadro"/>
-        <IfraEstouemcrise id="ifra-quadro" />
-        <div class="card-body">
-          <div class="position-relative m-4">
-            <div style={{ height: "1px" }}>
-              <div style={{ width: "50%" }}></div>
-            </div>
-            <button type="button" class="position-absolute  translate-middle btn btn-primary"
-              id="inicio">Voltar</button>
-            <a href="../home/Home.jsx"><button type="button" class="position-absolute translate-middle btn btn-primary"
-              id="estouCalmo">Estou mais
-              calmo</button></a>
-            <button onClick="" type="button" class="position-absolute  translate-middle btn btn-primary"
-              id="estouCrise">Próximo</button>
-          </div>
-
-        </div>
-      </div> */}
-      {/* // <!-- fim card do iframe  --> */}
+      
 
       {/* // <!-- inicio dos cards de soluções --> */}
       <div className="mrgx-pequena mrgt-pequena">

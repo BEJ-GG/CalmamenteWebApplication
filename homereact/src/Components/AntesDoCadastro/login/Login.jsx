@@ -64,7 +64,7 @@ const UserLogin = () => {
 
         if (token) {
             setToken(token)
-            return history.push('/home') //TO AKI Ó
+            return history.push('/home') 
         }
     }
 

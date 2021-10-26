@@ -22,7 +22,7 @@ export default function Home() {
         <div className="row m-0 row-cols-1 row-cols-md-3 g-4">
           <div className="col">
             <div className="ho-bor">
-              <Link to={`/estouemcrise/${token}`} className="linkreact">
+              <Link to="/estouemcrise" className="linkreact">
 
                 <div className="card h-100" style={{ border: "0px", position: "static" }}>
 
