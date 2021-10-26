@@ -6,13 +6,14 @@ import { useForm } from "react-hook-form";
 
 export default function Cadastro() {
 
-    // const {
-    //     register,
-    //     watch,
-    //     formState: { errors }
-    //   } = useForm();
-    
-    
+
+// const handleInput = () => {
+// let name = document.getElementById('idNome')
+
+
+// }
+
+
 const [novo, setNovo] = useState({
 nome: "",
 senha: "",
@@ -153,6 +154,7 @@ return (
             </div>
             {/*
             <!-- fim formulario --> */}
+            {/* <button onClick={() => } className="btn-cadas btn btn-primary">Cadastrar</button> */}
         </div>
     </div>
 

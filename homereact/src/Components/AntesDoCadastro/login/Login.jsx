@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react'
+import React, {useState, useContext, useEffect} from 'react'
 import { useHistory } from 'react-router-dom'
 import CalmamenteContext from '../../context/CalmamenteContext'
 import FooterAntesCadas from '../../Footers/FooterAntesCadas'
@@ -6,48 +6,67 @@ import HeaderAntesCadas from '../../Headers/HeaderAntesCadas'
 
 
 function inicialState(){
-return {email: '', senha: ''}
+    return {email: '', senha: ''}
 }
 
-function login({email, senha}) {
-if (email === 'admin@gmail.com' && senha === 'admin'){
-return {token: '1234'}
-}
-return {error: 'Usuário ou senha incorretos'}
-}
+
 
 const UserLogin = () => {
 
+    const [usuario, setUsuario] = useState([])
 
-const [values, setValues] = useState(inicialState);
-const { setToken } = useContext(CalmamenteContext);
-const history = useHistory();
+    useEffect(() => {
+        fetch("/rest/usuario").then((resp) => {
+            return resp.json()
+        }).then((resp) => {
+            setUsuario(usuario => ({
+                ...usuario,
+                cd_usuario: resp.map(( p ) => p.cd_usuario),
+                ds_email: resp.map(( p ) => p.ds_email),
+                sn_usuario: resp.map(( p ) => p.sn_usuario)
+            }))
+            
+        }).catch((error) => {
+            console.error(error)
+        })
+    }, [])
 
-function handleChange(event) {
-const {value, name } = event.target;
-setValues({
-...values,
-[name]: value
-});
-}
+    function login({email, senha},{cd_usuario, ds_email, sn_usuario}) { 
+        for (var i = 0; i < ds_email.length; i++) {
+            for (var j = 0; j < sn_usuario.length; j++) {
+                if (ds_email[i] === email && sn_usuario[j] === senha){
+                    return {token: cd_usuario[i]}
+                }
+            }
+        }     
+        return {error: 'Usuario ou senha invalidos'}
+
+    }
+
+    const [values, setValues] = useState(inicialState);
+    const { setToken } = useContext(CalmamenteContext);
+    const history = useHistory();
+
+    function handleChange(event) {
+        const {value, name } = event.target;
+        setValues({
+            ...values,
+            [name]: value
+        });
+        console.log(values)
+    }
 
 
-const handleSubmit = (event) => {
-event.preventDefault()
+    const handleSubmit = (event) => {
+        event.preventDefault()
+        
+        const { token } = login(values, usuario)
 
-const { token } = login(values)
-
-if (token) {
-setToken(token)
-return history.push('/home')
-}
-
-
-}
-
-
-
-
+        if (token) {
+            setToken(token)
+            return history.push('/home') 
+        }
+    }
 
 
 return (
@@ -103,8 +122,7 @@ return (
     <FooterAntesCadas />
 
 
-</>
-)
+</>)
 }
 
 export default UserLogin

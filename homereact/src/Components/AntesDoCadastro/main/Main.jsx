@@ -41,7 +41,7 @@ return(
                 <Route path="/login" component={Login} />
                 <Route path="/cadastro" component={Cadastro} />
                 <Route path="/estoutendoumacrise" component={EstouTendoUmacrise} />
-                <RoutesPrivate path="/chatbot" component={Chatbot} />
+                <RoutesPrivate path="/chatbot" component={Chatbot} /> {/*/chatbot/:id*/}
                 <RoutesPrivate path="/home" component={Home} />
                 <RoutesPrivate path="/estouemcrise" component={Estouemcrise} />
                 <RoutesPrivate path="/queromeacalmar" component={Queromeacalmar} />
