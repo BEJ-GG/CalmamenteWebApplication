@@ -11,7 +11,7 @@ export default function ExercicioCheiro() {
                 <h1 className="escr-olho">Liste mentalmente 2 coisas que possuem cheiro.</h1>
                 <div className="d-flex justify-content-center" style={{flexDirection: 'column'}}>
                     <div className="d-flex justify-content-center" >
-                        <img src={narizCheiro} style={{width:'25%'}} alt="" />
+                        <img src={narizCheiro} style={{width:'24%'}} alt="" />
                     </div>
                     <div>
                         <div className="ar-cheiro d-flex justify-content-center">

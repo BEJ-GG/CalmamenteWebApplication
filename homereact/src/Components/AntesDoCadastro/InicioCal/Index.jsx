@@ -13,7 +13,8 @@ import logoIcon from '../../img/logo-icon.png'
 import facebook from '../../img/facebook-logo.png'
 import twitter from '../../img/twitter-logo.png'
 import instagram from '../../img/instagram-logo.png'
-
+import useMediaQuery from '../query/useMediaQuery';
+import IndexSemCarousel from '../query/IndexSemCarousel';
 
 export default function Index() {
 //inicio da responsividade dos botões
@@ -32,7 +33,7 @@ const [CarouselCaption, setCarouselCaption] = useState('carousel-caption d-flex 
 // }
 // fim da responsividade dos botões da index
 
-
+// let removeBtn = useMediaQuery('(max-width: 710px)')
 
 return (
 
@@ -69,6 +70,7 @@ return (
                 <Carousel.Item>
                     <img className="d-block w-100" src={Carousel2} alt="First slide" />
                     <div className={CarouselCaption}>
+                        {/* {removeBtn && <IndexSemCarousel/>} */}
                         <Link to="/cadastro" className="linkreact btn btn-outline-info btn-inicial-enter"
                             style={{padding: '2%'}}>Conheça nosso site</Link>
                         <Link to="/estoutendoumacrise" className="linkreact btn btn-outline-danger btn-inicial-crise"
@@ -78,6 +80,8 @@ return (
                 <Carousel.Item>
                     <img className="d-block w-100" src={Carousel1} alt="Second slide" />
                     <div className={CarouselCaption}>
+                    {/* {removeBtn && <IndexSemCarousel/>} */}
+
                         <Link to="/cadastro" className="linkreact btn btn-outline-info btn-inicial-enter"
                             style={{padding: '2%'}}>Conheça nosso site</Link>
                         <Link to="/estoutendoumacrise" className="linkreact btn btn-outline-danger btn-inicial-crise"
@@ -85,8 +89,11 @@ return (
                     </div>
                 </Carousel.Item>
                 <Carousel.Item>
+                    
                     <img className="d-block w-100" src={Carousel3} alt="Third slide" />
                     <div className={CarouselCaption}>
+                    {/* {removeBtn && <IndexSemCarousel/>} */}
+
                         <Link to="/cadastro" className="linkreact btn btn-outline-info btn-inicial-enter"
                             style={{padding: '2%'}}>Conheça nosso site</Link>
                         <Link to="/estoutendoumacrise" className="linkreact btn btn-outline-danger btn-inicial-crise"
